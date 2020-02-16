@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小海鹏啊</title>
+  
+  <subtitle>龙鸣见闻</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://intellij.xyz/"/>
+  <updated>2020-02-14T20:43:22.093Z</updated>
+  <id>https://intellij.xyz/</id>
+  
+  <author>
+    <name>王海鹏</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客访问速度太慢？部署到OSS上面提高访问速度</title>
+    <link href="https://intellij.xyz/posts/d51f/index.html"/>
+    <id>https://intellij.xyz/posts/d51f/index.html</id>
+    <published>2020-02-14T14:56:56.000Z</published>
+    <updated>2020-02-14T20:43:22.093Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用阿里云OSS部署静态博客并且开启CDN加速和HTTPS访问&quot;&gt;&lt;a href=&quot;#使用阿里云OSS部署静态博客并且开启CDN加速和HTTPS访问&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="博客技术" scheme="https://intellij.xyz/categories/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Hexo,OSS,CDN,HTTPS" scheme="https://intellij.xyz/tags/Hexo-OSS-CDN-HTTPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test 7</title>
+    <link href="https://intellij.xyz/posts/3444/index.html"/>
+    <id>https://intellij.xyz/posts/3444/index.html</id>
+    <published>2020-02-11T17:12:19.000Z</published>
+    <updated>2020-02-11T17:12:36.623Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 5</title>
+    <link href="https://intellij.xyz/posts/f5c5/index.html"/>
+    <id>https://intellij.xyz/posts/f5c5/index.html</id>
+    <published>2020-02-11T17:12:08.000Z</published>
+    <updated>2020-02-11T17:12:36.621Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 6</title>
+    <link href="https://intellij.xyz/posts/f485/index.html"/>
+    <id>https://intellij.xyz/posts/f485/index.html</id>
+    <published>2020-02-11T17:11:59.000Z</published>
+    <updated>2020-02-11T17:12:36.620Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 4</title>
+    <link href="https://intellij.xyz/posts/3504/index.html"/>
+    <id>https://intellij.xyz/posts/3504/index.html</id>
+    <published>2020-02-11T17:11:49.000Z</published>
+    <updated>2020-02-11T17:12:36.606Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 3</title>
+    <link href="https://intellij.xyz/posts/f745/index.html"/>
+    <id>https://intellij.xyz/posts/f745/index.html</id>
+    <published>2020-02-11T17:11:40.000Z</published>
+    <updated>2020-02-11T17:12:36.604Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 2</title>
+    <link href="https://intellij.xyz/posts/3784/index.html"/>
+    <id>https://intellij.xyz/posts/3784/index.html</id>
+    <published>2020-02-11T17:07:48.000Z</published>
+    <updated>2020-02-11T17:08:18.710Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 1</title>
+    <link href="https://intellij.xyz/posts/36c4/index.html"/>
+    <id>https://intellij.xyz/posts/36c4/index.html</id>
+    <published>2020-02-11T17:07:38.000Z</published>
+    <updated>2020-02-11T17:08:18.709Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test 0</title>
+    <link href="https://intellij.xyz/posts/f605/index.html"/>
+    <id>https://intellij.xyz/posts/f605/index.html</id>
+    <published>2020-02-11T17:07:10.000Z</published>
+    <updated>2020-02-11T18:10:29.379Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="sss" scheme="https://intellij.xyz/categories/sss/"/>
+    
+    
+      <category term="test" scheme="https://intellij.xyz/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>动态规划之矩阵链乘法</title>
+    <link href="https://intellij.xyz/posts/8f42/index.html"/>
+    <id>https://intellij.xyz/posts/8f42/index.html</id>
+    <published>2019-11-26T11:16:51.000Z</published>
+    <updated>2020-02-14T16:32:42.764Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;动态规划之矩阵链乘法&quot;&gt;&lt;a href=&quot;#动态规划之矩阵链乘法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="算法,动态规划" scheme="https://intellij.xyz/tags/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机行业就业分析报告</title>
+    <link href="https://intellij.xyz/posts/69ec/index.html"/>
+    <id>https://intellij.xyz/posts/69ec/index.html</id>
+    <published>2019-11-25T02:34:02.000Z</published>
+    <updated>2020-02-11T09:51:25.905Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;计算机行业在国内算的上是最热的行业这里的原因就在于，计算机行业的高工资，最近几年计算机确实发挥了很重要的作用，可以说带来了极大的生产力的提高。不过今年计算机行业的就业趋势是怎样的呢，本科生如何准备就业呢，这是我所做这一篇文章的目的。&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我开发了一个又红又专的app</title>
+    <link href="https://intellij.xyz/posts/868a/index.html"/>
+    <id>https://intellij.xyz/posts/868a/index.html</id>
+    <published>2019-11-24T01:06:58.000Z</published>
+    <updated>2020-02-11T14:49:54.598Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;东方大国app开发&quot;&gt;&lt;a href=&quot;#东方大国app开发&quot; class=&quot;headerlink&quot; title=&quot;东方大国app开发&quot;&gt;&lt;/a&gt;东方大国app开发&lt;/h1&gt;&lt;p&gt;嘻嘻嘻只是一次作业而已啦，不过真的挺好&lt;/p&gt;
+&lt;p&gt;本项目地址&lt;br&gt; &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络问题汇总</title>
+    <link href="https://intellij.xyz/posts/facf/index.html"/>
+    <id>https://intellij.xyz/posts/facf/index.html</id>
+    <published>2019-11-23T11:40:14.000Z</published>
+    <updated>2020-02-11T09:51:25.903Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-12-常用的计算机拓扑结构有哪些，适用于广域网的拓扑结构有哪些？&quot;&gt;&lt;a href=&quot;#1-12-常用的计算机拓扑结构有哪些，适用于广域网的拓扑结构有哪些？&quot; class=&quot;headerlink&quot; title=&quot;1-12
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="计算机网络" scheme="https://intellij.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>破解markdown插件Markdown Navigator</title>
+    <link href="https://intellij.xyz/posts/252e/index.html"/>
+    <id>https://intellij.xyz/posts/252e/index.html</id>
+    <published>2019-11-22T13:13:13.000Z</published>
+    <updated>2020-02-11T15:46:45.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前排提示本项目地址&lt;br&gt;&lt;a href=&quot;https://github.com/whp98/markdownNavigatorPatch&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;whp98/markdownNavigatorPatch: 破解
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://intellij.xyz/posts/3eeb/index.html"/>
+    <id>https://intellij.xyz/posts/3eeb/index.html</id>
+    <published>2019-11-21T11:38:24.510Z</published>
+    <updated>2020-02-11T09:51:25.883Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
