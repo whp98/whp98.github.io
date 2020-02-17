@@ -13,14 +13,20 @@
       
       <categories>
           
-          <category> 博客技术 </category>
+          <category> 博客技术-Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Hexo,OSS,CDN,HTTPS </tag>
+            <tag> Hexo </tag>
+            
+            <tag> OSS </tag>
+            
+            <tag> CDN </tag>
+            
+            <tag> HTTPS </tag>
             
         </tags>
       

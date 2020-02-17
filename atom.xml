@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://intellij.xyz/"/>
-  <updated>2020-02-14T20:43:22.093Z</updated>
+  <updated>2020-02-16T15:32:19.829Z</updated>
   <id>https://intellij.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://intellij.xyz/posts/d51f/index.html"/>
     <id>https://intellij.xyz/posts/d51f/index.html</id>
     <published>2020-02-14T14:56:56.000Z</published>
-    <updated>2020-02-14T20:43:22.093Z</updated>
+    <updated>2020-02-16T15:32:19.829Z</updated>
     
     <summary type="html">
     
@@ -36,10 +36,16 @@
     </summary>
     
     
-      <category term="博客技术" scheme="https://intellij.xyz/categories/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF/"/>
+      <category term="博客技术-Hexo" scheme="https://intellij.xyz/categories/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF-Hexo/"/>
     
     
-      <category term="Hexo,OSS,CDN,HTTPS" scheme="https://intellij.xyz/tags/Hexo-OSS-CDN-HTTPS/"/>
+      <category term="Hexo" scheme="https://intellij.xyz/tags/Hexo/"/>
+    
+      <category term="OSS" scheme="https://intellij.xyz/tags/OSS/"/>
+    
+      <category term="CDN" scheme="https://intellij.xyz/tags/CDN/"/>
+    
+      <category term="HTTPS" scheme="https://intellij.xyz/tags/HTTPS/"/>
     
   </entry>
   
