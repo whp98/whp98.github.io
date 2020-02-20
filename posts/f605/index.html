@@ -435,7 +435,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-12
+                    2020-02-19
                 </div>
                 
 
@@ -444,7 +444,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    657
+                    667
                 </div>
                 
 
@@ -500,26 +500,26 @@
 <p>8点和10点各执行一次</p>
 <pre class=" language-bash"><code class="language-bash">0 8,10 * * * cmd</code></pre>
 <h3 id="天"><a href="#天" class="headerlink" title="天"></a>天</h3><p>每天5点执行</p>
-<pre class=" language-bash"><code class="language-bash">0 5 * * *</code></pre>
+<pre class=" language-bash"><code class="language-bash">0 5 * * * cmd</code></pre>
 <p>每隔一天执行</p>
-<pre class=" language-bash"><code class="language-bash">0 0 */2 * *</code></pre>
+<pre class=" language-bash"><code class="language-bash">0 0 */2 * * cmd</code></pre>
 <p>每月15号执行</p>
-<pre class=" language-bash"><code class="language-bash">0 0 15 * *</code></pre>
+<pre class=" language-bash"><code class="language-bash">0 0 15 * * cmd</code></pre>
 <h3 id="周"><a href="#周" class="headerlink" title="周"></a>周</h3><p>每周一执行</p>
-<pre class=" language-bash"><code class="language-bash">1 1 * * 1</code></pre>
+<pre class=" language-bash"><code class="language-bash">1 1 * * 1 cmd</code></pre>
 <p>每周日执行</p>
-<pre class=" language-bash"><code class="language-bash">1 1 * * 1</code></pre>
+<pre class=" language-bash"><code class="language-bash">1 1 * * 1 cmd</code></pre>
 <p>每两周执行</p>
-<pre class=" language-bash"><code class="language-bash">1 1 * * */2</code></pre>
+<pre class=" language-bash"><code class="language-bash">1 1 * * */2 cmd</code></pre>
 <h3 id="月"><a href="#月" class="headerlink" title="月"></a>月</h3><p>每月一号执行</p>
-<pre class=" language-bash"><code class="language-bash">0 0 1 * *</code></pre>
+<pre class=" language-bash"><code class="language-bash">0 0 1 * * cmd</code></pre>
 <p>每两个月执行</p>
-<pre class=" language-bash"><code class="language-bash">0 0 1 */2 *</code></pre>
+<pre class=" language-bash"><code class="language-bash">0 0 1 */2 * cmd</code></pre>
 <h3 id="年"><a href="#年" class="headerlink" title="年"></a>年</h3><p>每年二月执行</p>
-<pre class=" language-bash"><code class="language-bash">0 0 1 2 *</code></pre>
+<pre class=" language-bash"><code class="language-bash">0 0 1 2 * cmd</code></pre>
 <h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>如果在某个周期内执行一次那么周期内的单位不应该保持‘*’应该指定具体时间否则会导致按照小单位执行</p>
 <h2 id="比如"><a href="#比如" class="headerlink" title="比如"></a>比如</h2><p>你想写每周一执行</p>
-<pre class=" language-bash"><code class="language-bash">1 1 * * 1</code></pre>
+<pre class=" language-bash"><code class="language-bash">1 1 * * 1 cmd</code></pre>
 <p>若写成了<code>* 1 * * 1</code>则表示每周一的每分钟执行一次</p>
 <p>若写成了<code>0 * * * 1</code>则表示每周一的每小时执行一次</p>
 
@@ -778,36 +778,54 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/36c4/index.html">
+                <a href="/posts/f605/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/whp98/whp98.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="test 1">
+                        <img src="https://cdn.jsdelivr.net/gh/whp98/whp98.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="如何在Linux主机上定时运行某条命令或者程序以及注意事项">
                         
-                        <span class="card-title">test 1</span>
+                        <span class="card-title">如何在Linux主机上定时运行某条命令或者程序以及注意事项</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            最近我的新加坡主机总是要求google验证，不知道咋回事，我发现定时重启v2ray似乎可以降低验证频率，我决定让我的v2ray每天重启一次，于是我就学习了一下linux上的定时命令。Linux上定时任务类似于Windows的计划任务。cor
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-19
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            王海鹏
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/" class="post-category">
+                                    Linux-定时任务
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/corntab/">
+                        <span class="chip bg-color">corntab</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -819,35 +837,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/8f42/index.html">
+                <a href="/posts/d51f/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/whp98/whp98.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="动态规划之矩阵链乘法">
+                        <img src="https://cdn.jsdelivr.net/gh/whp98/whp98.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="Hexo博客访问速度太慢？部署到OSS上面提高访问速度">
                         
-                        <span class="card-title">动态规划之矩阵链乘法</span>
+                        <span class="card-title">Hexo博客访问速度太慢？部署到OSS上面提高访问速度</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            动态规划之矩阵链乘法这个算法的主要目标是降低矩阵连乘的时候的计算量，首先我们可以看一个例子：现有三个矩阵A，B，C 需要计算ABC 目前已知各个矩阵维数如下：
-A: 10x5  
-B: 5x200  
-C: 200x30  
-如果采用顺序计
+                            使用阿里云OSS部署静态博客并且开启CDN加速和HTTPS访问以前为了写博客买了一个阿里云学生机，在上面部署了一个Jpress博客。之后发现这个博客占用了较大资源，由于使用数据库啥的对于将来文章转移啥的也不是很方便，还有这台机器做科学上网的
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="post-category">
-                                    算法-动态规划
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%8A%80%E6%9C%AF-Hexo/" class="post-category">
+                                    博客技术-Hexo
                                 </a>
                             
                             
@@ -857,16 +871,20 @@ C: 200x30
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
-                        <span class="chip bg-color">动态规划</span>
+                    <a href="/tags/OSS/">
+                        <span class="chip bg-color">OSS</span>
                     </a>
                     
-                    <a href="/tags/%E7%9F%A9%E9%98%B5%E9%93%BE%E4%B9%98/">
-                        <span class="chip bg-color">矩阵链乘</span>
+                    <a href="/tags/CDN/">
+                        <span class="chip bg-color">CDN</span>
+                    </a>
+                    
+                    <a href="/tags/HTTPS/">
+                        <span class="chip bg-color">HTTPS</span>
                     </a>
                     
                 </div>

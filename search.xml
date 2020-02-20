@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>如何在Linux主机上定时运行某条命令或者程序以及注意事项</title>
+      <link href="/posts/f605/index.html"/>
+      <url>/posts/f605/index.html</url>
+      
+        <content type="html"><![CDATA[<p>最近我的新加坡主机总是要求google验证，不知道咋回事，我发现定时重启v2ray似乎可以降低验证频率，我决定让我的v2ray每天重启一次，于是我就学习了一下linux上的定时命令。Linux上定时任务类似于Windows的计划任务。corntab命令就是用来设置定时任务的。</p><h1 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h1><p>它的工作原理就是这个程序分钟检查配置文件中的任务，如果有需要执行的任务那么它就会在设定的时间执行对应的命令。</p><h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p><code>/var/spool/cron/crontabs</code><br>这个存放用户的配置文件，这个文件夹可能是空的但是我经过编辑之后可以看到root用户的一个文件内容如下</p><p><img src="/medias/cube.svg" data-original="/posts/f605/index/2020-02-20-16-17-53.png" alt><br><code>/etc/cron.d/</code><br>这个中存放着一部分需要执行的脚本，目测都是一些系统级别的定时任务才放</p><h1 id="简单的使用"><a href="#简单的使用" class="headerlink" title="简单的使用"></a>简单的使用</h1><p>本文只是简单介绍一下如何使用所以只说简单实用的方式</p><p>编辑当前用户的crontab配置</p><pre class=" language-bash"><code class="language-bash"><span class="token function">crontab</span> -e</code></pre><p>这个命令会打开当前用户的crontab配置文件（如果没有就会创建一个新的文件）</p><p>列出当前用户的计划任务列表</p><pre class=" language-bash"><code class="language-bash"><span class="token function">crontab</span> -l</code></pre><p>全部删除用户任务</p><pre class=" language-bash"><code class="language-bash"><span class="token function">crontab</span> -r</code></pre><p><img src="/medias/cube.svg" data-original="/posts/f605/index/2020-02-20-16-42-01.png" alt></p><h1 id="编辑定时任务"><a href="#编辑定时任务" class="headerlink" title="编辑定时任务"></a>编辑定时任务</h1><h2 id="命令基本形式"><a href="#命令基本形式" class="headerlink" title="命令基本形式"></a>命令基本形式</h2><pre class=" language-bash"><code class="language-bash">* * * * * 要执行的命令----------------<span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> ---- 周当中的某天 <span class="token punctuation">(</span>0 - 7<span class="token punctuation">)</span> <span class="token punctuation">(</span>周日为 0 或 7<span class="token punctuation">)</span><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> ------ 月份 <span class="token punctuation">(</span>1 - 12<span class="token punctuation">)</span><span class="token operator">|</span> <span class="token operator">|</span> -------- 一月当中的某天 <span class="token punctuation">(</span>1 - 31<span class="token punctuation">)</span><span class="token operator">|</span> ---------- 小时 <span class="token punctuation">(</span>0 - 23<span class="token punctuation">)</span>------------ 分钟 <span class="token punctuation">(</span>0 - 59<span class="token punctuation">)</span></code></pre><h2 id="举例子"><a href="#举例子" class="headerlink" title="举例子"></a>举例子</h2><h3 id="分钟"><a href="#分钟" class="headerlink" title="分钟"></a>分钟</h3><p>每一分钟执行(cmd代表执行的命令，每一行效果相同,下同)</p><pre class=" language-bash"><code class="language-bash">* * * * * cmd*/1 * * * * cmd</code></pre><p>每3分钟执行</p><pre class=" language-bash"><code class="language-bash">*/3 * * * * cmd</code></pre><h3 id="小时"><a href="#小时" class="headerlink" title="小时"></a>小时</h3><p>每小时的第15分钟执行</p><pre class=" language-bash"><code class="language-bash">15 * * * * cmd</code></pre><p>13-15点每小时执行</p><pre class=" language-bash"><code class="language-bash">0 13-15 * * * cmd</code></pre><p>8点和10点各执行一次</p><pre class=" language-bash"><code class="language-bash">0 8,10 * * * cmd</code></pre><h3 id="天"><a href="#天" class="headerlink" title="天"></a>天</h3><p>每天5点执行</p><pre class=" language-bash"><code class="language-bash">0 5 * * * cmd</code></pre><p>每隔一天执行</p><pre class=" language-bash"><code class="language-bash">0 0 */2 * * cmd</code></pre><p>每月15号执行</p><pre class=" language-bash"><code class="language-bash">0 0 15 * * cmd</code></pre><h3 id="周"><a href="#周" class="headerlink" title="周"></a>周</h3><p>每周一执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * 1 cmd</code></pre><p>每周日执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * 1 cmd</code></pre><p>每两周执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * */2 cmd</code></pre><h3 id="月"><a href="#月" class="headerlink" title="月"></a>月</h3><p>每月一号执行</p><pre class=" language-bash"><code class="language-bash">0 0 1 * * cmd</code></pre><p>每两个月执行</p><pre class=" language-bash"><code class="language-bash">0 0 1 */2 * cmd</code></pre><h3 id="年"><a href="#年" class="headerlink" title="年"></a>年</h3><p>每年二月执行</p><pre class=" language-bash"><code class="language-bash">0 0 1 2 * cmd</code></pre><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>如果在某个周期内执行一次那么周期内的单位不应该保持‘*’应该指定具体时间否则会导致按照小单位执行</p><h2 id="比如"><a href="#比如" class="headerlink" title="比如"></a>比如</h2><p>你想写每周一执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * 1 cmd</code></pre><p>若写成了<code>* 1 * * 1</code>则表示每周一的每分钟执行一次</p><p>若写成了<code>0 * * * 1</code>则表示每周一的每小时执行一次</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux-定时任务 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> corntab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客访问速度太慢？部署到OSS上面提高访问速度</title>
       <link href="/posts/d51f/index.html"/>
       <url>/posts/d51f/index.html</url>
@@ -120,33 +147,6 @@
         <content type="html"><![CDATA[]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>如何在Linux主机上定时运行某条命令或者程序以及注意事项</title>
-      <link href="/posts/f605/index.html"/>
-      <url>/posts/f605/index.html</url>
-      
-        <content type="html"><![CDATA[<p>最近我的新加坡主机总是要求google验证，不知道咋回事，我发现定时重启v2ray似乎可以降低验证频率，我决定让我的v2ray每天重启一次，于是我就学习了一下linux上的定时命令。Linux上定时任务类似于Windows的计划任务。corntab命令就是用来设置定时任务的。</p><h1 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h1><p>它的工作原理就是这个程序分钟检查配置文件中的任务，如果有需要执行的任务那么它就会在设定的时间执行对应的命令。</p><h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p><code>/var/spool/cron/crontabs</code><br>这个存放用户的配置文件，这个文件夹可能是空的但是我经过编辑之后可以看到root用户的一个文件内容如下</p><p><img src="/medias/cube.svg" data-original="/posts/f605/index/2020-02-20-16-17-53.png" alt><br><code>/etc/cron.d/</code><br>这个中存放着一部分需要执行的脚本，目测都是一些系统级别的定时任务才放</p><h1 id="简单的使用"><a href="#简单的使用" class="headerlink" title="简单的使用"></a>简单的使用</h1><p>本文只是简单介绍一下如何使用所以只说简单实用的方式</p><p>编辑当前用户的crontab配置</p><pre class=" language-bash"><code class="language-bash"><span class="token function">crontab</span> -e</code></pre><p>这个命令会打开当前用户的crontab配置文件（如果没有就会创建一个新的文件）</p><p>列出当前用户的计划任务列表</p><pre class=" language-bash"><code class="language-bash"><span class="token function">crontab</span> -l</code></pre><p>全部删除用户任务</p><pre class=" language-bash"><code class="language-bash"><span class="token function">crontab</span> -r</code></pre><p><img src="/medias/cube.svg" data-original="/posts/f605/index/2020-02-20-16-42-01.png" alt></p><h1 id="编辑定时任务"><a href="#编辑定时任务" class="headerlink" title="编辑定时任务"></a>编辑定时任务</h1><h2 id="命令基本形式"><a href="#命令基本形式" class="headerlink" title="命令基本形式"></a>命令基本形式</h2><pre class=" language-bash"><code class="language-bash">* * * * * 要执行的命令----------------<span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> ---- 周当中的某天 <span class="token punctuation">(</span>0 - 7<span class="token punctuation">)</span> <span class="token punctuation">(</span>周日为 0 或 7<span class="token punctuation">)</span><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> ------ 月份 <span class="token punctuation">(</span>1 - 12<span class="token punctuation">)</span><span class="token operator">|</span> <span class="token operator">|</span> -------- 一月当中的某天 <span class="token punctuation">(</span>1 - 31<span class="token punctuation">)</span><span class="token operator">|</span> ---------- 小时 <span class="token punctuation">(</span>0 - 23<span class="token punctuation">)</span>------------ 分钟 <span class="token punctuation">(</span>0 - 59<span class="token punctuation">)</span></code></pre><h2 id="举例子"><a href="#举例子" class="headerlink" title="举例子"></a>举例子</h2><h3 id="分钟"><a href="#分钟" class="headerlink" title="分钟"></a>分钟</h3><p>每一分钟执行(cmd代表执行的命令，每一行效果相同,下同)</p><pre class=" language-bash"><code class="language-bash">* * * * * cmd*/1 * * * * cmd</code></pre><p>每3分钟执行</p><pre class=" language-bash"><code class="language-bash">*/3 * * * * cmd</code></pre><h3 id="小时"><a href="#小时" class="headerlink" title="小时"></a>小时</h3><p>每小时的第15分钟执行</p><pre class=" language-bash"><code class="language-bash">15 * * * * cmd</code></pre><p>13-15点每小时执行</p><pre class=" language-bash"><code class="language-bash">0 13-15 * * * cmd</code></pre><p>8点和10点各执行一次</p><pre class=" language-bash"><code class="language-bash">0 8,10 * * * cmd</code></pre><h3 id="天"><a href="#天" class="headerlink" title="天"></a>天</h3><p>每天5点执行</p><pre class=" language-bash"><code class="language-bash">0 5 * * *</code></pre><p>每隔一天执行</p><pre class=" language-bash"><code class="language-bash">0 0 */2 * *</code></pre><p>每月15号执行</p><pre class=" language-bash"><code class="language-bash">0 0 15 * *</code></pre><h3 id="周"><a href="#周" class="headerlink" title="周"></a>周</h3><p>每周一执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * 1</code></pre><p>每周日执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * 1</code></pre><p>每两周执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * */2</code></pre><h3 id="月"><a href="#月" class="headerlink" title="月"></a>月</h3><p>每月一号执行</p><pre class=" language-bash"><code class="language-bash">0 0 1 * *</code></pre><p>每两个月执行</p><pre class=" language-bash"><code class="language-bash">0 0 1 */2 *</code></pre><h3 id="年"><a href="#年" class="headerlink" title="年"></a>年</h3><p>每年二月执行</p><pre class=" language-bash"><code class="language-bash">0 0 1 2 *</code></pre><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>如果在某个周期内执行一次那么周期内的单位不应该保持‘*’应该指定具体时间否则会导致按照小单位执行</p><h2 id="比如"><a href="#比如" class="headerlink" title="比如"></a>比如</h2><p>你想写每周一执行</p><pre class=" language-bash"><code class="language-bash">1 1 * * 1</code></pre><p>若写成了<code>* 1 * * 1</code>则表示每周一的每分钟执行一次</p><p>若写成了<code>0 * * * 1</code>则表示每周一的每小时执行一次</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Linux-定时任务 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-            <tag> corntab </tag>
-            
-        </tags>
       
     </entry>
     

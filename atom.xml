@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://intellij.xyz/"/>
-  <updated>2020-02-16T15:32:19.829Z</updated>
+  <updated>2020-02-20T10:18:03.961Z</updated>
   <id>https://intellij.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在Linux主机上定时运行某条命令或者程序以及注意事项</title>
+    <link href="https://intellij.xyz/posts/f605/index.html"/>
+    <id>https://intellij.xyz/posts/f605/index.html</id>
+    <published>2020-02-19T05:07:10.000Z</published>
+    <updated>2020-02-20T10:18:03.961Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近我的新加坡主机总是要求google验证，不知道咋回事，我发现定时重启v2ray似乎可以降低验证频率，我决定让我的v2ray每天重启一次，于是我就学习了一下linux上的定时命令。Linux上定时任务类似于Windows的计划任务。corntab命令就是用来设置定时任务的
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux-定时任务" scheme="https://intellij.xyz/categories/Linux-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+    
+    
+      <category term="Linux" scheme="https://intellij.xyz/tags/Linux/"/>
+    
+      <category term="corntab" scheme="https://intellij.xyz/tags/corntab/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客访问速度太慢？部署到OSS上面提高访问速度</title>
@@ -151,35 +180,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>如何在Linux主机上定时运行某条命令或者程序以及注意事项</title>
-    <link href="https://intellij.xyz/posts/f605/index.html"/>
-    <id>https://intellij.xyz/posts/f605/index.html</id>
-    <published>2020-02-11T17:07:10.000Z</published>
-    <updated>2020-02-20T09:14:18.969Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;最近我的新加坡主机总是要求google验证，不知道咋回事，我发现定时重启v2ray似乎可以降低验证频率，我决定让我的v2ray每天重启一次，于是我就学习了一下linux上的定时命令。Linux上定时任务类似于Windows的计划任务。corntab命令就是用来设置定时任务的
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux-定时任务" scheme="https://intellij.xyz/categories/Linux-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
-    
-    
-      <category term="Linux" scheme="https://intellij.xyz/tags/Linux/"/>
-    
-      <category term="corntab" scheme="https://intellij.xyz/tags/corntab/"/>
     
   </entry>
   
