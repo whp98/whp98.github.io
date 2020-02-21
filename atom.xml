@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.intellij.xyz/"/>
-  <updated>2020-02-20T10:20:20.016Z</updated>
+  <updated>2020-02-21T06:49:26.865Z</updated>
   <id>https://blog.intellij.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于博客内容创作和博客部署技术结构的思考</title>
+    <link href="https://blog.intellij.xyz/posts/36c4/index.html"/>
+    <id>https://blog.intellij.xyz/posts/36c4/index.html</id>
+    <published>2020-02-20T05:07:38.000Z</published>
+    <updated>2020-02-21T06:49:26.865Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前一段时间将自己的博客转移到了hexo上面，之前的博客是Jpress搭建的，Jpress还是有一定的好处就比如可以开发一些插件来增加各种功能，甚至自动运营公众号，不过缺点也很明显由于博客内容保存在数据库中，而图片保存在一个附件文件夹里面，这导致了很多问题，这一篇博客就是讨论
+        
+      
+    
+    </summary>
+    
+    
+      <category term="想法-杂谈" scheme="https://blog.intellij.xyz/categories/%E6%83%B3%E6%B3%95-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="内容创作" scheme="https://blog.intellij.xyz/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/"/>
+    
+      <category term="博客搭建" scheme="https://blog.intellij.xyz/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在Linux主机上定时运行某条命令或者程序以及注意事项</title>
@@ -165,35 +194,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>关于博客内容创作和博客部署技术结构的思考</title>
-    <link href="https://blog.intellij.xyz/posts/36c4/index.html"/>
-    <id>https://blog.intellij.xyz/posts/36c4/index.html</id>
-    <published>2020-02-11T17:07:38.000Z</published>
-    <updated>2020-02-21T06:41:19.907Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;前一段时间将自己的博客转移到了hexo上面，之前的博客是Jpress搭建的，Jpress还是有一定的好处就比如可以开发一些插件来增加各种功能，甚至自动运营公众号，不过缺点也很明显由于博客内容保存在数据库中，而图片保存在一个附件文件夹里面，这导致了很多问题，这一篇博客就是讨论
-        
-      
-    
-    </summary>
-    
-    
-      <category term="想法-杂谈" scheme="https://blog.intellij.xyz/categories/%E6%83%B3%E6%B3%95-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="内容创作" scheme="https://blog.intellij.xyz/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/"/>
-    
-      <category term="博客搭建" scheme="https://blog.intellij.xyz/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
