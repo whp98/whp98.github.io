@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>win10 开始菜单图标显示不正常，如何恢复</title>
+      <link href="/posts/969f/index.html"/>
+      <url>/posts/969f/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><p>今天笔记本硬盘掉线了，电脑蓝屏。当下吓得要死，好在只是硬盘线松开了加固了之后又满血复活了，但是开始菜单的图标都消失了变成了下面的样子：</p><p><img src="/medias/cube.svg" data-original="/posts/969f/index/2020-02-24-14-16-22.png" alt></p><p>当时没有截图大概每一个都像上面这个一样，变成了默认的程序图标，我先后找了几个解决方案实验最终解决了.分享出来让大家参考一下。</p><h1 id="尝试一：通过删除图标数据库来让win10重建图标缓存"><a href="#尝试一：通过删除图标数据库来让win10重建图标缓存" class="headerlink" title="尝试一：通过删除图标数据库来让win10重建图标缓存"></a>尝试一：通过删除图标数据库来让win10重建图标缓存</h1><p>虽然这个并没有解决开始菜单的图标异常问题，但是我还是试了一下，似乎没有用，网上大都是用来解决win10 桌面的图标异常的，有这个问题的朋友可以尝试一下，方法如下：<br>管理员打开CMD：</p><p><img src="/medias/cube.svg" data-original="/posts/969f/index/2020-02-24-14-25-41.png" alt></p><p>输入以下内容</p><pre class=" language-cmd"><code class="language-cmd">cd /d %userprofile%\AppData\Local\Microsoft\Windows\Explorertaskkill /f /im explorer.exeattrib -h iconcache_*.dbdel iconcache_*.db /astart explorerpause</code></pre><p><img src="/medias/cube.svg" data-original="/posts/969f/index/2020-02-24-14-34-13.png" alt></p><p>这个是立即奏效的如果不奏效看看第二个</p><h1 id="尝试二：运行命令来重新注册Windows商店应用"><a href="#尝试二：运行命令来重新注册Windows商店应用" class="headerlink" title="尝试二：运行命令来重新注册Windows商店应用"></a>尝试二：运行命令来重新注册Windows商店应用</h1><p><code>Win + X + A</code> 打开powershell管理员</p><p>输入下面的命令</p><pre class=" language-powershell"><code class="language-powershell"><span class="token variable">$manifest</span> = <span class="token punctuation">(</span>Get<span class="token operator">-</span>AppxPackage Microsoft<span class="token punctuation">.</span>WindowsStore<span class="token punctuation">)</span><span class="token punctuation">.</span>InstallLocation <span class="token operator">+</span> <span class="token string">'\AppxManifest.xml'</span> <span class="token punctuation">;</span> Add<span class="token operator">-</span>AppxPackage <span class="token operator">-</span>DisableDevelopmentMode <span class="token operator">-</span>Register <span class="token variable">$manifest</span></code></pre><p>然后重启电脑</p><p>我就是通过这个方式解决了图标失效的问题</p><h1 id="尝试三：扫描win10系统文件并且在线修复"><a href="#尝试三：扫描win10系统文件并且在线修复" class="headerlink" title="尝试三：扫描win10系统文件并且在线修复"></a>尝试三：扫描win10系统文件并且在线修复</h1><p><code>Win + X + A</code> 打开powershell管理员</p><p>输入下面的命令</p><pre class=" language-powershell"><code class="language-powershell">DISM<span class="token punctuation">.</span>exe <span class="token operator">/</span>Online <span class="token operator">/</span>Cleanup<span class="token operator">-</span>image ScanhealthDISM<span class="token punctuation">.</span>exe <span class="token operator">/</span>online <span class="token operator">/</span>cleanup<span class="token operator">-</span>image <span class="token operator">/</span>restorehealth sfc <span class="token operator">/</span>scannow</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> win10-图标故障 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> win10开始菜单 </tag>
+            
+            <tag> 图标缓存 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSP认证2013年12月第一题：出现次数最多的数</title>
+      <link href="/posts/3784/index.html"/>
+      <url>/posts/3784/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> OJ-CSP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ </tag>
+            
+            <tag> CSP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于博客内容创作和博客部署技术结构的思考</title>
       <link href="/posts/36c4/index.html"/>
       <url>/posts/36c4/index.html</url>
@@ -144,19 +198,6 @@
       <title>test 3</title>
       <link href="/posts/f745/index.html"/>
       <url>/posts/f745/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test 2</title>
-      <link href="/posts/3784/index.html"/>
-      <url>/posts/3784/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

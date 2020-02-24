@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.intellij.xyz/"/>
-  <updated>2020-02-21T06:49:26.865Z</updated>
+  <updated>2020-02-24T12:17:28.993Z</updated>
   <id>https://blog.intellij.xyz/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10 开始菜单图标显示不正常，如何恢复</title>
+    <link href="https://blog.intellij.xyz/posts/969f/index.html"/>
+    <id>https://blog.intellij.xyz/posts/969f/index.html</id>
+    <published>2020-02-24T06:07:33.000Z</published>
+    <updated>2020-02-24T12:17:28.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前情提要&quot;&gt;&lt;a href=&quot;#前情提要&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="win10-图标故障" scheme="https://blog.intellij.xyz/categories/win10-%E5%9B%BE%E6%A0%87%E6%95%85%E9%9A%9C/"/>
+    
+    
+      <category term="win10开始菜单" scheme="https://blog.intellij.xyz/tags/win10%E5%BC%80%E5%A7%8B%E8%8F%9C%E5%8D%95/"/>
+    
+      <category term="图标缓存" scheme="https://blog.intellij.xyz/tags/%E5%9B%BE%E6%A0%87%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSP认证2013年12月第一题：出现次数最多的数</title>
+    <link href="https://blog.intellij.xyz/posts/3784/index.html"/>
+    <id>https://blog.intellij.xyz/posts/3784/index.html</id>
+    <published>2020-02-21T05:07:48.000Z</published>
+    <updated>2020-02-23T06:00:07.218Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="OJ-CSP" scheme="https://blog.intellij.xyz/categories/OJ-CSP/"/>
+    
+    
+      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
+    
+      <category term="CSP" scheme="https://blog.intellij.xyz/tags/CSP/"/>
+    
+  </entry>
   
   <entry>
     <title>关于博客内容创作和博客部署技术结构的思考</title>
@@ -173,21 +223,6 @@
     <id>https://blog.intellij.xyz/posts/f745/index.html</id>
     <published>2020-02-11T17:11:40.000Z</published>
     <updated>2020-02-11T17:12:36.604Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test 2</title>
-    <link href="https://blog.intellij.xyz/posts/3784/index.html"/>
-    <id>https://blog.intellij.xyz/posts/3784/index.html</id>
-    <published>2020-02-11T17:07:48.000Z</published>
-    <updated>2020-02-11T17:08:18.710Z</updated>
     
     <summary type="html">
     
