@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.intellij.xyz/"/>
-  <updated>2020-02-26T18:28:00.024Z</updated>
+  <updated>2020-03-04T16:01:22.061Z</updated>
   <id>https://blog.intellij.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在别人代码的基础上做了一个AndroidTodo</title>
+    <link href="https://blog.intellij.xyz/posts/79d3/index.html"/>
+    <id>https://blog.intellij.xyz/posts/79d3/index.html</id>
+    <published>2020-03-04T09:25:09.000Z</published>
+    <updated>2020-03-04T16:01:22.061Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;在别人代码的基础上做了一个AndroidTodo&quot;&gt;&lt;a href=&quot;#在别人代码的基础上做了一个AndroidTodo&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="android开发" scheme="https://blog.intellij.xyz/categories/android%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="代码改进" scheme="https://blog.intellij.xyz/categories/android%E5%BC%80%E5%8F%91/%E4%BB%A3%E7%A0%81%E6%94%B9%E8%BF%9B/"/>
+    
+    
+      <category term="Android" scheme="https://blog.intellij.xyz/tags/Android/"/>
+    
+      <category term="App" scheme="https://blog.intellij.xyz/tags/App/"/>
+    
+      <category term="TodoList" scheme="https://blog.intellij.xyz/tags/TodoList/"/>
+    
+  </entry>
   
   <entry>
     <title>CCF CSP 201312-4 有趣的数</title>
@@ -39,9 +72,9 @@
       <category term="OJ-CSP" scheme="https://blog.intellij.xyz/categories/OJ-CSP/"/>
     
     
-      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
-    
       <category term="CSP" scheme="https://blog.intellij.xyz/tags/CSP/"/>
+    
+      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
     
   </entry>
   
@@ -68,9 +101,9 @@
       <category term="CSP-OJ" scheme="https://blog.intellij.xyz/categories/CSP-OJ/"/>
     
     
-      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
-    
       <category term="CSP" scheme="https://blog.intellij.xyz/tags/CSP/"/>
+    
+      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
     
   </entry>
   
@@ -97,9 +130,9 @@
       <category term="OJ-CSP" scheme="https://blog.intellij.xyz/categories/OJ-CSP/"/>
     
     
-      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
-    
       <category term="CSP" scheme="https://blog.intellij.xyz/tags/CSP/"/>
+    
+      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
     
   </entry>
   
@@ -186,9 +219,9 @@
       <category term="OJ-CSP" scheme="https://blog.intellij.xyz/categories/OJ-CSP/"/>
     
     
-      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
-    
       <category term="CSP" scheme="https://blog.intellij.xyz/tags/CSP/"/>
+    
+      <category term="OJ" scheme="https://blog.intellij.xyz/tags/OJ/"/>
     
   </entry>
   
