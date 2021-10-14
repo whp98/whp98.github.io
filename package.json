@@ -1,0 +1,21 @@
+{
+  "name": "haipeng_blog",
+  "version": "1.0.0",
+  "description": "博客",
+  "main": "index.js",
+  "repository": "https://github.com/whp98/blog_vuepress.git",
+  "author": "whp98 <whp98@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.26"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "dev": "vuepress dev docs",
+    "d": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build": "vuepress build docs",
+    "b": "vuepress build docs"
+  }
+}
