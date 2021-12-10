@@ -1,4 +1,4 @@
-# git的.gitignode文件不生效奇葩原因
+# Git的.gitignode文件不生效奇葩原因
 
 
 ## 1.   .gitignore编码不符合规范
