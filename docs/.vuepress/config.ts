@@ -6,7 +6,5 @@ export default defineUserConfig<DefaultThemeOptions>({
     title: 'HAIPENG_BLOG',
     description: 'Just write it',
     base: '/',
-    themeConfig: {
-        logo: 'https://vuejs.org/images/logo.png',
-    },
+    themeConfig: {},
 })
