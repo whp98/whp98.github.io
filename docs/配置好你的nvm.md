@@ -41,7 +41,7 @@ nvm uninstall 14.18.2
 nvm list
 ```
 设置npm代理
-```
+```powershell
 npm config set proxy=http://127.0.0.1:20003
 npm config set https-proxy http://127.0.0.1:20003
 npm config set registry=http://registry.npmjs.org
