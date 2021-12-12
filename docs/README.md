@@ -2,19 +2,27 @@
 
 
 
-[博客相关的内容](./博客/index.md)
+[博客](./博客/index.md)
 
-[Git相关的内容](./Git/index.md)
+[Git](./Git/index.md)
 
-[Node.js相关的内容](./Node/index.md)
+[Node](./Node/index.md)
 
-[Linux相关博客](./Linux/index.md)
+[Linux](./Linux/index.md)
 
-[OJ相关](./OJ/index.md)
+[OJ](./OJ/index.md)
 
 [容器](./容器/index.md)
 
-[JAVA相关内容](./Java/index.md)
+[JAVA](./Java/index.md)
+
+[数据库](./数据库/index.md)
+
+[Android](./Android/index.md)
+
+[网络](./网络/index.md)
+
+[思想](./思想政治/index.md)
 
 [业余爱好](./业余/index.md)
 
