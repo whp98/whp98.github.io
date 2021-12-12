@@ -13,3 +13,8 @@
 [OJ相关](./OJ/index.md)
 
 [容器](./容器/index.md)
+
+[JAVA相关内容](./Java/index.md)
+
+[业余爱好](./业余/index.md)
+

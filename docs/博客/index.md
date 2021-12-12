@@ -3,3 +3,8 @@
 [vue博客示例](./博客学习和示例.md)
 
 [初始化博客运行环境](./初始化vuepress运行环境.md)
+
+[Hexo一键部署并备份Powershell脚本书写](./hexo一键部署并备份powershell脚本书写/hexo一键部署并备份powershell脚本书写.md)
+
+
+[Hexo博客访问速度太慢？部署到OSS上面提高访问速度](./Hexo博客访问速度太慢？部署到OSS上面提高访问速度/Hexo博客访问速度太慢？部署到OSS上面提高访问速度.md)
