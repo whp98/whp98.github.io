@@ -26,7 +26,7 @@ date: 2020-03-06 17:55:45
 
 具体的解决思路如下图：
 
-![](git_new_version_from_old_version.svg)
+![](./git_new_version_from_old_version.svg)
 
 
 
