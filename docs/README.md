@@ -2,9 +2,14 @@
 
 
 
-[初始化博客运行环境](./初始化vuepress运行环境.md)
+[博客相关的内容](./博客/index.md)
 
+[Git相关的内容](./Git/index.md)
 
-[`gitignode`文件不生效奇葩原因](./gitignode的坑.md)
+[Node.js相关的内容](./Node/index.md)
 
-[配置nvm管理node版本](./配置好你的nvm.md)
+[Linux相关博客](./Linux/index.md)
+
+[OJ相关](./OJ/index.md)
+
+[容器](./容器/index.md)
