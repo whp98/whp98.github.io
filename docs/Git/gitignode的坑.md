@@ -1,7 +1,7 @@
-# Git的.gitignode文件不生效奇葩原因
+# Git的`.gitignode`文件不生效奇葩原因
 
 
-## 1.   .gitignore编码不符合规范
+## 1.   `.gitignore`编码不符合规范
 
 .gitignore如果不是`utf-8`有可能会识别失败,导致`.gitignore`添加忽略失效
 

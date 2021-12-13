@@ -1,6 +1,6 @@
 # Git 相关
 
-[`gitignode`文件不生效奇葩原因(文件编码错误)](./gitignode的坑.md)
+[`.gitignode`文件不生效奇葩原因(文件编码错误)](./gitignode的坑.md)
 
 [Github老仓库将主分支重命名成 main](./修改主分支名称为main.md)
 
