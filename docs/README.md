@@ -1,6 +1,6 @@
 # HAIPENG_BLOG
 
-
+![logo](./.vuepress/public/logo.png)
 
 [博客](./博客/index.md)
 
