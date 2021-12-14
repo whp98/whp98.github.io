@@ -2,7 +2,7 @@
 
 ## mc
 
-[minecraft开服](./minecraft开服/minecraft开服.md)
+[minecraft开服](./mc开服/开服.md)
 
 
 ##  win10
