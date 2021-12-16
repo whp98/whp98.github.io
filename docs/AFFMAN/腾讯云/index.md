@@ -1,0 +1,37 @@
+# 腾讯云优惠
+
+[限时秒杀活动](https://curl.qcloud.com/XOy05KJ6)
+
+[企业采购盛夏有礼](https://curl.qcloud.com/u4u88vEw)
+
+[企业采购盛夏有礼](https://curl.qcloud.com/u4u88vEw)
+
+[解析套餐全新升级](https://curl.qcloud.com/Xorw5IOo)
+
+[云服务器全球购](https://curl.qcloud.com/lMNQL4Up)
+
+[星星海SA2云服务器](https://curl.qcloud.com/huKVGuZ2)
+
+[新客专属福利](https://curl.qcloud.com/huKVGuZ2)
+
+[企业上云特惠活动](https://curl.qcloud.com/mfpISwnp)
+
+[云开发CloudBase](https://curl.qcloud.com/fdW6TBdn)
+
+[ES（ElasticSearch）](https://curl.qcloud.com/bv151G8f)
+
+[云数据库购买页](https://curl.qcloud.com/zGx3SNTa)
+
+[腾讯云图](https://curl.qcloud.com/5OMUyGO4)
+
+[音视频通信聚合页](https://curl.qcloud.com/Tkz6EQ7J)
+
+[即时通信 IM](https://curl.qcloud.com/afcPZ5Rb)
+
+[9.9元畅享2万分钟TRTC通话](https://curl.qcloud.com/EaLfznnT)
+
+[应用加固](https://curl.qcloud.com/LXwbbiXO)
+
+[移动推送 TPNS](https://curl.qcloud.com/gbv7swgI)
+
+[数据库MySQL](https://curl.qcloud.com/4hTF9OrL)

@@ -1,0 +1,13 @@
+# 阿里云优惠
+
+[超级周 超级省](https://www.aliyun.com/activity/chaopinyingxiao/index?userCode=cql85wec)
+
+[云小站特惠](https://www.aliyun.com/minisite/goods?userCode=cql85wec)
+
+[云服务器ECS年终特惠](https://www.aliyun.com/daily-act/ecs/fy22-12-yure?userCode=cql85wec)
+
+[云服务器 精选特惠](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=cql85wec)
+
+[ECS升级续费](https://www.aliyun.com/daily-act/ecs/care?userCode=cql85wec)
+
+[新人福利专场](https://www.aliyun.com/activity/new?userCode=cql85wec)

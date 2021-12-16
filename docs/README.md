@@ -26,3 +26,4 @@
 
 [业余爱好](./业余/index.md)
 
+[云服务器优惠](./AFFMAN/index.md)
