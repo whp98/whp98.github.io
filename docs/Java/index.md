@@ -4,3 +4,6 @@
 
 [破解MarkdownNavigator](./patchMarkdownNavigator/patchMarkdownNavigator.md)
 
+[IO流](./io流.md)
+
+[设计模式](./设计模式.md)
