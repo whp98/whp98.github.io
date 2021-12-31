@@ -393,8 +393,6 @@ public class BufferedWriterTest {
 
 ## 使用io流完成的软件试用操作逻辑
 ```java
-package xyz.intellij.playground.basic.io.exercise;
-
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
@@ -423,6 +421,7 @@ public class Trial {
                 System.out.println("试用结束，请购买正版软件");
                 return false;
             } else {
+                System.out.println("您的试用次数还剩:" + i + "次");
                 i--;
             }
         } catch (Exception e) {
@@ -433,7 +432,6 @@ public class Trial {
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), Charset.forName("UTF-8")));
         ) {
             bw.write("" + (i ^ pass));
-            System.out.println((i ^ pass));
             bw.flush();
         } catch (Exception e) {
             System.out.println("io异常");
@@ -441,6 +439,7 @@ public class Trial {
         }
         return true;
     }
+
     /**
      * 测试
      */
@@ -455,9 +454,9 @@ public class Trial {
             System.out.println("io异常");
             e.printStackTrace();
         }
-        while (main(new String[1])) {
-            System.out.println("测试");
-        }
+        do {
+            System.out.println("开始测试");
+        }while (main(new String[1]));
     }
 }
 ```
