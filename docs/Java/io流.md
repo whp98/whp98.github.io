@@ -391,3 +391,73 @@ public class BufferedWriterTest {
 
 ```
 
+## 使用io流完成的软件试用操作逻辑
+```java
+package xyz.intellij.playground.basic.io.exercise;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.*;
+import java.nio.charset.Charset;
+
+/**
+ * 收费软件试用模拟 用户可以试用软件三次
+ * 1.使用文件保存软件使用次数
+ * 2.读取内容小于0提示用户购买正版软件
+ * 3.应该对读写操作进行加密操作
+ */
+public class Trial {
+    final static String path = "src/main/resources/iofile/trial.txt".replaceAll("//", File.separator);
+    static int pass = 907898791;
+
+    public static boolean main(String[] args) {
+        int i = 0;
+        try (
+                BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(path), Charset.forName("UTF-8")));
+        ) {
+            String num = br.readLine();
+            if (null != num) {
+                i = Integer.parseInt(num) ^ pass;
+            }
+            if (i <= 0) {
+                System.out.println("试用结束，请购买正版软件");
+                return false;
+            } else {
+                i--;
+            }
+        } catch (Exception e) {
+            System.out.println("io异常");
+            e.printStackTrace();
+        }
+        try (
+                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), Charset.forName("UTF-8")));
+        ) {
+            bw.write("" + (i ^ pass));
+            System.out.println((i ^ pass));
+            bw.flush();
+        } catch (Exception e) {
+            System.out.println("io异常");
+            e.printStackTrace();
+        }
+        return true;
+    }
+    /**
+     * 测试
+     */
+    @Test
+    void testThis() {
+        try (
+                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), Charset.forName("UTF-8")));
+        ) {
+            bw.write("" + (3 ^ pass));
+            bw.flush();
+        } catch (Exception e) {
+            System.out.println("io异常");
+            e.printStackTrace();
+        }
+        while (main(new String[1])) {
+            System.out.println("测试");
+        }
+    }
+}
+```
