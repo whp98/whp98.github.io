@@ -460,3 +460,34 @@ public class Trial {
     }
 }
 ```
+## 用`File`类创建文件或文件夹
+```java
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * 用File类创建文件和文件夹
+ */
+public class FileTest01 {
+    public static void main(String[] args) throws IOException {
+        /*创建文件的时候会判断是否已经存在，如果文件存在，则返回false，文件不存在的时候会创建相应的文件并且返回true*/
+        File file1 = new File(FilePaths.myTestPath + "hello.txt");
+        System.out.println(file1.createNewFile());
+        /*创建文件夹的创建文件类似，返回值逻辑也是相同的，存在的时候会返回false*/
+        File file2 = new File(FilePaths.myTestPath + "test");
+        System.out.println(file2.mkdir());
+        /*想要创建多级目录需要使用下面的方法*/
+        File file3 = new File(FilePaths.myTestPath + "test" + File.separator + "dadsds" + File.separator + "sdadsasd");
+        System.out.println(file3.mkdirs());
+        /*文件名是可以带 . 的*/
+        File file4 = new File(FilePaths.myTestPath + "dsadjashdj.txt");
+        System.out.println(file4.mkdirs());
+        /*创建文件不写盘符会在项目根目录创建*/
+        File file5 = new File("mytext.txt");
+        System.out.println(file5.getAbsolutePath());
+        System.out.println(file5.createNewFile());
+        /*可以使用下面的方法判断文件是不是存在*/
+        System.out.println(file5.exists());
+    }
+}
+````
