@@ -672,3 +672,108 @@ public class FileTest07 {
     }
 }
 ```
+## 序列化和反序列化
+序列化市值将对象转换成序列进行传输，反之就可以称为反序列化。
+支持序列化需要实现`Serializable`。
+```java
+import xyz.intellij.playground.basic.io.file.FilePaths;
+
+import java.io.*;
+
+/**
+ * 保存测试类到硬盘并从硬盘读取还原
+ */
+public class ObjectOutput {
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.setId(String.valueOf(100));
+        student.setName("zhangsan");
+        saveObject(FilePaths.myTestPath + "object" + File.separator, "stu1.obj", student);
+        System.out.println(readObject(FilePaths.myTestPath + "object" + File.separator, "stu1.obj"));
+    }
+
+    static void saveObject(String path, String name, Object obj) {
+        try (
+                ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(path + name))
+        ) {
+            objectOutputStream.writeObject(obj);
+            objectOutputStream.flush();
+        } catch (Exception e) {
+            System.out.println("序列化失败或io异常");
+            e.printStackTrace();
+        }
+    }
+
+    static Object readObject(String path, String name) {
+        try (
+                ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(path + name));
+        ) {
+            return objectInputStream.readObject();
+        } catch (Exception e) {
+            System.out.println("序列化失败或io异常");
+            e.printStackTrace();
+        }
+        return null;
+    }
+}
+```
+序列化和反序列化需要注意实体类型改动之后序列化会报错。为了防止报错可以将序列化id写死。
+```java
+import java.io.Serializable;
+
+/**
+ * Serializable 不包含方法用来标记对象
+ */
+public class Student implements Serializable {
+    /*添加属性的时候反序列化会报错*/
+    /*InvalidClassException*/
+    /*如果不写这个则每次都是java自动生成一个id如果这个类修改了id也就变了*/
+    private static final long serialVersionUID = -3401995999593411028L;
+    private String name;
+    private String id;
+    /*transient修饰的字段不会被序列化*/
+    transient private Integer age;
+    private float weight;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+```
