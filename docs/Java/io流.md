@@ -460,11 +460,12 @@ public class Trial {
     }
 }
 ```
-## 用`File`类创建文件或文件夹
+## `File`类
+
+### 用File类创建文件和文件夹
 ```java
 import java.io.File;
 import java.io.IOException;
-
 /**
  * 用File类创建文件和文件夹
  */
@@ -491,3 +492,90 @@ public class FileTest01 {
     }
 }
 ````
+### File 类重命名或删除文件
+```java
+import java.io.File;
+/**
+ * 重命名和删除文件
+ */
+public class FileTest02 {
+    public static void main(String[] args) {
+        /*
+          文件重命名
+         */
+        File oldfile = new File(FilePaths.myTestPath+"hello.txt");
+        File newFile = new File(FilePaths.myTestPath+"world.txt");
+        /*返回值是重命名结果，如果成功会是true否则就是false*/
+        System.out.println(oldfile.renameTo(newFile));
+        /*在目录之间重命名会有移动文件的效果*/
+        File newFile1 = new File(FilePaths.myTestPath+"test"+File.separator+"world.txt");
+        System.out.println(newFile.renameTo(newFile1));
+        /*文件删除,文件并不会进入回收站，而是直接删除*/
+        File deleteFile = new File(FilePaths.myTestPath+"test"+File.separator+"world.txt");
+        /*返回值是删除结果*/
+        System.out.println(deleteFile.delete());
+        /*删除文件夹*/
+        /*如果文件夹中有内容会删除失败*/
+        File deleteFloder = new File(FilePaths.myTestPath+"test");
+        System.out.println(deleteFloder.delete());
+    }
+}
+```
+### 常用的方法
+判断类的方法
+```java
+import java.io.File;
+/**
+ * 文件中常用的判断方法
+ */
+public class FileTest03 {
+    public static void main(String[] args) {
+        File file1 = new File(FilePaths.myTestPath);
+        /*判断是不是文件夹*/
+        System.out.println(file1.isDirectory());
+        /*判断是不是文件*/
+        System.out.println(file1.isFile());
+        /*判断文件或者文件夹是否存在*/
+        System.out.println(file1.exists());
+        /*判断文件或文件夹是不是隐藏了*/
+        System.out.println(file1.isHidden());
+    }
+}
+```
+其他比较实用的方法
+```java
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * File类中其他常用方法
+ */
+public class FileTest04 {
+    public static void main(String[] args) {
+        File file  = new File(FilePaths.myTestPath+"gbk.txt");
+        /*查看文件的绝对路径*/
+        System.out.println(file.getAbsolutePath());
+        /*文件的大小单位是字节*/
+        System.out.println(file.length());
+        /*最后修改时间*/
+        long x = file.lastModified();
+        Date date = new Date(x);
+        SimpleDateFormat simpleFormatter = new SimpleDateFormat();
+        System.out.println(simpleFormatter.format(date));
+        /*列出某个目录下的文件名*/
+        File file1 = new File(FilePaths.myTestPath);
+        String[] names = file1.list();
+        for (String s: names){
+            System.out.println(s);
+        }
+        /*列出某个目录下的所有文件（同级）*/
+        File file2 = new File(FilePaths.myTestPath);
+        File[] files = null;
+        files = file2.listFiles();
+        for (File file3:files){
+            System.out.println(file3.getAbsolutePath());
+        }
+    }
+}
+```
