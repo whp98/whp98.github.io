@@ -579,3 +579,96 @@ public class FileTest04 {
     }
 }
 ```
+### `File`类使用案例
+#### 统计目录下`.txt`文件数量
+```java
+import java.io.File;
+
+/**
+ * 统计目录下txt文件数量
+ */
+public class FileTest05 {
+    public static void main(String[] args) {
+        File file = new File(FilePaths.myTestPath);
+        File[] listFiles = file.listFiles();
+        int i = 0;
+        assert listFiles != null;
+        for (File file1 : listFiles) {
+            if (file1.isFile() && file1.getName().endsWith(".txt")) {
+                System.out.println(file1.getName());
+                i++;
+            }
+        }
+        System.out.println(i);
+    }
+}
+```
+#### 通过文件过滤器筛选文件并统计
+```java
+import java.io.File;
+import java.io.FilenameFilter;
+
+/**
+ * 通过文件过滤器筛选文件
+ *  实现统计txt文件的功能
+ */
+public class FileTest06 {
+    public static void main(String[] args) {
+        File file = new File(FilePaths.myTestPath);
+        String names[] = file.list(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                if (dir.isFile()){
+                    return name.endsWith(".txt");
+                }else {
+                    return false;
+                }
+            }
+        });
+        int i = 0;
+        assert names != null;
+        for (String s : names) {
+            System.out.println(s);
+            i++;
+        }
+        System.out.println(i);
+    }
+}
+```
+#### 按照层级打印目录下所有文件和文件夹
+```java
+import java.io.File;
+
+/**
+ * 从键盘接受路径并按照路径下文件的层级打印目录结构
+ */
+public class FileTest07 {
+
+    public static void main(String[] args) {
+        printFileWithLevel(FilePaths.myTestPath, 0);
+    }
+
+    static void printFileWithLevel(String path, int level) {
+        File file = new File(path);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < level; i++) {
+            stringBuilder.append(" ");
+        }
+        if (file.isFile()) {
+            System.out.println(stringBuilder + "❤" + file.getName());
+        } else {
+            System.out.println(stringBuilder + "💌" + file.getName());
+        }
+        File[] files = file.listFiles();
+        assert files != null;
+        for (File file1 : files) {
+            if (file1.isFile()) {
+                System.out.println(stringBuilder + " " + "❤" + file1.getName());
+            } else {
+                printFileWithLevel(file1.getAbsolutePath(), ++level);
+                --level;
+            }
+        }
+    }
+}
+```
