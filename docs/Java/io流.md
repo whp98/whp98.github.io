@@ -491,7 +491,7 @@ public class FileTest01 {
         System.out.println(file5.exists());
     }
 }
-````
+```
 ### File 类重命名或删除文件
 ```java
 import java.io.File;
