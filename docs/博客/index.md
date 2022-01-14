@@ -16,4 +16,3 @@
 
 [部署wordpress](./部署wordpress.md)
 
-[Koodo Reader 阅读器容器化部署](./koodo-reader.md)
