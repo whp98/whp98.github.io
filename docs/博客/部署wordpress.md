@@ -46,6 +46,6 @@ volumes:
 # 启动或删除服务
 
 ```bash
-docker-compose -f docker-compose.wordpress.yml up -d  #部署
-docker-compose -f docker-compose.wordpress.yml down #停止并删除
+docker-compose -f wordpress.yml up -d  #部署
+docker-compose -f wordpress.yml down #停止并删除
 ```

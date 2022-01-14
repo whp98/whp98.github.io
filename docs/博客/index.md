@@ -15,3 +15,5 @@
 [使用cloudflare页面规则开启GithubPages的https访问](./Github-pages不能开启Https？Cloudflare来帮忙/使用cloudflare页面规则开启GithubPages的https访问.md)
 
 [部署wordpress](./部署wordpress.md)
+
+[Koodo Reader 阅读器容器化部署](./koodo-reader.md)
