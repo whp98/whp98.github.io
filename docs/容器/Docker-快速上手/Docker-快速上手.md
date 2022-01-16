@@ -12,14 +12,15 @@ date: 2020-03-11 21:51:12
 ## 安装和启动
 安装docker
 
-```bash
-yum install docker
-```
+[官方文档](https://docs.docker.com/engine/install/)
 
 启动docker
 ```bash
 systemctl start docker
 ```
+
+
+
 ## 不懂就查帮助，授人以渔
 
 获取命令帮助
