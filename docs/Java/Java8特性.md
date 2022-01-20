@@ -131,3 +131,76 @@ public class LambdaTest04 {
 ```
 
 ## Stream API
+下面的代码演示了流的使用
+```java
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+/**
+ * Collection可以使用Stream进行操作
+ * Stream本身支持函数式编程
+ */
+public class StreamTest01 {
+    public static void main(String[] args) {
+        List<Student> studentList = getStudents();
+        testMethod1(studentList);
+        testMethod2(studentList);
+    }
+
+    private static void testMethod1(List<Student> studentList) {
+        /*实现找到成年人，并按照年龄降序排序*/
+        /*实现1*/
+        List<Student> resList = new ArrayList<>(6);
+        for (Student student : studentList) {
+            /*筛选出成年人*/
+            if (student.getAge() >= 18) {
+                resList.add(student);
+            }
+        }
+        resList.sort(new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o2.getAge() - o1.getAge();
+            }
+        });
+        System.out.println(resList);
+        /*实现2 使用Stream实现*/
+        /**
+         * 1.使用Stream API
+         * 2.过滤
+         * 3.排序
+         * 4.使用collect将Stream转换成List
+         */
+        /*Stream内部实现了内部迭代，jdk8中的迭代速度比传统迭代慢*/
+        List<Student> arrayList = studentList.stream()
+                .filter((student -> student.getAge() >= 18))
+                //.sorted(((o1, o2) -> Integer.compare(o2.getAge(), o1.getAge())))
+                .sorted(Comparator.comparing(Student::getAge).reversed())
+                .collect(Collectors.toList());
+        System.out.println(arrayList);
+        /*Stream流是一次性的,是不能重复的*/
+    }
+
+    private static void testMethod2(List<Student> studentList){
+        /*流只能使用一次*/
+        Stream<Student> stream = studentList.stream();
+        stream.forEach(System.out::println);
+        /*此时流已经被关闭，无法被操作*/
+        stream.forEach(System.out::println);
+    }
+    private static List<Student> getStudents() {
+        List<Student> studentList = new ArrayList<Student>();
+        studentList.add(new Student("小明", 10));
+        studentList.add(new Student("小网", 18));
+        studentList.add(new Student("小的", 51));
+        studentList.add(new Student("小主", 34));
+        studentList.add(new Student("小哈哈", 61));
+        studentList.add(new Student("小大明", 12));
+        return studentList;
+    }
+}
+```
+使用流API操作集合能减少遍历代码，代码写起来和看起来都会比较好。
