@@ -1,5 +1,8 @@
 # OJ 相关内容
 
+## 算法
+[算法](./算法/index.md)
+
 ## leetcode
 
 [力扣](./LeetCode/index.md)
