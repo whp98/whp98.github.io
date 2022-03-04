@@ -5,8 +5,8 @@ export default defineUserConfig<DefaultThemeOptions>({
 /*     templateDev: path.join(__dirname, 'templates', 'index.dev.html'),
 	templateSSR: path.join(__dirname, 'templates', 'index.ssr.html'), */
     lang: 'zh-CN',
-    title: 'HAIPENG_BLOG',
-    description: 'Just write it.',
+    title: '海鹏志',
+    description: '记录成长和生活',
     base: '/',
     themeConfig: {
         logo:'/logo.png'
