@@ -46,3 +46,27 @@ Servlet可以用来编写动态页面，编写后运行在tomcat等web服务器�
 - getAttribute
 获取属性的Object对象
 
+## 欢迎页面设置
+在web.xml中可以配置一个欢迎页面列表`<welcome-file-list>`，tomcat服务器会依次查找`<welcome-file>`。
+不设置欢迎页面系统会默认index.html为欢迎页面，这算是一个约定。
+
+```xml
+<welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+</welcome-file-list>
+```
+
+## 可以使用更加简单的Generic Servlet类来实现Servlet
+```java
+public class SimpleServlet extends GenericServlet {
+    /**
+     * 更加简单的匹配服务
+     * 只需要实现一个方法
+     */
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        System.out.println("hello generic service");
+    }
+}
+```
+
