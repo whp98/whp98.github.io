@@ -1,6 +1,7 @@
-# 海鹏志
+# 大猪Blog
 
-<!-- ![logo](./.vuepress/public/logo.png) -->
+![logo](./.vuepress/public/logo.png)
+
 ## 目录引导
 
 ### 知识
