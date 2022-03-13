@@ -70,3 +70,15 @@ public class SimpleServlet extends GenericServlet {
 }
 ```
 
+## HttpServlet 
+这个类方便操作各种http请求，对于http请求的get post put delete 支持比较好。
+如果需要支持某种http请求就重写对应的方法，如果没有重写对应的方法就会
+报method not allowed 错误，默认的方法返回都是不允许的。
+这个类会通过请求类型将不同请求分发到不同的方法来处理。
+
+
+## HttpServletRequest 
+服务器将请求封装成这个对象。
+每次请求只有一个对象，生命周期较为短暂，当程序拿到这个对象的时候其生命周期就已经结束了。
+封装了请求的参数，可以获取用户请求的参数。
+
