@@ -117,3 +117,37 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
         req.getRequestDispatcher("http1").forward(req, resp);
     }
 ```
+
+## 重定向
+让浏览器去访问另一个url
+```java
+public class Redirect extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.sendRedirect("user.html");
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.sendRedirect("user.html");
+    }
+}
+```
+## 转发和重定向的区别
+转发：
+- 请求一次
+- 被转发接受的sevlet可以直接读取携带的数据，并且直接返回数据
+- 浏览器地址不变
+- 只能在当前应用中跳转
+重定向:
+- 请求2次
+- 重定向后不能携带数据
+- 浏览器地址为重定向的后的路径，可以防止表单重复提交
+- 不仅可以在当前应用跳转也可以跳转到其他应用中
+
+如何选择
+1. 跳转到其他应用->重定向
+1. 表单数据处理后跳转 -> 重定向
+1. 不想重复请求一个url（耗费资源）则请求之后可以重定向
+1. 其他转发即可
+
