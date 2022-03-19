@@ -82,3 +82,27 @@ public class SimpleServlet extends GenericServlet {
 每次请求只有一个对象，生命周期较为短暂，当程序拿到这个对象的时候其生命周期就已经结束了。
 封装了请求的参数，可以获取用户请求的参数。
 
+## 数据返回实操
+```java
+/**
+ * 继承HttpServlet可以处理get和post请求
+ */
+public class HttpServlet01 extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+        System.out.println(req.getParameter("username"));
+        System.out.println("post");
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
+        PrintWriter printWriter = resp.getWriter();
+        printWriter.println(req.getParameter("username"));
+        printWriter.println(req.getParameter("passwd"));
+    }
+
+
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println(req.getParameter("username"));
+        System.out.println("get");
+    }
+}
+```
