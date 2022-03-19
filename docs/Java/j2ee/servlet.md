@@ -106,3 +106,14 @@ public class HttpServlet01 extends HttpServlet {
     }
 }
 ```
+
+## 转发
+
+转发用于服务器内部跳转
+```java
+protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //转发
+        req.setAttribute("forward", "hello");
+        req.getRequestDispatcher("http1").forward(req, resp);
+    }
+```
