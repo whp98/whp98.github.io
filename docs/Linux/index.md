@@ -9,3 +9,5 @@
 [给服务器添加ssh公钥(免密登录)](./给服务器添加ssh公钥.md)
 
 [Linux服务器一键换源](./Linux服务区一键换源和安装Docker并换源.md)
+
+[Centos使用](./Centos使用.md)
