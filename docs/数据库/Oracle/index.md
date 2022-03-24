@@ -1,3 +1,5 @@
 # Oracle数据库
 
 [Oracle脚本注意事项](./Oracle脚本注意.md)
+
+[Oracle乱码问题](./Oracle乱码问题.md)
