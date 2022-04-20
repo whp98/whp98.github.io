@@ -1,3 +1,3 @@
-echo "å¼€å§‹å‘å¸ƒ";
-git fetch;git pull;git add .;git commit -m "å‘å¸ƒåšå®¢ï¼Œæ—¶é—´:$(Get-Date  -Format 'yyyy-MM-dd HH:mm:ss')" ; git push;
-echo "å‘å¸ƒå®Œæˆ";
+echo "¿ªÊ¼·¢²¼";
+git fetch;git pull;git add .;git commit -m "·¢²¼²©¿Í£¬Ê±¼ä:$(Get-Date  -Format 'yyyy-MM-dd HH:mm:ss')" ; git push;
+echo "·¢²¼Íê³É";
