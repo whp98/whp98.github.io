@@ -1,4 +1,10 @@
-# gluon编译native应用
+# 编译javafx native应用
+
+## gluon是啥
+
+gluon是一家提供移动应用的解决方案的供应商，同时维护着javafx，并且推出了一系列工具来支持javafx开发，同时其提供订阅服务，通过订阅服务可以，获得gluon团队的支持等。
+具体可以看[此页面](https://gluonhq.com/products/javafx/)
+
 
 ## 本人参考文档
 
@@ -44,3 +50,11 @@ dir
 ```
 
 编译fxml项目多些配置而已，但是步骤差不多。
+
+
+## 4. 总结
+1. 编译速度较慢
+1. 启动速度挺快的
+1. 包比较大一个hello word需要50M的exe
+1. 不需要安装java即可运行
+1. 只需要单个exe即可运行
