@@ -22,3 +22,28 @@
 
 启动类加@MapperScan 配合使⽤ @Resource （替换@Autowired）
 
+将注入组件的方式改成通过setter方式是比较推荐的做法，最后贴上我的配置如下​：
+
+启动类
+```java
+@SpringBootApplication
+/*这里的mapper扫描路径不要扫描到通用mapper*/
+@MapperScan(basePackages = "xyz.intellij.shopdev.mapper.custom")
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```
+使用mapper
+```java
+@Service
+public class UserServiceImpl implements UserService {
+    private UsersMapper usersMapper;
+
+    @Resource
+    public void setUsersMapper(UsersMapper usersMapper) {
+        this.usersMapper = usersMapper;
+    }
+... ...
+```
