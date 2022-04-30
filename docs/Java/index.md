@@ -19,3 +19,5 @@
 [J2EE](./j2ee/index.md)
 
 [gluon](./gluon.md)
+
+[mybatis](./mybatis/index.md)
