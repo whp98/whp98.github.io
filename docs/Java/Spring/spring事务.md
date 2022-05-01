@@ -1,7 +1,11 @@
-# Spring事务
+# Spring Boot事务
 
 ## Spring使用注解开启事务的方式
+
+Spring boot应用中默认开启了事务而Spring框架需要加上注解才行`@EnableTransactionManagement`
 下面两个是使用的例子。
+
+### 注解自动开启事务
 ```java
 @Override
     @Transactional(propagation = Propagation.REQUIRED)
@@ -33,6 +37,33 @@
         users.setCreatedTime(new Date());
         users.setPassword("sdsad");
         userService.saveUser(users);
+    }
+```
+
+### 手动开启事务
+```java
+@Autowired
+    DataSourceTransactionManager transactionManager;
+    @Override
+    public void save3() {
+        DefaultTransactionDefinition def = new DefaultTransactionDefinition();
+        def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRES_NEW); // 事物隔离级别
+        TransactionStatus status = transactionManager.getTransaction(def);// 事务状态
+        try {
+            Users users = new Users();
+            Random random = new Random();
+            int id = random.nextInt();
+            users.setId("111" + id);
+            users.setUsername("sdsasd" + id);
+            users.setUpdatedTime(new Date());
+            users.setFace("s");
+            users.setCreatedTime(new Date());
+            users.setPassword("sdsad");
+            userService.saveUser(users);
+            transactionManager.commit(status);
+        } catch (Exception e) {
+            transactionManager.rollback(status);
+        }
     }
 ```
 
@@ -88,3 +119,4 @@
 而新建事务则是单独提交的。主方法异常会导致子事务回滚而新建的事务则不会收到影响。
 
 子事务出现异常可以在父事务决定是否一起回滚，可以视情况决定是否主动回滚。
+
