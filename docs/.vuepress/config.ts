@@ -5,7 +5,8 @@ export default defineUserConfig<DefaultThemeOptions>({
     title: '大猪Blog',
     description: '记录成长和生活',
     base: '/',
+    port: 34561,
     themeConfig: {
-        logo:'/logo.png'
+        logo: '/logo.png'
     }
 })
