@@ -15,3 +15,5 @@
 [自建rustdesk服务端](./rustdesk.md)
 
 [linux服务器迁移](./服务器迁移.md)
+
+[nginx相关](./nginx/index.md)
