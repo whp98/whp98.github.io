@@ -18,7 +18,7 @@
 [OJ](./OJ/index.md) ||
 [Android](./Android/index.md)  || [网络](./网络/index.md)
 
-[思想](./思想政治/index.md) ||
+[思想](./思想政治/index.md) || 
  [业余爱好](./业余/index.md)
 
 ### 推荐
