@@ -1,4 +1,4 @@
-# 技术凡人
+# 技术凡人-主页
 
 ![logo](./.vuepress/public/qrcode.jpg)
 
