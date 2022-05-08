@@ -13,3 +13,5 @@
 [Centos使用](./Centos使用.md)
 
 [自建rustdesk服务端](./rustdesk.md)
+
+[linux服务器迁移](./服务器迁移.md)
