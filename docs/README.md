@@ -11,7 +11,7 @@
 ### 技能
 
  [JAVA](./Java/index.md) || [Git](./Git/index.md)  
- [Node](./Node/index.md) || [Linux](./Linux/index.md)  ||  
+ [Node](./Node/index.md) || [Linux](./Linux/index.md)  
  [架构](./架构/index.md) ||   [容器](./容器/index.md)  ||  [数据库](./数据库/index.md)  
 ### 记录
 
