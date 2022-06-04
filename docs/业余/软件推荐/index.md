@@ -11,3 +11,5 @@
 [Shizuku: 免root操作必备app，可以配合SAI等软件](https://shizuku.rikka.app/zh-hans/download/)
 
 [Legado / 开源阅读:小说神器](https://github.com/gedoor/legado)
+
+[X-plore File Manager:安卓高版本文件管理必备](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore&hl=en_US&gl=US)
