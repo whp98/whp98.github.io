@@ -1,0 +1,13 @@
+# 软件推荐
+
+## android
+
+[VLC : 音乐&视频播放](https://www.videolan.org/vlc/download-android.html)
+
+[VANCED : 无广告的YT MUSIC && YOUTUBE](https://vancedmanager.com/)
+
+[SAI 安装xapk和不关miui优化必备安装器，可以配合shizuku使用](https://github.com/Aefyr/SAI/releases)
+
+[Shizuku: 免root操作必备app，可以配合SAI等软件](https://shizuku.rikka.app/zh-hans/download/)
+
+[Legado / 开源阅读:小说神器](https://github.com/gedoor/legado)
