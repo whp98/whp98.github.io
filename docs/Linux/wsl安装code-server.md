@@ -37,3 +37,35 @@ code-server
 ```
 
 输入设置好的网址即可使用
+
+## 5.使用frp转发端口
+
+此处略过
+
+## 6.nginx设置反向代理使用https访问
+
+此处我本地wsl开启的端口是21001
+
+所以可以使用 localhost:21001/proxy/21001/? 这个地址来使用
+
+nginx设置一个反向代理即可使用网站的sub path来使用codeserver了
+
+使用路径
+
+https://网站/proxy/21001/?
+
+配置文件如下
+```nginx.conf
+location ^~/proxy/21001/ {
+                proxy_set_header Host $host;
+                proxy_set_header  X-Real-IP        $remote_addr;
+                proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+                proxy_set_header X-NginX-Proxy true;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection upgrade;
+                proxy_set_header Accept-Encoding gzip;
+                rewrite ^/proxy/21001/(.*)$ /$1 break;
+                proxy_pass http://127.0.0.1:30222;
+        }
+```
+
