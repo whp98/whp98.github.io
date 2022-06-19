@@ -44,6 +44,13 @@ code-server
 
 ## 6.nginx设置反向代理使用https访问
 
+
+此处参考
+
+1.[官方](https://coder.com/docs/code-server/latest/guide#using-a-subpath)
+2.[cnblog](https://www.cnblogs.com/woshimrf/p/nginx-proxy-rewrite-url.html)
+
+
 此处我本地wsl开启的端口是21001
 
 所以可以使用 localhost:21001/proxy/21001/? 这个地址来使用
