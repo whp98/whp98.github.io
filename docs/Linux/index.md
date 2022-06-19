@@ -17,3 +17,5 @@
 [linux服务器迁移](./服务器迁移.md)
 
 [nginx相关](./nginx/index.md)
+
+[wsl安装code-server](./wsl安装code-server.md)
