@@ -1,11 +1,11 @@
-# OracleÊý¾Ý¿âÂÒÂë
+# Oracleæ•°æ®åº“ä¹±ç 
 
-OracleÊý¾Ý¿â¿Í»§¶ËÐèÒªÉèÖÃ»·¾³±äÁ¿×÷Îª±àÂëµÄ»·¾³±äÁ¿¡£
+Oracleæ•°æ®åº“å®¢æˆ·ç«¯éœ€è¦è®¾ç½®çŽ¯å¢ƒå˜é‡ä½œä¸ºç¼–ç çš„çŽ¯å¢ƒå˜é‡ã€‚
 
 ```bash
 vi .bash_profile
 ```
-×·¼Ó
+è¿½åŠ 
 
 ```text
 NLS_LANG="SIMPLIFIED CHINESE_CHINA.ZHS16GBK"
