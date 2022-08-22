@@ -46,3 +46,36 @@ systemctl start frp
 ```bash
 systemctl status frp
 ```
+## 3.frp服务端客户端配置
+  经过我使用,frp在windows远程桌面的时候有不稳定的状况。后来启用了kcp发现反应快多了，并且更稳定，就是有点费流量。
+
+这是我的配置文件密码需要自己设置下。
+frps
+```ini
+[common]
+bind_port = 17000
+kcp_bind_port = 17000
+dashboard_port = 17500
+token = adhksdhkajshdkashdkja
+dashboard_user = admin
+dashboard_pwd = sdadasdasdasdsavvfsfds
+```
+
+frpc
+```ini
+[common]
+server_addr = 1.1.1.1
+server_port = 17000
+token = adhksdhkajshdkashdkja
+protocol = kcp
+[mypc_compTCP]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 3389
+remote_port = 30250
+[mypc_compUDP]
+type = udp
+local_ip = 127.0.0.1
+local_port = 3389
+remote_port = 30250
+```
