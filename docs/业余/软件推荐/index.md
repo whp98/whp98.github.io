@@ -13,3 +13,5 @@
 [Legado / 开源阅读:小说神器](https://github.com/gedoor/legado)
 
 [X-plore File Manager:安卓高版本文件管理必备](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore&hl=en_US&gl=US)
+
+[Hail 雹 (真正的冻结自由)](https://github.com/aistra0528/Hail/releases)
