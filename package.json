@@ -1,21 +1,19 @@
 {
-  "name": "haipeng_blog",
-  "version": "1.0.0",
-  "description": "博客",
+  "name": "haipeng-blog",
+  "version": "2.0.0",
+  "description": "技术凡人",
   "main": "index.js",
-  "repository": "https://github.com/whp98/blog_vuepress.git",
-  "author": "whp98 <whp98@outlook.com>",
+  "repository": "https://github.com/whp98/whp98.github.io.git",
+  "author": "whp98",
   "license": "MIT",
   "private": true,
-  "devDependencies": {
-    "vuepress": "^2.0.0-beta.43"
-  },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "dev": "vuepress dev docs",
-    "d": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "build": "vuepress build docs",
-    "b": "vuepress build docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.10",
+    "vue": "^3.2.37"
   }
 }

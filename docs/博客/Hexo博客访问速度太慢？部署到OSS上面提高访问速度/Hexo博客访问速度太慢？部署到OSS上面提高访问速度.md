@@ -73,7 +73,7 @@ date: 2020-02-14 22:56:56
 改为以下内容
 
  
-```yml
+```yaml
 menu:
 
 Index:
@@ -365,7 +365,7 @@ npm install hexo-deployer-ali-oss --save
 ```
 
 在hexo项目配置文件_config.yml中添加如下部署配置
-```yml
+```yaml
 deploy:
 
 type: aliyun

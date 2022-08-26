@@ -14,7 +14,7 @@ systemctl start docker.service
 yum install docker-compose 
 ```
 编辑配置文件
-```yml
+```yaml
 version: '3.3'
 services:
    db:

@@ -27,7 +27,7 @@
 
 然后编写第一个jsp文件，然后就可以把访问这个页面了。
 文件
-```jsp
+```html
 <%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: w

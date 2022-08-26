@@ -1,8 +1,5 @@
 # 业余⛏
 
-## Windows使用心得
-
-[Windows](./windows/index.md)
 
 ## mc
 [minecraft开服](./mc开服/开服.md)

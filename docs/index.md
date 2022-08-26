@@ -1,6 +1,6 @@
 # 技术凡人-主页
 
-![logo](./.vuepress/public/weixinqr.png)
+![logo](./public/weixinqr.png)
 
 ## 目录引导
 

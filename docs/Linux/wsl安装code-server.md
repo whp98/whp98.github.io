@@ -62,7 +62,7 @@ nginx设置一个反向代理即可使用网站的sub path来使用codeserver了
 https://网站/proxy/21001/?
 
 配置文件如下
-```nginx.conf
+```text
 location ^~/proxy/21001/ {
                 proxy_set_header Host $host;
                 proxy_set_header  X-Real-IP        $remote_addr;
