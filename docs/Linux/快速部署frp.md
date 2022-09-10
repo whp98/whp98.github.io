@@ -160,6 +160,15 @@ systemctl restart frp2
 systemctl restart frp3
 systemctl restart frp4
 ```
+查看情况
+```sh 
+systemctl status frp1
+systemctl status frp2
+systemctl status frp3
+systemctl status frp4
+```
+
+
 
 
 删除
