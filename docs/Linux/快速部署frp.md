@@ -1,0 +1,110 @@
+# 快速部署frp
+
+
+部署多个端口有利于高可用
+
+
+```sh
+#!/bin/sh
+token=adsasdasdasd
+passwd=sdasdasdl
+account=admin
+
+wget https://github.com/fatedier/frp/releases/download/v0.44.0/frp_0.44.0_linux_amd64.tar.gz -O frp_temp.tar.gz
+
+tar -xvzf frp_temp.tar.gz
+mv frp_0.44.0_linux_amd64 frp_temp
+rm frp_temp.tar.gz
+cp frp_temp -r frp1
+cp frp_temp -r frp2
+rm -rf frp_temp
+
+echo "
+[common]
+bind_port = 15000
+bind_udp_port = 15001
+kcp_bind_port = 15000
+dashboard_port = 15500
+token = ${token}
+dashboard_user = ${admin}
+dashboard_pwd = ${passwd}
+max_pool_count = 15
+" | tee frp1/frps.ini
+
+echo "
+[common]
+bind_port = 16000
+bind_udp_port = 16001
+kcp_bind_port = 16000
+dashboard_port = 16500
+token = ${token}
+dashboard_user = ${admin}
+dashboard_pwd = ${passwd}
+max_pool_count = 15
+" | tee frp2/frps.ini
+
+path=`pwd`
+echo "
+[Unit]
+Description=FRP: The nginx HTTP and reverse proxy server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=${path}/frp1/frps -c ${path}/frp1/frps.ini
+KillSignal=SIGQUIT
+TimeoutStopSec=5
+KillMode=process
+PrivateTmp=true
+StandardOutput=syslog
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
+" | tee /lib/systemd/system/frp1.service
+echo "
+[Unit]
+Description=FRP: The nginx HTTP and reverse proxy server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=${path}/frp2/frps -c ${path}/frp2/frps.ini
+KillSignal=SIGQUIT
+TimeoutStopSec=5
+KillMode=process
+PrivateTmp=true
+StandardOutput=syslog
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
+" | tee /lib/systemd/system/frp2.service
+```
+
+上面弄好之后设置开机启动
+
+```sh 
+#!/bin/sh
+systemctl start frp1
+systemctl status frp1
+systemctl enable frp1
+systemctl start frp2
+systemctl status frp2
+systemctl enable frp2
+```
+
+删除
+```sh 
+#!/bin/sh
+systemctl stop frp1
+systemctl disable frp1
+systemctl stop frp2
+systemctl disable frp2
+rm /lib/systemd/system/frp1.service
+rm /lib/systemd/system/frp2.service
+
+rm -r frp1
+rm -r frp2
+```
+
