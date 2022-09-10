@@ -26,7 +26,7 @@ bind_udp_port = 15001
 kcp_bind_port = 15000
 dashboard_port = 15500
 token = ${token}
-dashboard_user = ${admin}
+dashboard_user = ${account}
 dashboard_pwd = ${passwd}
 max_pool_count = 15
 " | tee frp1/frps.ini
@@ -38,7 +38,7 @@ bind_udp_port = 16001
 kcp_bind_port = 16000
 dashboard_port = 16500
 token = ${token}
-dashboard_user = ${admin}
+dashboard_user = ${account}
 dashboard_pwd = ${passwd}
 max_pool_count = 15
 " | tee frp2/frps.ini
@@ -93,6 +93,14 @@ systemctl start frp2
 systemctl status frp2
 systemctl enable frp2
 ```
+
+重启
+```sh
+systemctl restart frp1
+systemctl restart frp2
+
+```
+
 
 删除
 ```sh 
