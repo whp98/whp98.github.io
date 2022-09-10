@@ -23,3 +23,5 @@
 [Ubuntu20.04编译安装Openssl](./Ubuntu20.04编译安装Openssl.md)
 
 [Frp使用心得](./Frp使用心得.md)
+
+[记录服务器升级失败](./记录服务器升级失败.md)
