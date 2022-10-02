@@ -43,6 +43,77 @@ frpc(控制端) -> v2隧道 -> frps -> frpc(被控端)
 3. 偶尔卡顿（原先是有的直接跳重连，现在大多情况卡几秒就恢复了）
 
 
+## 5.多实例+HA负载均衡
+
+这个方案比较暴力
+
+在被控机上开四个frpc配置好不同的服务端口，服务器开启四个frps端口和客户端对应。
+
+控制端开启四个frpc配置好stcp协议，然后使用haproxy配置文件弄好本地四个端口的rdp。
+
+使用的时候就使用haproxy提供的端口即可，每次断开连接，ha会自动切换端口，能快速恢复服务。
+
+我的haproxy配置文件可以参考下。
+
+```text
+#logging options
+global
+    log 127.0.0.1 local0 info
+    maxconn 1500
+    quiet
+    nbproc 1
+
+defaults
+    log global
+    #使用4层代理模式，”mode http”为7层代理模式
+    mode tcp
+    #if you set mode to tcp,then you nust change tcplog into httplog
+    option tcplog
+    option dontlognull
+    retries 3
+    option redispatch
+    maxconn 2000
+    timeout connect 10s
+     ##客户端空闲超时时间为 60秒 则HA 发起重连机制
+    timeout client 10s
+     ##服务器端链接超时时间为 15秒 则HA 发起重连机制
+    timeout server 10s 
+#front-end IP for consumers and producters
+
+listen RDP
+    bind 127.0.0.1:32000
+    #配置TCP模式
+    mode tcp
+    tcp-request inspect-delay 5s
+    tcp-request content accept if RDP_COOKIE
+    persist rdp-cookie
+    balance leastconn
+    option tcpka
+    option tcplog
+    server one45671	127.0.0.1:45671 check inter 1000 rise 2 fall 2
+    server one45672	127.0.0.1:45672 check inter 1000 rise 2 fall 2
+    server one45673	127.0.0.1:45673 check inter 5000 rise 2 fall 2
+    server one45674	127.0.0.1:45674 check inter 5000 rise 2 fall 2
+    option redispatch
+        
+#配置haproxy web监控，查看统计信息
+listen stats
+    bind 127.0.0.1:8990
+    mode http
+    option httplog
+    stats enable
+    #设置haproxy监控地址为http://localhost:8990/frp-stats
+    stats uri /frp-stats
+    stats refresh 200ms
+```
+
+使用可以打开 http://localhost:8990/frp-stats 查看服务状态。
+
+本地使用 127.0.0.1:32000 连接即可
+
+
+
+
 ## 总结
 以上就是我目前的体会和经验
 要是frp有升级我再尝试优化
