@@ -107,7 +107,7 @@ listen stats
     stats refresh 200ms
 ```
 
-使用可以打开 http://localhost:8990/frp-stats 查看服务状态。
+使用可以打开 `http://localhost:8990/frp-stats` 查看服务状态。
 
 本地使用 127.0.0.1:32000 连接即可
 
