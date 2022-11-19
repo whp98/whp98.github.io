@@ -42,9 +42,6 @@ jobs:
       # 运行构建脚本
       - name: Build VitePress site
         run: yarn docs:build
-
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
