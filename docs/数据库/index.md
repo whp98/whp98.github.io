@@ -1,7 +1,4 @@
-## 数据库
-
-# Redis
-
+# 数据库
 
 [Oracle](./Oracle/index.md)
 

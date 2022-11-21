@@ -1,6 +1,6 @@
-# windows 操作系统
+# Windows 操作系统相关
 
-##  win10
+##  Win10
 
 常见bug解决
 
