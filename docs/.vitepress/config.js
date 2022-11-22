@@ -30,6 +30,7 @@ export default {
         nav: [
             { text: '主页', link: '/index' },
             { text: 'Java', link: '/Java/' },
+            { text: 'Android', link: '/Android/' },
             { text: '数据库', link: '/数据库/' },
             { text: '网络', link: '/网络/' },
             {
@@ -37,7 +38,8 @@ export default {
                     { text: 'Linux', link: '/Linux/' },
                     { text: 'Windows', link: '/windows/' },
                 ]
-            }
+            },
+            { text: '云服务推广', link: '/AFFMAN/'}
         ]
     }
 }
