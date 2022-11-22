@@ -1,7 +1,7 @@
 export default {
     lang: 'zh-CN',
     title: '技术凡人',
-    description: '记录成长和生活',
+    description: '技术凡人的个人站',
     base: '/',
     port: 34561,
     appearance: 'dark',
