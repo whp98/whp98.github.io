@@ -1,4 +1,4 @@
-# 使用cloudflare开启githubpages的强制https访问
+# 使用cloudflare开启github pages的强制https访问
 
 ## 前言
 

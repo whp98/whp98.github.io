@@ -6,7 +6,7 @@ abbrlink: d51f
 date: 2020-02-14 22:56:56
 ---
 
-使用阿里云OSS部署静态博客并且开启CDN加速和HTTPS访问
+# 使用阿里云OSS部署静态博客并且开启CDN加速和HTTPS访问
 ===================================================
 
 以前为了写博客买了一个阿里云学生机，在上面部署了一个Jpress博客。之后发现这个博客占用了较大资源，由于使用数据库啥的对于将来文章转移啥的也不是很方便，还有这台机器做科学上网的中转机器导致网站访问速度缓慢，于是决定使用静态博客，免费的静态博客也是有的经过我的测试发现一个问题是博客访问速度缓慢。
@@ -323,7 +323,7 @@ tagWordArr.push({'text': tag.name, 'weight': tag.length, 'link': decodeURI(
  
 然后你访问
 
-<http://ali.intellij.xyz/favicon-128.png>
+<http://ali.jsfr.work/favicon-128.png>
 
 就会发现显示了图片而不是下载
 
@@ -386,7 +386,7 @@ accessKeySecret: XXXXXXXXXXXXXXXXXXXXXXXXX
 
 这时候你就可以访问你的网站了
 
-<http://ali.intellij.xyz/>
+<http://ali.jsfr.work/>
 
 但是这里不是HTTPS访问，这里需要通过在域名管理哪里上传你的证书就可以开启HTTPS访问了
 

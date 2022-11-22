@@ -1,7 +1,7 @@
-# 部署wordpress
+# 部署wordpress博客
 
 
-安装docker
+## 安装docker
 ```shell
 yum update 
 yum -y install docker 
@@ -9,7 +9,7 @@ systemctl start docker.service
 
 ```
 
-安装docker-compose
+## 安装docker-compose
 ```bash
 yum install docker-compose 
 ```

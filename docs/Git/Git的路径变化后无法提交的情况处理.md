@@ -1,6 +1,4 @@
-# Git安装版本修改安装文件的路径后，无法提交的报错`error setting certificate verify locations:`解决方式
-
-
+# Git的路径变化后无法提交的情况处理`unable to access ...`
 ## 报错内容
 
 ```

@@ -1,4 +1,4 @@
-# 博客相关
+# 博客建设和优化相关
 
 [vuepress博客示例](./博客学习和示例.md)
 
@@ -16,3 +16,4 @@
 
 [部署wordpress](./部署wordpress.md)
 
+[网站SEO优化](./Site-SEO.md)
