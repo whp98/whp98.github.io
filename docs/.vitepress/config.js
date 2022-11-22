@@ -4,6 +4,18 @@ export default {
     description: '记录成长和生活',
     base: '/',
     port: 34561,
+    appearance: 'dark',
+    head: [
+        [
+            'script',
+            { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-F97C887PZ0' }
+        ],
+        [
+            'script',
+            {},
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-F97C887PZ0');"
+        ]
+    ],
     themeConfig: {
         logo: '/logo.png',
         footer: {
