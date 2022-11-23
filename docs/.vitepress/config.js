@@ -14,7 +14,9 @@ export default {
             'script',
             {},
             "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-F97C887PZ0');"
-        ]
+        ],
+        ['script', {},
+            "var _hmt = _hmt || [];\n(function() {\nvar hm = document.createElement('script');\nhm.src ='https://hm.baidu.com/hm.js?8b332f513007cd16a483b694bd2c5335';\nvar s = document.getElementsByTagName('script')[0]; \ns.parentNode.insertBefore(hm, s);\n})();"]
     ],
     themeConfig: {
         logo: '/logo.png',
@@ -39,7 +41,7 @@ export default {
                     { text: 'Windows', link: '/windows/' },
                 ]
             },
-            { text: '云服务推广', link: '/AFFMAN/'}
+            { text: '云服务推广', link: '/AFFMAN/' }
         ]
     }
 }
