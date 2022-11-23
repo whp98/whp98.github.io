@@ -1,3 +1,7 @@
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
+import { SitemapStream } from 'sitemap'
+const links = []
 export default {
     lang: 'zh-CN',
     title: '技术凡人',
@@ -43,5 +47,24 @@ export default {
             },
             { text: '云服务推广', link: '/AFFMAN/' }
         ]
+    },
+    transformHtml: (_, id, { pageData }) => {
+        if (!/[\\/]404\.html$/.test(id))
+            links.push({
+                // you might need to change this if not using clean urls mode
+                url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2'),
+                lastmod: pageData.lastUpdated
+            })
+    },
+    buildEnd: async ({ outDir }) => {
+        console.log("out", outDir);
+        const sitemap = new SitemapStream({
+            hostname: 'https://blog.jsfr.work/'
+        })
+        const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+        sitemap.pipe(writeStream)
+        links.forEach((link) => sitemap.write(link))
+        sitemap.end()
+        await new Promise((r) => writeStream.on('finish', r))
     }
 }
