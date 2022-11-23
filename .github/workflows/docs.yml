@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           # 选择要使用的 node 版本
-          node-version: '16'
+          node-version: '16.18.1'
 
       # 缓存 node_modules
       - name: Cache dependencies
@@ -41,7 +41,7 @@ jobs:
 
       # 运行构建脚本  
       - name: Build VitePress site
-        run: yarn docs:build
+        run: yarn && yarn docs:build
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
