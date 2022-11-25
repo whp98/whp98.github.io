@@ -1,3 +1,3 @@
 # 生活
 
-[健康](./健康/index.md)
+[健康](docs/Life/healthy/index.md)

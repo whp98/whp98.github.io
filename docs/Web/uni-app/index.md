@@ -1,5 +1,5 @@
 # uni-app
 
-[news-app](./uni—app入门开发-官方news应用/uni-app入门开发-官方news应用.md)
+[news-app](docs/Web/uni-app/uni-app-news-app/index.md)
 
-[uni-app展示k线](./使用uni-app开发一款展示股票交易数据的app/使用uni-app开发一款展示股票交易数据的app.md)
+[uni-app展示k线](docs/Web/uni-app/uni-app-show-stock/index.md)

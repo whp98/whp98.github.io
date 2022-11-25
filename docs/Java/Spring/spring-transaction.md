@@ -7,6 +7,7 @@ Spring boot应用中默认开启了事务而Spring框架需要加上注解才行
 
 ### 注解自动开启事务
 ```java
+public class A{
 @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public void save1() {
@@ -38,10 +39,12 @@ Spring boot应用中默认开启了事务而Spring框架需要加上注解才行
         users.setPassword("sdsad");
         userService.saveUser(users);
     }
+}
 ```
 
 ### 手动开启事务
 ```java
+public class B
 @Autowired
     DataSourceTransactionManager transactionManager;
     @Override
@@ -65,6 +68,7 @@ Spring boot应用中默认开启了事务而Spring框架需要加上注解才行
             transactionManager.rollback(status);
         }
     }
+}
 ```
 
 ## 测试事务的注意事项

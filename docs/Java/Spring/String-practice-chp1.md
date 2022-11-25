@@ -6,7 +6,7 @@ tags:
 abbrlink: 5a27
 date: 2020-04-29 14:31:58
 ---
-
+# Spring实战第一章Spring之旅笔记
 Spring的两个核心特性是，依赖注入（dependency injection，DI）和面向切片编程（aspect-oriented programming，AOP）
 
 Spring提供了轻量级和简单的编程模型来替代重量级的企业级Java技术，它增强了简单老式的Java对象（Plain Old Java Object， POJO），

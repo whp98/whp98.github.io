@@ -1,16 +1,16 @@
 # JAVA相关内容
 
-[垃圾回收机制](./垃圾回收机制.md)
+[垃圾回收机制](./java-gc.md)
 
-[IO流](./io流.md)
+[IO流](./io-stream.md)
 
-[设计模式](./设计模式.md)
+[设计模式](./design-model.md)
 
-[多线程](./多线程.md)
+[多线程](./muitl-thread.md)
 
-[反射](./反射.md)
+[反射](./reflect.md)
 
-[Java8特性](./Java8特性.md)
+[Java8特性](./Java8-fature.md)
 
 [Spring相关](./Spring/index.md)
 

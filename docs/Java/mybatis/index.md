@@ -1,3 +1,3 @@
 ## mybatis
 
-[mapper注入爆红解决](./mapper注入爆红.md)
+[mapper注入报红解决](./mapper-inject-problem.md)

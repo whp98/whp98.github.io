@@ -1,4 +1,4 @@
 # Node相关
 
-[配置nvm管理node版本](./配置好你的nvm.md)
+[配置nvm管理node版本](./mvn-node-version-manager-config.md)
 
