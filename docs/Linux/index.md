@@ -1,10 +1,10 @@
 # Linux相关博客
 
-[Centos8安装FFmpeg](docs/Linux/Centos8-Install-FFmpeg/index.md)
+[Centos8安装FFmpeg](./Centos8-Install-FFmpeg/index.md)
 
-[如何在Linux主机上定时运行某条命令或者程序以及注意事项](docs/Linux/run-commend-on-linux-Timming/index.md)
+[如何在Linux主机上定时运行某条命令或者程序以及注意事项](./run-commend-on-linux-Timming/index.md)
 
-[关闭ssh的严格模式](docs/Linux/disable-strict-mode-for-ssh-connect/index.md)
+[关闭ssh的严格模式](./disable-strict-mode-for-ssh-connect/index.md)
 
 [给服务器添加ssh公钥(免密登录)](./add-public-key-for-liuux-server.md)
 

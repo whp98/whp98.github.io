@@ -1,5 +1,5 @@
 ---
-title: Redis快速入门
+title: redis基本命令
 tags:
   - redis
   - 基本命令

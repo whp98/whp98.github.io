@@ -1,7 +1,7 @@
 # OJ 相关内容
 
 ## 算法
-[算法](docs/OJ/algorithem-learn/index.md)
+[算法](./algorithem-learn/index.md)
 
 ## leetcode
 

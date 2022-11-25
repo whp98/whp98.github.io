@@ -5,6 +5,7 @@ tags:
 abbrlink: ac56
 date: 2020-05-14 00:47:27
 ---
+# Centos8安装FFmpeg，以及下载m3u8视频方法
 Centos8 安装常用软件经常遇到困难 文本介绍如何安装FFmpeg亲测有效
 
 这里由于，编译太麻烦直接下载可以用的版本，需要从negativo17下载

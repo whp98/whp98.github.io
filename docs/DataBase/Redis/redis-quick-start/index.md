@@ -9,7 +9,7 @@ tategories:
 abbrlink: a905
 date: 2020-03-11 15:53:25
 ---
-
+# Redis 快速上手
 Redis是一款NOSQL（非关系型）数据库，优点如下：
 - 开源
 - 键值缓存和存储
