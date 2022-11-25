@@ -4,7 +4,7 @@ title: 页面的标题
 description: 页面的描述
 ---
 
-# 标准博客
+# 标准博客和语法
 
 ---
 __Advertisement :)__
