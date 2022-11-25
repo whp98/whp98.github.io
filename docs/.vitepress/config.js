@@ -38,12 +38,12 @@ export default {
             { text: '主页', link: '/index' },
             { text: 'Java', link: '/Java/' },
             { text: 'Android', link: '/Android/' },
-            { text: '数据库', link: '/数据库/' },
-            { text: '网络', link: '/网络/' },
+            { text: '数据库', link: '/DataBase/' },
+            { text: '网络', link: '/NetWork/' },
             {
                 text: '操作系统', items: [
                     { text: 'Linux', link: '/Linux/' },
-                    { text: 'Windows', link: '/windows/' },
+                    { text: 'Windows', link: '/Windows/' },
                 ]
             },
             { text: '云服务推广', link: '/AFFMAN/' }
