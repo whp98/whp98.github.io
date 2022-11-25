@@ -1,4 +1,4 @@
-# 安卓MySQL
+# 安装MySQL
 1.下载mysql
 
 去官网下载最新版 zip文件

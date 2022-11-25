@@ -1,9 +1,9 @@
 # Oracle数据库
 
-[Oracle脚本注意事项](./Oracle脚本注意.md)
+[Oracle脚本注意事项](./Oracle-Script-Write.md)
 
-[Oracle乱码问题](./Oracle乱码问题.md)
+[Oracle乱码问题](./Oracle-gibberish.md)
 
-[Oracle数据库导入](./oracle数据库导入.md)
+[Oracle数据库导入](./oracle-data-import.md)
 
-[Oracle表结构导出](./Oracle表结构导出.md)
+[Oracle表结构导出](./Oracle-Export-Table-Struct.md)
