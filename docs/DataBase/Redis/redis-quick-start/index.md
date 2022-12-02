@@ -82,7 +82,7 @@ ls
 ```
 **截图**
 
-![](./2020-03-11-17-09-35.png)
+![](./2020-03-11-17-09-35.jpg)
 
 其中`redis-server`是服务端，`redis-cli`是客户端
 
@@ -171,7 +171,7 @@ docker pull redis
 注释掉`daemonize yes`
 还有`bind 127.0.0.1`
 
-![](./2020-03-11-21-47-06.png)
+![](./2020-03-11-21-47-06.jpg)
 
 
 运行容器
@@ -179,7 +179,7 @@ docker pull redis
 docker run -d --name myredis -p 6379:6379 -v /var/lib/redis:/data  -v /etc/redis/redis.conf:/etc/redis/redis.conf redis
 ```
 ## 获取桌面管理软件
-![RDM](./2020-03-12-01-33-33.png)
+![RDM](./2020-03-12-01-33-33.jpg)
 
 下载地址
 （来自网友编译版本）
@@ -193,7 +193,7 @@ docker run -d --name myredis -p 6379:6379 -v /var/lib/redis:/data  -v /etc/redis
 
 连接上之后软件主界面如图
 
-![](./2020-03-12-22-32-22.png)
+![](./2020-03-12-22-32-22.jpg)
 
 
 

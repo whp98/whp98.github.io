@@ -24,7 +24,7 @@ export default {
         ['meta', { name: 'sogou_site_verification', content: 'UFI5s8VKnD' }, {}]
     ],
     themeConfig: {
-        logo: '/logo.png',
+        logo: '/logo.jpg',
         footer: {
             message: '基于<a href="https://github.com/whp98/whp98.github.io/blob/main/LICENSE.txt">MIT License</a>发布',
             copyright: 'Copyright © 2019-present <a href="https://github.com/whp98">whp98</a>'

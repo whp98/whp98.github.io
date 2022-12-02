@@ -25,7 +25,7 @@ uname -a
 lsb_release
 ```
 
-![](./2020-03-12-22-16-46.png)
+![](./2020-03-12-22-16-46.jpg)
 
 ## 更改方式
 修改sshd_config的StrictModes 为no
@@ -33,7 +33,7 @@ lsb_release
 
 `sudo vi /etc/ssh/sshd_config`
 
-![](./2020-03-12-22-20-25.png)
+![](./2020-03-12-22-20-25.jpg)
 
 
 ## 小知识,Linux主机名修改

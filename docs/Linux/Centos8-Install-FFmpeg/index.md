@@ -22,7 +22,7 @@ sudo yum-config-manager --add-repo=https://negativo17.org/repos/epel-multimedia.
 ```bash
 sudo dnf install ffmpeg
 ```
-![截图](./2020-05-14-01-00-49.png)
+![截图](./2020-05-14-01-00-49.jpg)
 
 
 ## 验证安装
@@ -32,7 +32,7 @@ ffmpeg -version
 ```
 
 
-![验证结果](./2020-05-14-01-02-03.png)
+![验证结果](./2020-05-14-01-02-03.jpg)
 
 ## 简单的使用FFmpeg下载m3u8片段转为MP4
 ```
