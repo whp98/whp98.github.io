@@ -14,7 +14,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.29",
+    "vitepress": "^1.0.0-alpha.45",
     "vue": "^3.2.37"
   },
   "dependencies": {
