@@ -15,3 +15,5 @@
 [关闭Win10更新](./Win10-disable-auto-update.md)
 
 [快速关闭win10](./shutdown-windows-quickly.md)
+
+[Windows常用路径](./useful-path-in-windows.md)
