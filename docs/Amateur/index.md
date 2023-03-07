@@ -21,3 +21,6 @@
 ## 软件推荐
 
 [软件推荐](./software-referance/index.md)
+
+## 框架探索
+[Electorn弊端](./Electron-arch-disadvantages.md)
