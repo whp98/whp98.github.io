@@ -3,6 +3,9 @@
 
 [原脚本来源](https://www.bilibili.com/read/cv6965091/)
 
+此脚本经过了测试可以自动取关所有up！！！
+
+
 ```javascript
 /**定时器控制*/
 var interControl;
