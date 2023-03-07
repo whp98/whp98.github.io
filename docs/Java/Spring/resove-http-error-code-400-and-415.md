@@ -2,7 +2,7 @@
 
 ## 先看400报错
 
-```txt
+```
 HTTP Status 400 – Bad Request
 Type Status Report
 
@@ -29,7 +29,7 @@ Apache Tomcat/8.0.0
 
 ## 415报错
 报错内容
-```txt
+```
 HTTP Status 415 – Unsupported Media Type
 Type Status Report
 
@@ -46,7 +46,7 @@ Apache Tomcat/8.0.0
         ... ...
 ```
 浏览器请求，payload查看负载,查看源
-```txt
+```
 pagex=1&startx=0&limitx=20
 ```
 这个是表单post请求。

@@ -3,7 +3,7 @@
 ## 情况
 某一天tomcat起不来，提示端口被占用，但是找了半天没有找到是哪个程序占用了。
 
-```txt
+```
 Caused by: java.net.BindException: Address already in use: bind
 
 ```

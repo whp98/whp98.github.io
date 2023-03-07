@@ -11,7 +11,7 @@
 ## 3.修改配置文件
 
 按需修改
-```txt
+```
 root: F:\xxxxx\nvm
 arch: 64
 proxy: http://127.0.0.1:20003
