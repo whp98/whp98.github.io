@@ -44,7 +44,7 @@ class Solution {
 
 不得不说这个题还是比较简单的，因为上面的连续三个双层for循环竟然超过了100%的人,不过内存占用并不是很好。
 
-```text
+```txt
 Accepted
 133/133 cases passed (0 ms)
 Your runtime beats 100 % of java submissions

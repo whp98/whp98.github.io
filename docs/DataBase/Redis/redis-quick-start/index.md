@@ -139,7 +139,7 @@ vi /etc/redis/redis.conf
 
 
 修改几个字段就行
-```text
+```txt
 # 守护启动
 daemonize yes
 # 注释掉来允许其他机器来访问Redis服务

@@ -77,7 +77,7 @@ public class Cookie01 extends HttpServlet {
 }
 ```
 浏览器的响应头中包含了设置cookie的响应头。
-```text
+```txt
 Set-Cookie: userName=haha; Path=/JavaWeb_war_exploded/aaa
 Set-Cookie: userId=001; Path=/JavaWeb_war_exploded/bbb
 ```
@@ -94,7 +94,7 @@ Set-Cookie: userId=001; Path=/JavaWeb_war_exploded/bbb
 设置之后可以看到浏览器cookie会显示过期时间为具体的时间而不是会话。
 
 可以看到响应头中包含失效时间的信息。
-```text
+```txt
 Set-Cookie: userName=haha; Max-Age=3600; Expires=Mon, 04-Apr-2022 12:11:41 GMT; Path=/JavaWeb_war_exploded/aaa
 Set-Cookie: userId=001; Max-Age=86400; Expires=Tue, 05-Apr-2022 11:11:41 GMT; Path=/JavaWeb_war_exploded/bbb
 ```
@@ -115,7 +115,7 @@ public class CookieReceive extends HttpServlet {
 }
 ```
 此时访问url控制台打印
-```text
+```txt
 name=userName
 value=haha
 maxAge=-1

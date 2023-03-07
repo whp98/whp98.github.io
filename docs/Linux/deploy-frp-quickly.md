@@ -202,7 +202,7 @@ systemctl daemon-reload
 这样每次服务断开之后可以立即切换到另一个端口从而能实现一定程度的高可用。
 
 我自己本人在windows上使用ha的配置文件如下：
-```text
+```txt
 #logging options
 global
     log 127.0.0.1 local0 info
