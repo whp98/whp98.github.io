@@ -5,7 +5,7 @@
 nmcli connection show
 ```
 返回值
-```text
+```txt
 name uuid type device
 enp0s3 xxx-xxx ethernet --
 ```
