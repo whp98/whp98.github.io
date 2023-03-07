@@ -55,7 +55,7 @@ frpc(控制端) -> v2隧道 -> frps -> frpc(被控端)
 
 我的haproxy配置文件可以参考下。
 
-```txt
+```
 #logging options
 global
     log 127.0.0.1 local0 info

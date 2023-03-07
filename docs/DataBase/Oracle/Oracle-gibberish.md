@@ -7,7 +7,7 @@ vi .bash_profile
 ```
 追加
 
-```txt
+```
 NLS_LANG="SIMPLIFIED CHINESE_CHINA.ZHS16GBK"
 export NLS_LANG
 ```

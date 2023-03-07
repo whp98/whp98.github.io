@@ -49,7 +49,7 @@
 ```
 
 显示结果
-```txt
+```
 服务器时间 2022年4月6日 下午7:10:35
 ```
 
@@ -58,11 +58,11 @@
 
 
 tomcat里面有一个work，里面有临时文件，对于idea来说会在一个特殊的地方，比如我的在
-```txt
+```
 C:\Users\www\AppData\Local\JetBrains\IntelliJIdea2021.3\tomcat\2ba1a2bb-d42b-493f-8b8d-a10a6d38e665\work\Catalina\localhost\JavaWeb_war_exploded\org\apache\jsp
 ```
 里面可以看到两个文件
-```txt
+```
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----          2022/4/6     12:24           5669 first_jsp.class

@@ -306,7 +306,7 @@ public class ObserverTest {
 }
 ```
 测试输出如下
-```txt
+```
 A收到了信息:老人摔倒了
 A逃跑了
 B收到了信息:老人摔倒了

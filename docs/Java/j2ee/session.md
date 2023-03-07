@@ -54,7 +54,7 @@ public class Session02 extends HttpServlet {
 并将session对象引用放入map中作为value，然后将key作为JSESSIONID作为cookie发送給浏览器，下次请求的时候浏览器会携带这个cookie，服务器就会根据这个key找到对应的session对象。
 
 f12查看下http的请求头可以看到如下的请求头：
-```txt
+```
 Cookie: JSESSIONID=D021BDDB61941784692366844FC22992
 ```
 
@@ -118,7 +118,7 @@ public class MainBookCart extends HttpServlet {
 }
 ```
 展示效果
-```txt
+```
 全部书
 
 穷爸爸，富爸爸 添加
@@ -156,7 +156,7 @@ public class AddCart extends HttpServlet {
 }
 ```
 展示效果
-```txt
+```
 添加完成
 ```
 ### 清空购物车
@@ -208,7 +208,7 @@ public class ShowCart extends HttpServlet {
 }
 ```
 展示效果
-```txt
+```
 穷爸爸，富爸爸 X 1
 我的奋斗 X 1
 ```

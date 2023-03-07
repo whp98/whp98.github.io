@@ -10,7 +10,7 @@ proxy_redirect / /frp/;
 ```
 可以将重定向修改成frp路径下的重定向。
 
-```txt
+```
 location ^~/frp/ {
                 proxy_set_header Host $host;
                 proxy_set_header X-Real-IP $remote_addr;

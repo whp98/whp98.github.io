@@ -77,7 +77,7 @@ public class ReflectIoExample {
     }
 }
 ```
-```txt
+```
 dogClass=xyz.intellij.playground.basic.reflect.Dog
 ```
 ## 获取类中的属性
