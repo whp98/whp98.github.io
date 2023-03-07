@@ -11,7 +11,7 @@ export default defineConfig({
     },
     plugins: [
         SearchPlugin({
-            previewLength: 80,
+            previewLength: 40,
             encode: false,
             tokenize: "full", // 解决汉字不能多个输入
         }),
