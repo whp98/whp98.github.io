@@ -1,7 +1,10 @@
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
+import moment from "moment/moment";
 const links = []
+const currentYear = moment().format('YYYY');
+
 export default {
     lang: 'zh-CN',
     title: '技术凡人',
@@ -27,7 +30,7 @@ export default {
         logo: '/logo.png',
         footer: {
             message: '基于<a href="https://github.com/whp98/whp98.github.io/blob/main/LICENSE.txt">MIT License</a>发布',
-            copyright: 'Copyright © 2019-present <a href="https://github.com/whp98">whp98</a>'
+            copyright: `Copyright © 2019-${currentYear} <a href="https://github.com/whp98">Roc</a>`
         },
         lastUpdated: true,
         markdown: {
