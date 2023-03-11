@@ -29,3 +29,5 @@
 [快速部署frp](./deploy-frp-quickly.md)
 
 [Linux iptables 使用](./ip-tables.md)
+
+[Ngrok使用方法](./ngrok-useage-doc.md)
