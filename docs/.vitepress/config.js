@@ -30,7 +30,7 @@ export default {
         logo: '/logo.png',
         footer: {
             message: '基于<a href="https://github.com/whp98/whp98.github.io/blob/main/LICENSE.txt">MIT License</a>发布',
-            copyright: `Copyright © 2019-${currentYear} <a href="https://github.com/whp98">Roc</a>`
+            copyright: `Copyright © 2021-${currentYear} <a href="https://github.com/whp98">Roc</a>`
         },
         lastUpdated: true,
         markdown: {
