@@ -15,3 +15,5 @@
 [Git按照时间提交](./how-to-change-commit-time.md)
 
 [Git设置代理](./set-git-proxy.md)
+
+[Git合并上游代码](./git-merge-upstream.md)
