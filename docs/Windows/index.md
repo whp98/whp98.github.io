@@ -19,3 +19,5 @@
 [Windows常用路径](./useful-path-in-windows.md)
 
 [Windows虚拟内存过大的危害软件卡顿](./windows-idea-lag-fix-virtual-memory.md)
+
+[Windows虚拟化开发](./cpu-v-open.md)
