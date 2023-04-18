@@ -21,3 +21,6 @@
 [Windows虚拟内存过大的危害软件卡顿](./windows-idea-lag-fix-virtual-memory.md)
 
 [Windows虚拟化开发](./cpu-v-open.md)
+
+[Windows激活](./windows-active.md)
+

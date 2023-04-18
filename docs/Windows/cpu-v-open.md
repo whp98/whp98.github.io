@@ -4,8 +4,8 @@ AMD 4650G 微星主板
 
 想要玩VMware嵌套虚拟化就需要开启BIOS的SVM功能，在高级菜单中。
 
-检测虚拟化是否完全开启的工具
-https://leomoon.com/downloads/desktop-apps/leomoon-cpu-v/
+检测虚拟化是否完全开启的工具[LeoMoon CPU-V](https://leomoon.com/downloads/desktop-apps/leomoon-cpu-v/)
+
 
 全绿色才可以
 
