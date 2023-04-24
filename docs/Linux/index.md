@@ -31,3 +31,5 @@
 [Linux iptables 使用](./ip-tables.md)
 
 [Ngrok使用方法](./ngrok-useage-doc.md)
+
+[telegram-bot-api](./fix-telegram-bot-api-lib.so-missing-problem.md)
