@@ -16,7 +16,11 @@ export default {
     head: [
         [
             'script',
-            {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-M87WHVJHWW'}
+            {
+                async: true,
+                src: 'https://www.googletagmanager.com/gtag/js?id=G-M87WHVJHWW',
+                crossorigin: 'anonymous'
+            }
         ],
         [
             'script',
@@ -25,10 +29,26 @@ export default {
         ],
         ['script', {},
             "var _hmt = _hmt || [];\n(function() {\nvar hm = document.createElement('script');\nhm.src ='https://hm.baidu.com/hm.js?8b332f513007cd16a483b694bd2c5335';\nvar s = document.getElementsByTagName('script')[0]; \ns.parentNode.insertBefore(hm, s);\n})();"],
-        ['meta', {name: 'sogou_site_verification', content: 'UFI5s8VKnD'}, {}],
+        ['meta', {
+            name: 'sogou_site_verification',
+            content: 'UFI5s8VKnD'
+            }, {}],
         [
             'script',
-            {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-M87WHVJHWW', crossorigin: 'anonymous'}
+            {
+                async: true,
+                src: 'https://www.googletagmanager.com/gtag/js?id=G-M87WHVJHWW',
+                crossorigin: 'anonymous'
+            }
+        ],
+        [
+            'script',
+            {
+                async: true,
+                src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7612861739271816'
+                ,
+                crossorigin: 'anonymous'
+            }
         ]
     ],
     themeConfig: {
