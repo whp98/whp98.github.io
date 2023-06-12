@@ -3,7 +3,7 @@ layout: home
 hero:
   name: 技术凡人工作室
   text: 技术凡人的个人分享
-  tagline: 让技术变得易懂，让凡人变得不凡!
+  tagline: 技术驱动的创造力工坊
   actions:
     - theme: brand
       text: 目录导引
