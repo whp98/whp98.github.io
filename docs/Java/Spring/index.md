@@ -9,3 +9,5 @@
 [Spring事务](./spring-transaction.md)
 
 [切面编程](./aop.md)
+
+[在Spring Boot项目中使用Toml配置文件](./use-toml-config-in-spring-boot.md)
