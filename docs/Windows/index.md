@@ -24,3 +24,4 @@
 
 [Windows激活](./windows-active.md)
 
+[Windows关机或重启太慢解决](./how-to-fix-windows-poweroff-and-restart-problem.md)
