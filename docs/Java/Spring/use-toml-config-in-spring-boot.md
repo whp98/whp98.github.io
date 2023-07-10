@@ -14,7 +14,7 @@
 
 ## 我自己的实现
 
-[tomlj-spring-boot-starter][https://github.com/whp98/tomlj-spring-boot-starter]
+[tomlj-spring-boot-starter](https://github.com/whp98/tomlj-spring-boot-starter)
 
 我的主要工作是编写了解析toml代码的部分,
 并且基本上测试了toml所有数据类型和数据结构,
