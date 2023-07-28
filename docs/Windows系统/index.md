@@ -1,0 +1,12 @@
+# Windows系统
+- [Hyper-V端口占用解决](./Hyper-V端口占用解决.md)
+- [Win10关闭更新](./Win10关闭更新.md)
+- [Windows 关闭内核隔离 （解决VMware启动不了）](./Windows 关闭内核隔离 （解决VMware启动不了）.md)
+- [Windows 批量版 激活](./Windows 批量版 激活.md)
+- [Windows10 IDEA卡顿修复，虚拟内存过大](./Windows10 IDEA卡顿修复，虚拟内存过大.md)
+- [Windows常用路径](./Windows常用路径.md)
+- [windows搜索界面出现白屏](./windows搜索界面出现白屏.md)
+- [如何排查和解决windows关机和重启慢的问题](./如何排查和解决windows关机和重启慢的问题.md)
+- [开启windows的虚拟化功能](./开启windows的虚拟化功能.md)
+- [快速关闭windows](./快速关闭windows.md)
+- [修复win10开始菜单图标显示不正常](./修复win10开始菜单图标显示不正常/)
