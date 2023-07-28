@@ -1,0 +1,10 @@
+# Git版本管理
+- [Github老仓库将主分支重命名成main](./Github老仓库将主分支重命名成main.md)
+- [Git修改提交时间](./Git修改提交时间.md)
+- [Git合并代码到上游分支](./Git合并代码到上游分支.md)
+- [Git的gitignore不生效解决](./Git的gitignore不生效解决.md)
+- [Git的路径变化后无法提交的情况处理`unable to access ...`](./Git的路径变化后无法提交的情况处理.md)
+- [Git设置代理](./Git设置代理.md)
+- [git创建pull-request和删除合并后的远程分支](./git创建pull-request和删除合并后的远程分支/)
+- [Git原来的历史分支开发出新的分支，合并到最新的分支上面](./Git原来的历史分支开发出新的分支，合并到最新的分支上面/)
+- [如何使用git打标签](./如何使用git打标签/)
