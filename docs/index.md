@@ -4,7 +4,7 @@
 - [Java语言相关](./Java语言相关/)
 - [Linux系统](./Linux系统/)
 - [NodeJS学习](./NodeJS学习/)
-- [public](./public/)
+- [public](./public/public.md)
 - [Rust语言](./Rust语言/)
 - [Web开发](./Web开发/)
 - [Windows系统](./Windows系统/)

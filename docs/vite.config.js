@@ -16,4 +16,5 @@ export default defineConfig({
             tokenize: "full", // 解决汉字不能多个输入
         }),
     ],
+    assetsInclude: ['**/*.PNG','**/*.JPG']
 });
