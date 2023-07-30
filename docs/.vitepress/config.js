@@ -139,7 +139,7 @@ export default {
     nav: [
       {text: "主页", link: "/"},
       {text: "Java", link: "/Java语言相关/"},
-      {text: "Android", link: "/安卓开发/"},
+      {text: "Android", link: "/安卓/"},
       {text: "数据库", link: "/数据库/"},
       {text: "网络", link: "/计网学习/"},
       {
