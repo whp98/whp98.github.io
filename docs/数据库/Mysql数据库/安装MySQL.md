@@ -1,5 +1,6 @@
-# 安装MySQL-8
-1.下载mysql
+# 安装MySQL
+
+## 1.下载mysql
 
 去官网下载最新版 zip文件
 
@@ -7,11 +8,11 @@ https://dev.mysql.com/downloads/mysql/
 
 
 下载之后解压到一个目录
-
-2.新建并修改配置文件
+比如  `E:\mysql-5.7.31-winx64`
+## 2.新建并修改配置文件
 
 解压后的目录并没有的my.ini文件，没关系可以自行创建在安装根目录下添加的my.ini（新建文本文件，将文件类型改为的.ini），写入基本配置：
-
+```ini
 [mysqld]
 # 设置3306端口
 port=3306
@@ -38,11 +39,15 @@ default-character-set=utf8mb4
 port=3306
 default-character-set=utf8mb4
 
-3.初始化数据目录
+```
 
+## 3.初始化数据目录
 
-mysqld --initialize --console   #包含密码
-mysqld --initialize-insecure --console  #没有密码
+下面两条命令任选其一用于初始化mysql的基础数据目录
+```powershell
+mysqld --initialize --console   #使用随机密码
+mysqld --initialize-insecure --console  #不设置密码（不推荐）
+```
 
 来自 <https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/data-directory-initialization.html#data-directory-initialization-procedure> 
 
@@ -53,12 +58,36 @@ mysqld --initialize-insecure --console  #没有密码
 2021-04-01T10:49:34.293553Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
 2021-04-01T10:49:56.962209Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: aSj0BmD;68#s
 
+## 4.安装服务并尝试启动
+可以参考[MySQL服务启停](./MYSQL的服务安装和启停脚本.md)
 
-4.使用初始密码登录mysql
+## 5.使用初始密码登录mysql
+```powershell
+.\bin\mysql.exe -uroot -p
+```
+```text
+PS D:\mysql57\mysql-5.7.43-winx64> .\bin\mysql.exe -uroot -p
+Enter password: ************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.7.43
 
-Mysql -uroot -p 
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+
+```
 
 
-5.修改默认的root密码
+## 6.修改默认的root密码
+使用默认密码登录root用户后可以使用如下命令修改root用户的密码。
 
-
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码';
+```
