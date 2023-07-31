@@ -6,7 +6,7 @@
 将TABLE_NAME替换成想要导出的表名即可导出
 
 ```sql
-SELECT /*t.OWNER*/ 'XRISK', t.TABLE_NAME, t.COLUMN_ID, t.COLUMN_NAME
+SELECT /*t.OWNER*/ 'DB', t.TABLE_NAME, t.COLUMN_ID, t.COLUMN_NAME
      , REGEXP_REPLACE(t1.COMMENTS, '[\(\)\（\）\的\ \n]') AS comments, t.data_type || '(' || t.data_length || ')' AS "数据类型"
      , CASE t2.PK WHEN 'Y' THEN t2.PK ELSE 'N' END     AS "是否主键", t.nullable AS "是允许为空", 'N' AS "代码表", 'N' AS "代码表引用"
 FROM ALL_tab_columns t
