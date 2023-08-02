@@ -168,14 +168,14 @@ export default {
         });
         const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
         sitemap.pipe(writeStream);
-        links.forEach((link) => sitemap.write(decodeURI(link)));
+        links.forEach((link) => sitemap.write(link));
         sitemap.end();
         await new Promise((r) => writeStream.on("finish", r));
     },
     markdown: {
         // options for @mdit-vue/plugin-toc
         // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
-        toc: {level: [0, 1, 2, 3, 4]},
+        toc: {level: [1, 2, 3, 4]},
     },
     // 忽略死链
     ignoreDeadLinks: true,
