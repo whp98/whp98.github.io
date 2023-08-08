@@ -1,13 +1,3 @@
----
-title: Docker-快速上手
-tags:
-  - Docker
-  - 快速上手
-categories:
-  - Docker
-abbrlink: b33d
-date: 2020-03-11 21:51:12
----
 # Docker-快速上手
 ## 安装和启动
 安装docker
