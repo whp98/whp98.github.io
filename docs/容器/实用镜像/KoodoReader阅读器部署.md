@@ -1,4 +1,4 @@
-# KoodoReader阅读器部署
+# Koodo Reader阅读器部署
 
 拉取
 ```bash
