@@ -5,7 +5,7 @@
 - [Linux系统](./Linux系统/)
 - [NodeJS学习](./NodeJS学习/)
 - [public](./public/public.md)
-- [Q](./Q/Q.md)
+- [Q](./Q/)
 - [Rust语言](./Rust语言/)
 - [Web开发](./Web开发/)
 - [Windows系统](./Windows系统/)
