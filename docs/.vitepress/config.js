@@ -175,7 +175,7 @@ export default {
     markdown: {
         // options for @mdit-vue/plugin-toc
         // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
-        toc: {level: [1, 2, 3, 4]},
+        toc: {level: [1, 2, 3, 4, 5, 6, 7]},
         attrs: {disable: true}
     },
     // 忽略死链
