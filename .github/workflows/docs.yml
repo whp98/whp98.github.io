@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           # 选择要使用的 node 版本
-          node-version: '16.18.1'
+          node-version: '18.17.0'
       # 缓存 node_modules
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
-      # 运行构建脚本  
+      # 运行构建脚本
       - name: Build VitePress site
         run: yarn && yarn docs:build
       - name: Deploy to GitHub Pages
