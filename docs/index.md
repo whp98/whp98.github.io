@@ -3,6 +3,7 @@
 - [Git版本管理](./Git版本管理/)
 - [Java语言相关](./Java语言相关/)
 - [Linux系统](./Linux系统/)
+- [Nginx](./Nginx/)
 - [NodeJS学习](./NodeJS学习/)
 - [public](./public/public.md)
 - [Q](./Q/)
