@@ -1,9 +1,9 @@
 # Windows系统
 - [Hyper-V端口占用解决](./Hyper-V端口占用解决.md)
 - [Win10关闭更新](./Win10关闭更新.md)
-- [Windows 关闭内核隔离 （解决VMware启动不了）](./Windows 关闭内核隔离(解决VMware启动不了).md)
-- [Windows 批量版 激活](./Windows 批量版 激活.md)
-- [Windows10 IDEA卡顿修复，虚拟内存过大](./Windows10 IDEA卡顿修复，虚拟内存过大.md)
+- [Windows 关闭内核隔离 （解决VMware启动不了）](./Windows-关闭内核隔离(解决VMware启动不了).md)
+- [Windows 批量版 激活](./Windows-批量版-激活.md)
+- [Windows10 IDEA卡顿修复，虚拟内存过大](./Windows10-IDEA卡顿修复-虚拟内存过大.md)
 - [Windows常用路径](./Windows常用路径.md)
 - [windows搜索界面出现白屏](./windows搜索界面出现白屏.md)
 - [可执行文件安装成windows服务](./可执行文件安装成windows服务.md)
