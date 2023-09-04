@@ -2,7 +2,7 @@
 - [Arthas 相关(todo)](./arthas.md)
 - [Java设计模式](./design-model.md)
 - [编译javafx native应用](./gluon.md)
-- [Idea版本推荐](./Idea版本推荐.md)
+- [IDEA 持续高CPU占用20%-30%](./Idea版本推荐.md)
 - [Java IO流](./io-stream.md)
 - [垃圾回收机制](./java-gc.md)
 - [Java8特性](./Java8-fature.md)
