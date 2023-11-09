@@ -8,6 +8,7 @@
 - [rustdesk服务端搭建](./rustdesk服务端搭建.md)
 - [WSL安装CODE-SERVER](./WSL安装CODE-SERVER.md)
 - [为frp配置反向代理](./为frp配置反向代理.md)
+- [压缩和解压Linux文件](./压缩和解压Linux文件.md)
 - [快速部署frp](./快速部署frp.md)
 - [给服务器添加公钥登录](./给服务器添加公钥登录.md)
 - [编译安装openssl-3](./编译安装openssl-3.md)
