@@ -1,6 +1,6 @@
 # 兴趣
 - [Electron客户端应用程序缺点](./Electron客户端应用程序缺点.md)
-- [Export OTP From Microsoft Authenticator](./Export OTP From Microsoft Authenticator.md)
+- [Export OTP From Microsoft Authenticator](./Export-OTP-From-Microsoft-Authenticator.md)
 - [frp内网穿透后台服务相关](./frp内网穿透后台服务相关.md)
 - [办公室双屏幕建议](./办公室双屏幕建议.md)
 - [网站推荐](./网站推荐.md)
