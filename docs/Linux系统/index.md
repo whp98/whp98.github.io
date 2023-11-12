@@ -4,6 +4,7 @@
 - [iptables端口转发](./iptables端口转发.md)
 - [linux服务器迁移](./linux-server-move-place.md)
 - [Linux一键换源](./Linux一键换源.md)
+- [linux系统自动删除垃圾文件](./linux系统自动删除垃圾文件.md)
 - [Ngrok使用方式](./Ngrok使用方式.md)
 - [rustdesk服务端搭建](./rustdesk服务端搭建.md)
 - [WSL安装CODE-SERVER](./WSL安装CODE-SERVER.md)
