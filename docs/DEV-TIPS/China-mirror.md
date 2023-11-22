@@ -1,0 +1,38 @@
+# China-mirror 中国镜像
+
+## AliYun mirror
+
+https://developer.aliyun.com/mirror/
+
+## NetEase
+
+https://mirrors.163.com/
+
+## tencent
+
+https://mirrors.tencent.com/
+
+## bytedance
+
+https://mirrorvolc.volces.com/
+
+
+## huawei cloud
+
+https://mirrors.huaweicloud.com/home
+
+
+## tsinghua
+https://mirrors.tuna.tsinghua.edu.cn/
+
+## ustc
+http://mirrors.ustc.edu.cn/
+
+## bjtu
+https://mirror.bjtu.edu.cn/
+
+## zju
+http://mirrors.zju.edu.cn/
+
+## neusoft
+http://mirrors.neusoft.edu.cn/
