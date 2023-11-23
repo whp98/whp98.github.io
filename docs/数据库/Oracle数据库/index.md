@@ -1,4 +1,5 @@
 # Oracle数据库
+- [linux服务器上修改oracle数据库的字符集](./linux服务器上修改oracle数据库的字符集.md)
 - [Oracle数据库乱码](./Oracle数据库乱码解决.md)
 - [Oracle数据库导入 impdp](./Oracle数据库导入impdp.md)
 - [Oracle脚本注意事项](./Oracle脚本注意事项.md)
