@@ -2,6 +2,7 @@
 - [Electron客户端应用程序缺点](./Electron客户端应用程序缺点.md)
 - [Export OTP From Microsoft Authenticator](./Export-OTP-From-Microsoft-Authenticator.md)
 - [frp内网穿透后台服务相关](./frp内网穿透后台服务相关.md)
+- [Vmware虚拟机的复制粘贴问题解决](./Vmware虚拟机的复制粘贴问题解决.md)
 - [Windows使用cygwin编译运行haproxy](./Windows使用cygwin编译运行haproxy.md)
 - [办公室双屏幕建议](./办公室双屏幕建议.md)
 - [网站推荐](./网站推荐.md)
