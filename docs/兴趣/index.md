@@ -1,4 +1,5 @@
 # 兴趣
+- [AI-M61-32SU点灯](./AI-M61-32SU点灯.md)
 - [Electron客户端应用程序缺点](./Electron客户端应用程序缺点.md)
 - [Export OTP From Microsoft Authenticator](./Export-OTP-From-Microsoft-Authenticator.md)
 - [frp内网穿透后台服务相关](./frp内网穿透后台服务相关.md)
