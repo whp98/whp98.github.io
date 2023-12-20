@@ -29,23 +29,17 @@ SELECT * FROM YOUR_TABLENAME AS OF TIMESTAMP SYSDATE - 125 / 1440
 
 闪回表数据SQL语句：
 
+
 ```SQL
 -- 1、启动表的row movement特性
 ALTER TABLE YOUR_TABLENAME ENABLE ROW MOVEMENT;
-```
-
-
-```SQL
 -- 2、闪回指定时间的快照
 FLASHBACK TABLE YOUR_TABLENAME TO TIMESTAMP 
 TO_TIMESTAMP('2018-04-23 16:06:00','yyyy-mm-dd hh24:mi:ss');
-```
-
-
-```SQL
 -- 3、关闭表的row movement功能
 ALTER TABLE YOUR_TABLENAME DISABLE ROW MOVEMENT;
 ```
+
 
 闪回数据表的SQL语句：
 ```SQL
