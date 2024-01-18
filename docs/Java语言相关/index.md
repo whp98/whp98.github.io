@@ -11,6 +11,7 @@
 - [多线程](./muitl-thread.md)
 - [Java反射](./reflect.md)
 - [单点登录](./sso.md)
+- [引入durid连接池并配置完整sql打印](./使用durid打印可执行sql.md)
 - [j2ee](./j2ee/)
 - [maven](./maven/)
 - [mybatis](./mybatis/)
