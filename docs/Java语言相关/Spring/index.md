@@ -1,5 +1,6 @@
 # Spring
 - [切面编程](./aop.md)
+- [如何发布jar包到Maven Central仓库](./how-to-public-jar-to-maven-central.md)
 - [Spring 框架接口接收数据报400或415](./resove-http-error-code-400-and-415.md)
 - [springboot添加junit测试](./spring-boot-with-junit-test.md)
 - [Spring Boot事务](./spring-transaction.md)

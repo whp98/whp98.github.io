@@ -23,7 +23,8 @@
 我就没有做深入处理。
 ## 如何使用
 ### 将我的起步依赖添加到Spring Boot项目中
-我的项目使用jitpack库[go](https://jitpack.io/#whp98/tomlj-spring-boot-starter/v1.1.6)
+中央仓库 [sonatype](https://s01.oss.sonatype.org/#nexus-search;quick~tomlj-spring-boot-starter)
+jitpack库 [jitpack](https://jitpack.io/#whp98/tomlj-spring-boot-starter/)
 
 下面是1.1.6版本，最新的请访问上面的链接
 ```xml
