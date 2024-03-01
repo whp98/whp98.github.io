@@ -2,7 +2,7 @@
 
 
 配置文件如下
-```conf
+```nginx
 gzip on;
 gzip_comp_level 5;
 gzip_min_length 1k;

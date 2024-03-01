@@ -7,7 +7,7 @@ https://jenkins.xxx.xxx
 配置文件路径`/etc/nginx/conf.d/`
 
 配置文件内容
-```conf
+```nginx
 server {
     # 服务器端口使用443，开启ssl, 这里ssl就是上面安装的ssl模块
     listen  443 ssl;

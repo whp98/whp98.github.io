@@ -1,7 +1,7 @@
 # Nginx做cdn缓存
 
 配置文件如下
-```conf
+```nginx
 # 用户请求端口28080,反向代理转发到8080端口,并为请求设置缓存
 
 proxy_cache_key $host$uri$is_args$args;
