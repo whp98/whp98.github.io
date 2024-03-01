@@ -19,7 +19,7 @@ This is the full script:
 pip install qrcode[pil]
 ```
 
-```python3
+```python
 import sqlite3
 import uuid
 import json
