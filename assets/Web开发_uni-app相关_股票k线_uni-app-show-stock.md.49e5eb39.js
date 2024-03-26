@@ -1,0 +1,45 @@
+import{_ as s,o as a,c as n,Q as e}from"./chunks/framework.0cae56c7.js";const p="/assets/2020-06-22-02-23-28.ebe3541b.jpg",l="/assets/2020-06-22-03-57-01.c4bb1381.jpg",k=JSON.parse('{"title":"使用uni-app开发一款展示虚拟货币交易数据的app","description":"","frontmatter":{"title":"使用uni-app开发一款展示虚拟货币交易数据的app","tags":["小程序","vue","股票，数字货币，接口"],"abbrlink":"d506","date":"2020-06-22T01:25:41.000Z"},"headers":[],"relativePath":"Web开发/uni-app相关/股票k线/uni-app-show-stock.md","filePath":"Web开发/uni-app相关/股票k线/uni-app-show-stock.md","lastUpdated":1690537275000}'),o={name:"Web开发/uni-app相关/股票k线/uni-app-show-stock.md"},t=e(`<h1 id="使用uni-app开发一款展示股票交易数据的app" tabindex="-1">使用uni-app开发一款展示股票交易数据的app <a class="header-anchor" href="#使用uni-app开发一款展示股票交易数据的app" aria-label="Permalink to &quot;使用uni-app开发一款展示股票交易数据的app&quot;">​</a></h1><p>最近被各种ddl压得不行，小程序课程的作业不得不做，虽然是学的微信小程序但是我个人比较讨厌大公司这种流量入口垄断的行为， 而且被vue的组件化开发所吸引，于是决定放弃原生开发，转投面向全平台的uni-app。</p><p>由于项目完成时间有限，所以我决定开发一个比较简单的项目，这个项目使用一个免费的数据接口，用于展示K线图和盘口数据，还有可视化这些数据，我知道这个不会有太出彩的地方，但是也没办法了。</p><h2 id="项目使用ucharts做可视化" tabindex="-1">项目使用uCharts做可视化 <a class="header-anchor" href="#项目使用ucharts做可视化" aria-label="Permalink to &quot;项目使用uCharts做可视化&quot;">​</a></h2><p>我看到Dcloud官方库里面比较出彩的就决定使用这个做了，接下来就是一个一个的实现功能了</p><h2 id="价格展示的实现" tabindex="-1">价格展示的实现 <a class="header-anchor" href="#价格展示的实现" aria-label="Permalink to &quot;价格展示的实现&quot;">​</a></h2><p>首页展示各种虚拟货币的交易价格，形成一个列表先来一个最简单的纯文字展示数据，使用websocket接口订阅数据，一开始我是用这个</p><p><code>wss://ws.coincap.io/prices?assets=ALL</code>这个接口订阅所有数字货币的实时价格，后来我觉得不太行，因为变化太快类型太多所以减少一些选了最火的10个币：bitcoin、ethereum、tether、ripple、bitcoin-cash、bitcoin-sv、litecoin、binancecoin、eos、cardano。 订阅变成：<code>wss://ws.coincap.io/prices?assets=bitcoin,ethereum,tether,ripple,bitcoin-cash,bitcoin-sv,litecoin,binance-coin,eos,cardano</code>。 下一步就是建立ws连接获取数据：</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">uni.</span><span style="color:#B392F0;">connectSocket</span><span style="color:#E1E4E8;">({url:</span><span style="color:#9ECBFF;">&quot;wss://ws.coincap.io/prices?assets=bitcoin,ethereum,tether,ripple,bitcoin-cash,bitcoin-sv,litecoin,binance-coin,eos,cardano&quot;</span><span style="color:#E1E4E8;">})</span></span>
+<span class="line"><span style="color:#E1E4E8;">uni.</span><span style="color:#B392F0;">onSocketMessage</span><span style="color:#E1E4E8;">(</span><span style="color:#F97583;">function</span><span style="color:#E1E4E8;"> (</span><span style="color:#FFAB70;">res</span><span style="color:#E1E4E8;">) {</span></span>
+<span class="line"><span style="color:#E1E4E8;">			  console.</span><span style="color:#B392F0;">log</span><span style="color:#E1E4E8;">(</span><span style="color:#9ECBFF;">&#39;收到服务器内容：&#39;</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">+</span><span style="color:#E1E4E8;"> res.data);</span></span>
+<span class="line"><span style="color:#E1E4E8;">});</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">uni.</span><span style="color:#6F42C1;">connectSocket</span><span style="color:#24292E;">({url:</span><span style="color:#032F62;">&quot;wss://ws.coincap.io/prices?assets=bitcoin,ethereum,tether,ripple,bitcoin-cash,bitcoin-sv,litecoin,binance-coin,eos,cardano&quot;</span><span style="color:#24292E;">})</span></span>
+<span class="line"><span style="color:#24292E;">uni.</span><span style="color:#6F42C1;">onSocketMessage</span><span style="color:#24292E;">(</span><span style="color:#D73A49;">function</span><span style="color:#24292E;"> (</span><span style="color:#E36209;">res</span><span style="color:#24292E;">) {</span></span>
+<span class="line"><span style="color:#24292E;">			  console.</span><span style="color:#6F42C1;">log</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&#39;收到服务器内容：&#39;</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">+</span><span style="color:#24292E;"> res.data);</span></span>
+<span class="line"><span style="color:#24292E;">});</span></span></code></pre></div><p>效果如下： <img src="`+p+'" alt=""></p><p>接下来呢就是数据绑定直接展示数字货币的价格为了骚气我让它显示一些颜色：</p><p><img src="'+l+`" alt=""></p><p>具体代码如下</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;">&lt;view v-for=&quot;(value, key, index) in prices&quot; :key=&quot;key&quot; v-bind:class=&quot;value.isup ? &#39;isup&#39; : &#39;isdown&#39;&quot;&gt;</span></span>
+<span class="line"><span style="color:#e1e4e8;">	&lt;view class=&quot;price_box&quot;&gt;</span></span>
+<span class="line"><span style="color:#e1e4e8;">			   {{ key }} : {{ value.p }}</span></span>
+<span class="line"><span style="color:#e1e4e8;">	&lt;/view&gt;</span></span>
+<span class="line"><span style="color:#e1e4e8;">&lt;/view&gt;</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">样式</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">.isup{</span></span>
+<span class="line"><span style="color:#e1e4e8;">	width: 100%;</span></span>
+<span class="line"><span style="color:#e1e4e8;">	background: #ff6e6e;</span></span>
+<span class="line"><span style="color:#e1e4e8;">}</span></span>
+<span class="line"><span style="color:#e1e4e8;">.isdown{</span></span>
+<span class="line"><span style="color:#e1e4e8;">	width: 100%;</span></span>
+<span class="line"><span style="color:#e1e4e8;">	background: #59fd72;</span></span>
+<span class="line"><span style="color:#e1e4e8;">}</span></span>
+<span class="line"><span style="color:#e1e4e8;">	</span></span>
+<span class="line"><span style="color:#e1e4e8;">.price_box{</span></span>
+<span class="line"><span style="color:#e1e4e8;">	margin: 10px;</span></span>
+<span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292e;">&lt;view v-for=&quot;(value, key, index) in prices&quot; :key=&quot;key&quot; v-bind:class=&quot;value.isup ? &#39;isup&#39; : &#39;isdown&#39;&quot;&gt;</span></span>
+<span class="line"><span style="color:#24292e;">	&lt;view class=&quot;price_box&quot;&gt;</span></span>
+<span class="line"><span style="color:#24292e;">			   {{ key }} : {{ value.p }}</span></span>
+<span class="line"><span style="color:#24292e;">	&lt;/view&gt;</span></span>
+<span class="line"><span style="color:#24292e;">&lt;/view&gt;</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">样式</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">.isup{</span></span>
+<span class="line"><span style="color:#24292e;">	width: 100%;</span></span>
+<span class="line"><span style="color:#24292e;">	background: #ff6e6e;</span></span>
+<span class="line"><span style="color:#24292e;">}</span></span>
+<span class="line"><span style="color:#24292e;">.isdown{</span></span>
+<span class="line"><span style="color:#24292e;">	width: 100%;</span></span>
+<span class="line"><span style="color:#24292e;">	background: #59fd72;</span></span>
+<span class="line"><span style="color:#24292e;">}</span></span>
+<span class="line"><span style="color:#24292e;">	</span></span>
+<span class="line"><span style="color:#24292e;">.price_box{</span></span>
+<span class="line"><span style="color:#24292e;">	margin: 10px;</span></span>
+<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><p>代码具体请看<a href="https://github.com/whp98/uni-cryptocurrency/tree/ffd7b1e23b2c358fbaa9499380be030afbb65689" target="_blank" rel="noreferrer">完成文字展示</a></p><h2 id="开始画图相关的工作-使用画图组件" tabindex="-1">开始画图相关的工作，使用画图组件 <a class="header-anchor" href="#开始画图相关的工作-使用画图组件" aria-label="Permalink to &quot;开始画图相关的工作，使用画图组件&quot;">​</a></h2><p>完成了上一步，下一步就是绘制k线图</p><p>k线图使用的uCharts的Candle组件，这个使用官方示例的代码来组织数据，具体的使用直接从官方的demo中copy出代码，再getserverdata中修改获取数据的部分就可以了</p><p>具体的大体修改部分如下：</p>`,19),c=[t];function i(r,u,y,d,h,b){return a(),n("div",null,c)}const g=s(o,[["render",i]]);export{k as __pageData,g as default};
