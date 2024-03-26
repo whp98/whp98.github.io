@@ -141,7 +141,7 @@ export default {
             {text: "Java", link: "/Java语言相关/"},
             {text: "Android", link: "/安卓/"},
             {text: "数据库", link: "/数据库/"},
-            {text: "网络", link: "/计网学习/"},
+            {text: "Git", link: "/Git版本管理/"},
             {
                 text: "操作系统",
                 items: [
