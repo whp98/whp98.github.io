@@ -1,6 +1,7 @@
 # Git版本管理
 - [Github老仓库将主分支重命名成main](./Github老仓库将主分支重命名成main.md)
 - [Git修改提交时间](./Git修改提交时间.md)
+- [Git删除某个文件的全部历史记录](./Git删除某个文件的全部历史记录.md)
 - [Git删除误提交的内容](./Git删除误提交的内容.md)
 - [Git合并代码到上游分支](./Git合并代码到上游分支.md)
 - [Git的gitignore不生效解决](./Git的gitignore不生效解决.md)
