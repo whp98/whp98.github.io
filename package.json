@@ -19,7 +19,7 @@
     "markdown-it": "13.0.1",
     "moment": "2.29.4",
     "vite": "4.4.9",
-    "vitepress": "1.0.0-rc.25",
+    "vitepress": "1.1.0",
     "vitepress-plugin-search": "1.0.4-alpha.20",
     "vue": "3.3.4"
   },
