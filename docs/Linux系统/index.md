@@ -7,6 +7,7 @@
 - [linux系统自动删除垃圾文件](./linux系统自动删除垃圾文件.md)
 - [Ngrok使用方式](./Ngrok使用方式.md)
 - [rustdesk服务端搭建](./rustdesk服务端搭建.md)
+- [sudo命令免密操作](./sudo命令免密操作.md)
 - [WSL安装CODE-SERVER](./WSL安装CODE-SERVER.md)
 - [为frp配置反向代理](./为frp配置反向代理.md)
 - [压缩和解压Linux文件](./压缩和解压Linux文件.md)
