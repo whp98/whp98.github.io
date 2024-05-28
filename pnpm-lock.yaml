@@ -12,8 +12,8 @@ dependencies:
     specifier: 7.1.1
     version: 7.1.1
   vite-plugin-vitepress-auto-index:
-    specifier: 1.1.15
-    version: 1.1.15(eslint@8.57.0)(typescript@5.4.5)(vite@4.4.9)(vitepress@1.1.0)
+    specifier: 1.1.16
+    version: 1.1.16(eslint@8.57.0)(typescript@5.4.5)(vite@4.4.9)(vitepress@1.1.0)
   vite-plugin-vitepress-auto-sidebar-whp98:
     specifier: ^1.5.1
     version: 1.5.1(eslint@8.57.0)(typescript@5.4.5)(vite@4.4.9)(vitepress@1.1.0)
@@ -2154,8 +2154,8 @@ packages:
       punycode: 2.3.1
     dev: false
 
-  /vite-plugin-vitepress-auto-index@1.1.15(eslint@8.57.0)(typescript@5.4.5)(vite@4.4.9)(vitepress@1.1.0):
-    resolution: {integrity: sha512-psadc3YV94LPKAzgd9pQj7ZTJ8BnTqDVT1K2gc4FKOxSjHtgimeVqRuHI+4rMCQpyWjjGQAD7ZP5srkMph5Wog==}
+  /vite-plugin-vitepress-auto-index@1.1.16(eslint@8.57.0)(typescript@5.4.5)(vite@4.4.9)(vitepress@1.1.0):
+    resolution: {integrity: sha512-VpIgiRihGLU5vKbmpE2EGUetfN2AX/IhPeFQb5Nj6BmePseX+EPwd+tjSyqnyjLZH3SFgCPC41RgFrHbJv9kSg==}
     peerDependencies:
       vite: ^4.0.4
       vitepress: 1.0.0-alpha.49
