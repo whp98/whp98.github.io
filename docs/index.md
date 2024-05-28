@@ -1,5 +1,5 @@
 # 目录
-- [public](./public/public.md)
+- [About](./public/public.md)
 - [Web开发](./Web开发/)
 - [Linux系统](./Linux系统/)
 - [兴趣](./兴趣/)
