@@ -1,10 +1,10 @@
 # 目录
+- [public](./public/public.md)
 - [Web开发](./Web开发/)
 - [Linux系统](./Linux系统/)
 - [兴趣](./兴趣/)
 - [计网](./计网/)
 - [Git版本管理](./Git版本管理/)
-- [public](./public/public.md)
 - [开发工具技巧](./开发工具技巧/)
 - [Windows系统](./Windows系统/)
 - [Java语言相关](./Java语言相关/)
