@@ -1,7 +1,7 @@
 # 目录
+- [About](./public/public.md)
 - [兴趣](./兴趣/)
 - [数据库](./数据库/)
-- [About](./public/public.md)
 - [Web开发](./Web开发/)
 - [Linux系统](./Linux系统/)
 - [计网](./计网/)
