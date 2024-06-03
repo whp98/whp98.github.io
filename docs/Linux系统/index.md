@@ -1,4 +1,5 @@
 # Linux系统
+- [ubuntu桌面](./ubuntu桌面/)
 - [sudo命令免密操作](./sudo命令免密操作.md)
 - [linux系统自动删除垃圾文件](./linux系统自动删除垃圾文件.md)
 - [压缩和解压Linux文件](./压缩和解压Linux文件.md)
