@@ -2,7 +2,10 @@
 
 ## 安装包下载
 
-https://softwareupdate.vmware.com/cds/vmw-desktop/
+注册博通账号
+然后下载
+
+https://support.broadcom.com/group/ecx/productfiles?subFamily=VMware%20Workstation%20Pro&displayGroup=VMware%20Workstation%20Pro%2017.0%20for%20Personal%20Use%20(Linux)&release=17.5.2&os=&servicePk=520450&language=EN
 
 ## 安装教程
 https://systemweakness.com/guide-to-installing-vmware-workstation-pro-on-ubuntu-22-04-in-2023-76bb5e2a242a
