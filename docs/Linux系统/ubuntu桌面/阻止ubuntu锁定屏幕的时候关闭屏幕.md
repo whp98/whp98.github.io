@@ -20,3 +20,21 @@ echo "xset -dpms" >> ~/.xinitrc
 https://askubuntu.com/questions/696738/prevent-monitor-from-losing-signal-after-screen-saver-lock-activates
 
 https://wiki.archlinux.org/title/Display_Power_Management_Signaling
+
+
+## 上面的在ubuntu24上不好用
+
+使用shell扩展解决
+
+安装浏览器扩展管理插件的连接器
+```shell
+sudo apt-get install gnome-browser-connector
+```
+安装浏览器扩展
+
+https://chrome.google.com/webstore/detail/gphhapmejobijbbhgpjhcjognlahblep
+
+
+安装这个插件即可
+
+https://extensions.gnome.org/extension/1414/unblank/
