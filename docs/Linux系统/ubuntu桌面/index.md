@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [解决ubuntu24-docker-desktop-不能启动](./解决docker-desktop-不能启动.md)
 - [阻止ubuntu锁定屏幕的时候关闭屏幕 dpms](./阻止ubuntu锁定屏幕的时候关闭屏幕.md)
 - [ubuntu修改swap文件大小](./ubuntu修改swap文件大小.md)
 - [vmware-workstation在ubuntu24上安装报错](./vmware-workstation在ubuntu24上安装报错.md)
