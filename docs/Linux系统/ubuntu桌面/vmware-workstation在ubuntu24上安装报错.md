@@ -30,7 +30,6 @@ https://superuser.com/questions/1713277/unable-to-install-all-modules-see-log-tm
 cd /usr/lib/vmware/modules/source
 git clone https://github.com/mkubecek/vmware-host-modules
 cd vmware-host-modules
-git checkout workstation-17.5.1O
 git checkout workstation-17.5.1
 make
 ls
