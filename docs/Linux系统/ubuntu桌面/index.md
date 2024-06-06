@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [ubuntu24-状态栏显示网速](./ubuntu24-状态栏显示网速.md)
 - [解决ubuntu24-docker-desktop-不能启动](./解决docker-desktop-不能启动.md)
 - [阻止ubuntu锁定屏幕的时候关闭屏幕 dpms](./阻止ubuntu锁定屏幕的时候关闭屏幕.md)
 - [ubuntu修改swap文件大小](./ubuntu修改swap文件大小.md)
