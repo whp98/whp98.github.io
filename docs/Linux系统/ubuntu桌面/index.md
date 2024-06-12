@@ -1,10 +1,11 @@
 # ubuntu桌面
+- [ubuntu24安装easyconnect](./ubuntu24安装easyconnect.md)
+- [snap商店代理](./snap商店代理.md)
 - [systemd示例-一次运行和后台运行](./systemd示例-一次运行和后台运行.md)
 - [ubuntu24-状态栏显示网速](./ubuntu24-状态栏显示网速.md)
 - [解决ubuntu24-docker-desktop-不能启动](./解决docker-desktop-不能启动.md)
 - [阻止ubuntu锁定屏幕的时候关闭屏幕 dpms](./阻止ubuntu锁定屏幕的时候关闭屏幕.md)
 - [ubuntu修改swap文件大小](./ubuntu修改swap文件大小.md)
 - [vmware-workstation在ubuntu24上安装报错](./vmware-workstation在ubuntu24上安装报错.md)
-- [snap商店代理](./snap商店代理.md)
 - [ubuntu24.04玩兼容不如加内存上虚拟机](./ubuntu24.04玩兼容不如加内存.md)
 - [ubuntu桌面svn命令idea报错](./ubuntu桌面svn命令idea报错.md)
