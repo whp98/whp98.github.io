@@ -15,15 +15,20 @@ https://github.com/lalatgithub/gitlab-in-docker/tree/master/4.%20auto-register-g
 `docker-compose.yml`
 
 ```yaml
-version: '3.8'
 services:
-
   gitlab-server:
-    image: gitlab/gitlab-ce:latest
+    # 使用token注册runner会弃用，锁定版本到17
+    image: gitlab/gitlab-ce:17.0.2-ce.0
     container_name: gitlab-server
+    restart: always
+    # extra_hosts:
+    #   - "w-x570:127.0.0.1"
     environment:
+      # 界面端口设置8088
+      # 设置默认密码
+      # 关闭集群
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://localhost:8088'
+        external_url 'http://w-x570:8088'
         nginx['listen_port'] = 8088
         gitlab_rails['initial_root_password'] = 'Abcd@0123456789'
         puma['worker_processes'] = 0 # disable cluster mode to avoid more memory usage
@@ -33,31 +38,45 @@ services:
       - ./gitlab/logs:/var/log/gitlab
       - ./gitlab/data:/var/opt/gitlab
     ports:
-      - '8088:8088'
+      - "8088:8088"
     healthcheck:
-      test: curl --fail http://localhost:8088/users/sign_in || exit 1
+      test: curl --fail http://gitlab-server:8088/users/sign_in || exit 1
       interval: 60s
       timeout: 3s
-      retries: 5
-
+      retries: 10
+    networks:
+      gitlab_network:
+        aliases:
+          - w-x570
   gitlab-runner:
-    image: gitlab/gitlab-runner:latest
+    image: gitlab/gitlab-runner:v17.0.0
     container_name: gitlab-runner
+    restart: always
+    # extra_hosts:
+    #   - "w-x570:127.0.0.1"
     entrypoint: [""]
-    command: ["/bin/sh", "-c", "gitlab-runner register \
-                                      --non-interactive \
-                                      --url 'http://localhost:8088' \
-                                      --registration-token 'r3g1str4t10n' \ 
-                                      --executor 'docker' \
-                                      --docker-network-mode 'host' \
-                                      --docker-image 'python:alpine' \
-            && gitlab-runner run --user=gitlab-runner --working-directory=/etc/gitlab-runner"]
+    command: [
+        "/bin/sh",
+        "-c",
+        "gitlab-runner register \
+        --non-interactive \
+        --url 'http://gitlab-server:8088' \
+        --registration-token 'r3g1str4t10n' \
+        --executor 'docker' \
+        --docker-image 'python:alpine' \
+        --docker-network-mode gitlab_network \
+        && gitlab-runner run --user=gitlab-runner --working-directory=/etc/gitlab-runner",
+      ]
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock   
-    network_mode: 'host'
+      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
-      gitlab-server: 
+      gitlab-server:
         condition: service_healthy
+    networks:
+      - gitlab_network
+networks:
+  gitlab_network:
+    name: gitlab_network
 ```
 
 
