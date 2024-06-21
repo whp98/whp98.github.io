@@ -1,4 +1,6 @@
 # Web开发
+- [pnpm-缺少各种loader思路](./pnpm-缺少各种loader思路.md)
+- [yarn报错registry.nlark.com连不上](./yarn报错registry.nlark.com连不上.md)
 - [npm发布软件包](./npm发布软件包.md)
 - [前端开发的axios的promise封装](./前端开发的axios的promise封装.md)
 - [VUE-devServer-看不到源码处理](./VUE-devServer-看不到源码处理.md)
