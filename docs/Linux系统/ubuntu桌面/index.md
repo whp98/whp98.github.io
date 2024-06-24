@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [解决ubuntu24.04的网易邮件大师的状态栏图标变成黑色](./解决ubuntu24.04的网易邮件大师的状态栏图标变成黑色.md)
 - [ubuntu24安装easyconnect](./ubuntu24安装easyconnect.md)
 - [snap商店代理](./snap商店代理.md)
 - [systemd示例-一次运行和后台运行](./systemd示例-一次运行和后台运行.md)
