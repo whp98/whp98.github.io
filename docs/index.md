@@ -1,4 +1,5 @@
 # 目录
+- [Git版本管理](./Git版本管理/)
 - [Web开发](./Web开发/)
 - [安卓](./安卓/)
 - [容器](./容器/)
@@ -16,7 +17,6 @@
 - [NodeJS学习](./NodeJS学习/)
 - [Windows系统](./Windows系统/)
 - [DEV-TIPS](./DEV-TIPS/)
-- [Git版本管理](./Git版本管理/)
 - [Java语言相关](./Java语言相关/)
 - [About](./public/public.md)
 - [开发工具技巧](./开发工具技巧/)

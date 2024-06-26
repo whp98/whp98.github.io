@@ -1,4 +1,5 @@
 # Git版本管理
+- [gitlab的cicd部署项目](./gitlab的cicd部署项目.md)
 - [Git设置代理](./Git设置代理.md)
 - [Git下载自动替换协议](./Git下载自动替换协议.md)
 - [Git删除某个文件的全部历史记录](./Git删除某个文件的全部历史记录.md)
