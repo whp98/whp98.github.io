@@ -1,4 +1,5 @@
 # Linux系统
+- [rsync的使用](./rsync的使用.md)
 - [ubuntu桌面](./ubuntu桌面/)
 - [sudo命令免密操作](./sudo命令免密操作.md)
 - [linux系统自动删除垃圾文件](./linux系统自动删除垃圾文件.md)
