@@ -36,17 +36,12 @@ cd /etc/apt/sources.list.d/
 sudo cp ubuntu.sources ubuntu22.04.sources
 sudo vim ubuntu22.04.sources
 ```
+我去除jammy-updates jammy-security，因为这个会影响其他软件比如snapd和系统。
 输入以下内容：
 ```text
 Types: deb
 URIs: http://archive.ubuntu.com/ubuntu/
-Suites: jammy jammy-updates jammy-backports
-Components: main restricted universe multiverse
-Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-
-Types: deb
-URIs: http://security.ubuntu.com/ubuntu/
-Suites: jammy-security
+Suites: jammy jammy-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 ```
