@@ -1,4 +1,5 @@
 # 兴趣
+- [Minecraft修改存档允许作弊](./Minecraft修改存档允许作弊.md)
 - [手机大猩猩玻璃的代和特点](./手机大猩猩玻璃的代和特点.md)
 - [多设备文件快速同步-微力同步](./多设备文件快速同步-微力同步.md)
 - [Export OTP From Microsoft Authenticator](./Export-OTP-From-Microsoft-Authenticator.md)
