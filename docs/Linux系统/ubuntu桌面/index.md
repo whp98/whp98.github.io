@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [linux拆分大文本split命令](./linux拆分大文本split命令.md)
 - [ubuntu24.04增加老源的支持](./ubuntu24.04增加老源的支持.md)
 - [ubuntu24.04安装easyconnect之后导致尼扣瑞无法连接](./ubuntu24.04安装easyconnect之后导致尼口瑞无法连接.md)
 - [解决ubuntu24.04的网易邮件大师的状态栏图标变成黑色](./解决ubuntu24.04的网易邮件大师的状态栏图标变成黑色.md)
