@@ -1,4 +1,5 @@
 # Oracle数据库
+- [oracle生成表统计信息和清理语句](./oracle生成表统计信息和清理语句.md)
 - [Oracle数据库恢复](./Oracle数据库恢复.md)
 - [linux服务器上修改oracle数据库的字符集](./linux服务器上修改oracle数据库的字符集.md)
 - [Oracle表结构导出](./Oracle表结构导出.md)
