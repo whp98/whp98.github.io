@@ -1,5 +1,5 @@
 # Java语言相关
-- [存储10亿密码](./存储10亿密码.md)
+- [存储10亿密码rockyou2024](./存储10亿密码.md)
 - [j2ee](./j2ee/)
 - [Spring](./Spring/)
 - [引入durid连接池并配置完整sql打印](./使用durid打印可执行sql.md)
