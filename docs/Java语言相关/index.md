@@ -1,4 +1,5 @@
 # Java语言相关
+- [maven](./maven/)
 - [存储100亿密码rockyou2024](./存储100亿密码rockyou2024.md)
 - [j2ee](./j2ee/)
 - [Spring](./Spring/)
@@ -6,7 +7,6 @@
 - [Java流式转换超大文本的字符编码](./Java流式转换超大文本的字符编码.md)
 - [IDEA 持续高CPU占用20%-30%](./Idea版本推荐.md)
 - [Java G1GC例子带注释](./JavaG1GC例子.md)
-- [maven](./maven/)
 - [swagger-ui](./swagger-ui/)
 - [mybatis](./mybatis/)
 - [垃圾回收机制](./java-gc.md)
