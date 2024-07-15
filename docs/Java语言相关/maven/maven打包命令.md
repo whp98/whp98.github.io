@@ -10,3 +10,7 @@ mvn clean install package -Dmaven.test.skip=true
 ```shell
 mvn clean install package -Dmaven.test.skip=true -B -DskipTests --settings ./settings.xml
 ```
+
+## 3.更多其他参数说明
+
+https://blog.csdn.net/wangjunjun2008/article/details/18982089
