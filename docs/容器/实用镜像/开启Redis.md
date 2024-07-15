@@ -2,7 +2,7 @@
 
 `/etc/redis/redis.conf`
 
-```conf
+```text
 requirepass redis123
 bind 0.0.0.0
 protection-mode no
