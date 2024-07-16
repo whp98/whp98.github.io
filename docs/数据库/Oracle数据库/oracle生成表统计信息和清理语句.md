@@ -11,7 +11,7 @@ FROM (SELECT owner,
              SUM(bytes) AS data_length,
              0          AS index_length -- 可以根据需要修改来计算索引大小
       FROM dba_segments
-      WHERE segment_type = 'TABLE'
+      /*WHERE segment_type = 'TABLE'*/
       GROUP BY owner, segment_name)
 WHERE owner = 'db1'
 ORDER BY data_length DESC;
