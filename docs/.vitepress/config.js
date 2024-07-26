@@ -4,7 +4,11 @@ import {SitemapStream} from "sitemap";
 import moment from "moment/moment";
 import AutoSidebar from "vite-plugin-vitepress-auto-sidebar-whp98";
 import AutoIndex from "vite-plugin-vitepress-auto-index";
-const {chunkSplitPlugin} = import("vite-plugin-chunk-split");
+const {chunkSplitPlugin} = import("vite-plugin-chunk-split").then(
+    e=>{
+        console.log(e)
+    }
+);
 console.log(chunkSplitPlugin);
 const links = [];
 const currentYear = moment().format("YYYY");
