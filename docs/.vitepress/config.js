@@ -4,12 +4,6 @@ import {SitemapStream} from "sitemap";
 import moment from "moment/moment";
 import AutoSidebar from "vite-plugin-vitepress-auto-sidebar-whp98";
 import AutoIndex from "vite-plugin-vitepress-auto-index";
-const {chunkSplitPlugin} = import("vite-plugin-chunk-split").then(
-    e=>{
-        console.log('123',e)
-    }
-);
-console.log(chunkSplitPlugin);
 const links = [];
 const currentYear = moment().format("YYYY");
 
@@ -82,8 +76,7 @@ export default {
                 titleFromFile: true,
                 // sideBarItemsResolved: SidebarItemFilter,
                 sideBarItemsResolved: SidebarItemFilter,
-            }),
-            chunkSplitPlugin()
+            })
         ],
     },
     head: [

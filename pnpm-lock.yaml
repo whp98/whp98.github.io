@@ -33,9 +33,6 @@ importers:
       vite:
         specifier: 4.4.9
         version: 4.4.9
-      vite-plugin-chunk-split:
-        specifier: ^0.5.0
-        version: 0.5.0(vite@4.4.9)
       vitepress:
         specifier: 1.1.0
         version: 1.1.0(@algolia/client-search@4.23.3)(axios@1.4.0)(postcss@8.4.38)(search-insights@2.13.0)(typescript@5.4.5)
@@ -867,9 +864,6 @@ packages:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
 
-  es-module-lexer@1.5.4:
-    resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
-
   esbuild@0.18.20:
     resolution: {integrity: sha512-ceqxoedUrcayh7Y7ZX6NdbbDzGROiyVBgC4PriJThBKSVPWnnFHZAkfI1lJT8QFkOwH4qOS2SJkS4wvpGl8BpA==}
     engines: {node: '>=12'}
@@ -1022,9 +1016,6 @@ packages:
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
-
-  import-meta-resolve@4.1.0:
-    resolution: {integrity: sha512-I6fiaX09Xivtk+THaMfAwnA3MVA5Big1WHF1Dfx9hFuvNIWpXnorlkzhcQf6ehrqQiiZECRt1poOAkPmer3ruw==}
 
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -1330,11 +1321,6 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
-
-  vite-plugin-chunk-split@0.5.0:
-    resolution: {integrity: sha512-pasNKLhH+ICjoCF6HoKKvgmZ1LEPSCIKAa8Lz0ZpMyQC9bLmCLT7UxgKMULewsc9SUw89OX0udsGiIQCtr8wLA==}
-    peerDependencies:
-      vite: ^4 || ^5
 
   vite-plugin-vitepress-auto-index@1.1.16:
     resolution: {integrity: sha512-VpIgiRihGLU5vKbmpE2EGUetfN2AX/IhPeFQb5Nj6BmePseX+EPwd+tjSyqnyjLZH3SFgCPC41RgFrHbJv9kSg==}
@@ -2191,8 +2177,6 @@ snapshots:
 
   entities@4.5.0: {}
 
-  es-module-lexer@1.5.4: {}
-
   esbuild@0.18.20:
     optionalDependencies:
       '@esbuild/android-arm': 0.18.20
@@ -2418,8 +2402,6 @@ snapshots:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
-
-  import-meta-resolve@4.1.0: {}
 
   imurmurhash@0.1.4: {}
 
@@ -2686,13 +2668,6 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
-
-  vite-plugin-chunk-split@0.5.0(vite@4.4.9):
-    dependencies:
-      es-module-lexer: 1.5.4
-      import-meta-resolve: 4.1.0
-      magic-string: 0.30.9
-      vite: 4.4.9
 
   vite-plugin-vitepress-auto-index@1.1.16(eslint@8.57.0)(typescript@5.4.5)(vite@4.4.9)(vitepress@1.1.0(@algolia/client-search@4.23.3)(axios@1.4.0)(postcss@8.4.38)(search-insights@2.13.0)(typescript@5.4.5)):
     dependencies:
