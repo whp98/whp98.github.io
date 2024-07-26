@@ -6,7 +6,7 @@ import AutoSidebar from "vite-plugin-vitepress-auto-sidebar-whp98";
 import AutoIndex from "vite-plugin-vitepress-auto-index";
 const {chunkSplitPlugin} = import("vite-plugin-chunk-split").then(
     e=>{
-        console.log(e)
+        console.log('123',e)
     }
 );
 console.log(chunkSplitPlugin);
