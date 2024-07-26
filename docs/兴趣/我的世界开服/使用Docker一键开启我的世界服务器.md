@@ -89,11 +89,6 @@ docker restart <name>/<id前缀>
 docker run -d -it -v /root/mc114:/data -e VERSION=1.14.4 -e EULA=TRUE -p 25575:25575 -p 25565:25565 --name mc114p itzg/minecraft-server
 ```
 
-![划线指令](./2020-07-04-01-45-42.jpg)
-
-
-
-
 
 修改服务器配置文件或者自定义服务器配置文件
 

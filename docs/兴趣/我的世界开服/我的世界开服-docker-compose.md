@@ -1,5 +1,8 @@
 # 我的世界开服-docker-compose
 
+## 本文参考
+https://docker-minecraft-server.readthedocs.io
+
 ## 配置文件
 
 `docker-compose.yml`
@@ -57,7 +60,8 @@ services:
     `mc121_mods`: 存储模组的卷。
 
 4. 添加一个web rcon控制器，用于控制服务器，里面可以定时执行一些命令来实现个性化管理。
-
+5. 所有服务器相关内容都可以使用环境变量控制
+  `environment` 请参考 https://docker-minecraft-server.readthedocs.io/en/latest/configuration/server-properties/#whitelist-players
 
 你可以使用`docker-compose up -d`命令来启动容器，使用`docker-compose down`命令来停止容器。
 
