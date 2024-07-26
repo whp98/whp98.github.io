@@ -62,6 +62,11 @@ services:
 4. 添加一个web rcon控制器，用于控制服务器，里面可以定时执行一些命令来实现个性化管理。
 5. 所有服务器相关内容都可以使用环境变量控制
   `environment` 请参考 https://docker-minecraft-server.readthedocs.io/en/latest/configuration/server-properties/#whitelist-players
+  
+  其中可以使用这个配置[服务器类型](https://docker-minecraft-server.readthedocs.io/en/latest/types-and-platforms/server-types/bukkit-spigot/)：
+  
+  比如我配置了`TYPE: SPIGOT`然后我把我的插件放在`/mc121_plugins`目录下，就可以直接使用`/mc121_plugins`目录下的插件了，比如我配置了登陆插件`AuthMe-5.6.0-legacy.jar`，插件和mod要和服务器类型一致。
 
-你可以使用`docker-compose up -d`命令来启动容器，使用`docker-compose down`命令来停止容器。
+6. 你可以使用`docker-compose up -d`命令来启动容器，使用`docker-compose down`命令来停止容器。
+
 
