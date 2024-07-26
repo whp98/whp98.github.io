@@ -77,7 +77,8 @@ export default {
                 titleFromFile: true,
                 // sideBarItemsResolved: SidebarItemFilter,
                 sideBarItemsResolved: SidebarItemFilter,
-            })
+            }),
+            chunkSplitPlugin()
         ],
     },
     head: [
