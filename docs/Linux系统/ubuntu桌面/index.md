@@ -1,4 +1,7 @@
 # ubuntu桌面
+- [Ubuntu24.04大内存和多服务优化](./Ubuntu24.04大内存和多服务优化.md)
+- [Ubuntu24.04剪辑软件kdenlive](./ubuntu24.04剪辑软件.md)
+- [ubuntu24.04多JDK版本管理](./ubuntu24.04多JDK版本管理.md)
 - [linux拆分大文本split命令](./linux拆分大文本split命令.md)
 - [ubuntu24.04增加老源的支持](./ubuntu24.04增加老源的支持.md)
 - [ubuntu24.04安装easyconnect之后导致尼扣瑞无法连接](./ubuntu24.04安装easyconnect之后导致尼口瑞无法连接.md)

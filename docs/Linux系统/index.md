@@ -1,8 +1,7 @@
 # Linux系统
-- [ubuntu24.04多JDK版本管理](./ubuntu24.04多JDK版本管理.md)
+- [ubuntu桌面](./ubuntu桌面/)
 - [Linux系统中su-用户和su的区别](./Linux系统中su-用户和su的区别.md)
 - [Linux系统中.bash_rc和.bash_profile的区别](./Linux系统中.bash_rc和.bash_profile的区别.md)
-- [ubuntu桌面](./ubuntu桌面/)
 - [rsync的使用](./rsync的使用.md)
 - [sudo命令免密操作](./sudo命令免密操作.md)
 - [linux系统自动删除垃圾文件](./linux系统自动删除垃圾文件.md)
