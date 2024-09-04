@@ -90,3 +90,18 @@ Conda 和 `venv` 都是用来管理 Python 虚拟环境的工具，但它们有�
 - venv: 适用于只需要管理 Python 版本和包的轻量级项目。
 
 在某些简单的 Python 项目中，`venv` 是可以替代 Conda 的。但如果项目有跨语言需求或者复杂依赖，Conda 则更为合适。
+
+## shell脚本中使用conda
+
+在shell脚本中，可以使用以下命令来使用conda：
+```bash
+#!/bin/bash
+eval "$(conda shell.bash hook)"
+conda activate myenv
+```
+或者
+```bash
+#!/bin/bash
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate myenv
+```
