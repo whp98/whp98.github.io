@@ -1,5 +1,19 @@
 # mysql统一全库字符集和排序规则
 
+## 修改原因
+字符集不统一会导致索引失效
+
+可以通过下面的语句验证是否是字符集和排序规则导致的问题，可以尝试把字段设置一下字符集和排序规则
+
+```sql
+-- 单表
+SELECT * from table_name WHERE field_name collate utf8mb4_0900_ai_ci = '值';
+-- 关联表
+SELECT * from table_name1 A
+  left join table_name2 B on A.id  collate utf8mb4_0900_ai_ci = B.id
+WHERE field_name = '值';
+```
+
 ## 批量修改数据库字符集
 ```sql
 -- 批量修改数据库字符集
