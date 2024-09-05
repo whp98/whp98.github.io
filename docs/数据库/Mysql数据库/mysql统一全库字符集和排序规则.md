@@ -45,13 +45,24 @@ WHERE TABLE_SCHEMA IN (SELECT SCHEMA_NAME
 SELECT CONCAT('ALTER TABLE ', TABLE_SCHEMA, '.', TABLE_NAME, ' MODIFY COLUMN ', COLUMN_NAME, ' ', COLUMN_TYPE,
               ' CHARACTER SET utf8mb4 COLLATE utf8mb4_bin', ' ', IF(IS_NULLABLE = 'NO', 'NOT NULL', 'NULL'),
               IF(ISNULL(COLUMN_DEFAULT), '', CONCAT(' DEFAULT \'', COLUMN_DEFAULT, '\'')),
-              IF(ISNULL(COLUMN_COMMENT), '', CONCAT(' COMMENT \'', COLUMN_COMMENT, '\';'))) AS 'sql_str'
+              IF(ISNULL(COLUMN_COMMENT), '',
+                 CONCAT(' COMMENT \'', replace(COLUMN_COMMENT, '''', '"'), '\';'))) AS 'sql_str'
 FROM information_schema.`COLUMNS`
 WHERE TABLE_SCHEMA IN (SELECT SCHEMA_NAME
                        FROM information_schema.`SCHEMATA`
                        WHERE DEFAULT_CHARACTER_SET_NAME RLIKE 'utf8mb4'
-                         AND SCHEMA_NAME IN ('db_name'))
-  and COLLATION_NAME RLIKE 'utf8mb4';
+                         AND SCHEMA_NAME IN ('db'))
+  and TABLE_NAME in (select TABLE_NAME
+                     from information_schema.`TABLES`
+                     where TABLE_TYPE = "BASE TABLE"
+                       AND TABLE_SCHEMA IN ('db'))
+  and (COLLATION_NAME RLIKE 'utf8mb4_0900_ai_ci' or COLLATION_NAME RLIKE 'utf8_general_ci');
 ```
 
-
+## 有外建的表需要关闭外键约束关闭后修改
+```sql
+SET FOREIGN_KEY_CHECKS=0;
+-- 执行修改
+SET FOREIGN_KEY_CHECKS=1;
+-- 执行完之后，重新开启外键约束
+```
