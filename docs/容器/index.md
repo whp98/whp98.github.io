@@ -1,4 +1,5 @@
 # 容器
+- [ubuntu docker使用nvidia显卡跑ai](./docker使用nvidia显卡跑ai.md)
 - [实用镜像](./实用镜像/)
 - [docker-compose](./docker-compose/)
 - [PhotoPrism使用docker-compose部署](./PhotoPrism使用docker-compose部署.md)
