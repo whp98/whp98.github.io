@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [ubuntu安装nvidia 4060ti驱动](./ubuntu安装nvidia驱动.md)
 - [Ubuntu24.04大内存和多服务优化](./Ubuntu24.04大内存和多服务优化.md)
 - [Ubuntu24.04剪辑软件kdenlive](./ubuntu24.04剪辑软件.md)
 - [ubuntu24.04多JDK版本管理](./ubuntu24.04多JDK版本管理.md)
