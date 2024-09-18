@@ -1,5 +1,7 @@
 //vite.config.js
 import { defineConfig } from "vite";
+import { splitVendorChunkPlugin } from 'vite'
+
 
 export default defineConfig({
     base: "./",
@@ -9,6 +11,7 @@ export default defineConfig({
         disableHostCheck: true,
     },
     plugins: [
+        splitVendorChunkPlugin()
     ],
     assetsInclude: ['**/*.PNG','**/*.JPG']
 });
