@@ -12,7 +12,8 @@
     "dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:preview": "vitepress preview docs",
+    "preview": "vitepress preview docs"
   },
   "devDependencies": {
     "flexsearch": "0.7.31",
