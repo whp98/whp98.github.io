@@ -19,8 +19,7 @@
     "markdown-it": "13.0.1",
     "moment": "2.29.4",
     "vite": "4.4.9",
-    "vitepress": "1.1.0",
-    "vitepress-plugin-search": "1.0.4-alpha.20",
+    "vitepress": "1.3.4",
     "vue": "3.3.4"
   },
   "dependencies": {
@@ -30,6 +29,6 @@
     "vite-plugin-vitepress-auto-sidebar-whp98": "^1.5.1"
   },
   "engines": {
-    "node": ">16.20.0 <17"
+    "node": ">=18.0.0"
   }
 }

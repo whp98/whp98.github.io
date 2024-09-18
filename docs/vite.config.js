@@ -1,5 +1,4 @@
 //vite.config.js
-import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -10,11 +9,6 @@ export default defineConfig({
         disableHostCheck: true,
     },
     plugins: [
-        SearchPlugin({
-            previewLength: 40,
-            encode: false,
-            tokenize: "full", // 解决汉字不能多个输入
-        }),
     ],
     assetsInclude: ['**/*.PNG','**/*.JPG']
 });
