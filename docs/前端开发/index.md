@@ -1,4 +1,5 @@
-# Web开发
+# 前端开发
+- [用nvm管理node版本](./用nvm管理node版本.md)
 - [npm设置查看镜像](./npm设置查看镜像.md)
 - [nrm前端镜像管理](./nrm前端镜像管理.md)
 - [yrm前端镜像管理](./yrm前端镜像管理.md)
@@ -11,5 +12,10 @@
 - [VUE-devServer-看不到源码处理](./VUE-devServer-看不到源码处理.md)
 - [npm、npx、pnmp、cnpm、yarn都是什么](./npm、npx、pnmp、cnpm、yarn都是什么.md)
 - [vue项目加快启动速度](./vue项目加快启动速度.md)
+- [npm和yarn和代理设置和设置淘宝镜像源](./npm和yarn和代理设置和设置淘宝镜像源.md)
+- [Yarn换源文件可以放到项目目录下](./Yarn换源文件可以放到项目目录下.md)
+- [开源electron模板应用](./开源electron模板应用.md)
+- [Electron项目未知断点异常问题解决](./Electron项目未知断点异常问题解决/Electron项目未知断点异常问题解决.md)
 - [uni-app相关](./uni-app相关/)
+- [nodejs介绍](./nodejs介绍.md)
 - [哔哩哔哩批量取关脚本](./哔哩哔哩批量取关脚本.md)
