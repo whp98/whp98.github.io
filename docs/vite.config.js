@@ -9,5 +9,8 @@ export default defineConfig({
     },
     plugins: [
     ],
-    assetsInclude: ['**/*.PNG','**/*.JPG']
+    assetsInclude: ['**/*.PNG','**/*.JPG'],
+    build: {
+        chunkSizeWarningLimit: 1024
+    }
 });
