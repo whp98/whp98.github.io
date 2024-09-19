@@ -11,6 +11,6 @@ export default defineConfig({
     ],
     assetsInclude: ['**/*.PNG','**/*.JPG'],
     build: {
-        chunkSizeWarningLimit: 1024
+        chunkSizeWarningLimit: 10240
     }
 });
