@@ -1,4 +1,5 @@
 # 容器技术
+- [我的世界开服](./我的世界开服/)
 - [docker-compose中如何访问宿主机的网络](./docker-compose中如何访问宿主机的网络.md)
 - [管理docker网络地址范围](./管理docker网络.md)
 - [ubuntu docker使用nvidia显卡跑ai](./docker使用nvidia显卡跑ai.md)
