@@ -178,11 +178,14 @@ export default {
     },
     nav: [
       { text: "主页", link: "/" },
-      { text: "Java", link: "/Java语言相关/" },
+      { text: "后端开发", link: "/后端开发/" },
       { text: "前端开发", link: "/前端开发/" },
-      { text: "Android", link: "/安卓/" },
+      { text: "安卓开发", link: "/安卓开发/" },
+      { text: "兴趣", link: "/兴趣/" },
       { text: "数据库", link: "/数据库/" },
       { text: "Git", link: "/Git版本管理/" },
+      { text: "Python语言", link: "/Python语言/" },
+      { text: "Rust语言", link: "/Rust语言/" },
       {
         text: "操作系统",
         items: [
