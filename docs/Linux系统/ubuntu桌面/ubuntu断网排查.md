@@ -45,7 +45,7 @@ sudo systemctl restart NetworkManager
 https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/2084234
 
 社区回复说会修复这个问题，是netplan的问题，NetworkManager支持但是netplan不支持`stable-ssid`，netplan的配置文件格式有误。
-可以通过这个命令快速验证同样的问题
+可以通过这个命令快速验证同样的问题,输出报错就是netplan配置不对
 ```shell
 sudo netplan get
 ```
