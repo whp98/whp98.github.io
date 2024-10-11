@@ -40,9 +40,15 @@ sudo systemctl restart NetworkManager
 10月 11 15:18:15 mypc NetworkManager[45923]: <info>  [1728631095.2762] manager: (lo): new Loopback device (/org/freedesktop/NetworkManager/Devices/1)
 10月 11 15:18:15 mypc NetworkManager[45923]: <info>  [1728631095.2766] device (br-0ad233ffab7c): carrier: link connected
 ```
-这个应该是bug 
+这个是bug 
 
 https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/2084234
+
+社区回复说会修复这个问题，是netplan的问题，NetworkManager支持但是netplan不支持`stable-ssid`，netplan的配置文件格式有误。
+可以通过这个命令快速验证同样的问题
+```shell
+sudo netplan get
+```
 
 日志分析：查看日志中是否有错误信息，或者提示信息。
 
