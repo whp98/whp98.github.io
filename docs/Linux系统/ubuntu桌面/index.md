@@ -1,4 +1,6 @@
 # ubuntu桌面
+- [ubuntu卸载nautils](./ubuntu卸载nautils.md)
+- [ubuntu切换kde](./ubuntu切换kde.md)
 - [ubuntu24.04断网排查和修复](./ubuntu断网排查.md)
 - [ubuntu安装nvidia 4060ti驱动](./ubuntu安装nvidia驱动.md)
 - [Ubuntu24.04大内存和多服务优化](./Ubuntu24.04大内存和多服务优化.md)

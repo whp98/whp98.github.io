@@ -1,4 +1,5 @@
 # Python语言
+- [python输出没有缓存](./python输出没有缓存.md)
 - [anaconda使用](./anaconda使用.md)
 - [pip使用](./pip使用.md)
 - [使用mark-pdf转markdown](./使用mark-pdf转markdown.md)
