@@ -1,4 +1,5 @@
 # 目录
+- [About](./public/public.md)
 - [奇思妙想](./奇思妙想/)
 - [AI相关](./AI相关/)
 - [后端开发](./后端开发/)
@@ -19,7 +20,6 @@
 - [数据库](./数据库/)
 - [系统架构](./系统架构/)
 - [Windows系统](./Windows系统/)
-- [About](./public/public.md)
 - [Rust语言](./Rust语言/)
 - [算法面试](./算法面试/)
 - [VitePress 博客](./Readme.md)
