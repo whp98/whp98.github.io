@@ -1,5 +1,6 @@
 # Linux系统
 - [ubuntu桌面](./ubuntu桌面/)
+- [linux centos系统pyinstaller打包环境准备](./linux系统pyinstaller打包环境准备.md)
 - [Linux系统中su-用户和su的区别](./Linux系统中su-用户和su的区别.md)
 - [Linux系统中.bash_rc和.bash_profile的区别](./Linux系统中.bash_rc和.bash_profile的区别.md)
 - [rsync的使用](./rsync的使用.md)

@@ -40,6 +40,13 @@ sudo apt install kde-plasma-desktop
 
 安装完毕之后重启系统即可使用。
 
+## 其他必须软件
+
+1.压缩工具ark
+```shell
+sudo apt install ark
+```
+
 
 ## 评价
 kde解决了nautils的问题，文件保存选择路径慢的问题。
