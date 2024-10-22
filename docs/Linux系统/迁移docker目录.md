@@ -41,3 +41,20 @@ sudo vim /etc/docker/daemon.json
 sudo systemctl daemon-reload 
 sudo systemctl restart docker
 ```
+
+6.验证结果
+
+```shell
+docker info | grep root
+docker ps
+```
+
+```shell
+ Docker Root Dir: /home/docker_lib
+```
+
+7.删除旧目录
+
+```shell
+sudo rm /var/lib/docker/ -rf
+```
