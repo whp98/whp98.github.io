@@ -1,7 +1,7 @@
 # 目录
+- [Linux系统](./Linux系统/)
 - [开发工具技巧](./开发工具技巧/)
 - [SVN版本管理](./SVN版本管理/)
-- [Linux系统](./Linux系统/)
 - [Python语言](./Python语言/)
 - [社会认知](./社会认知/)
 - [About](./public/public.md)
