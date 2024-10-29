@@ -1,4 +1,5 @@
 # Linux系统
+- [debian系暂停内核更新](./debian系暂停内核更新.md)
 - [迁移docker目录/var/lib/docker/](./迁移docker目录.md)
 - [ubuntu桌面](./ubuntu桌面/)
 - [linux centos系统pyinstaller打包环境准备](./linux系统pyinstaller打包环境准备.md)
