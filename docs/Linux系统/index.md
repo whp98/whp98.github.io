@@ -1,4 +1,5 @@
 # Linux系统
+- [SSH设置远程电脑免密连接脚本](./SSH设置远程电脑免密连接.md)
 - [debian系暂停内核更新](./debian系暂停内核更新.md)
 - [迁移docker目录/var/lib/docker/](./迁移docker目录.md)
 - [ubuntu桌面](./ubuntu桌面/)
