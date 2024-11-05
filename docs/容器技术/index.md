@@ -1,4 +1,5 @@
 # 容器技术
+- [docker-compose设置拉取策略](./docker-compose设置拉取策略.md)
 - [我的世界开服](./我的世界开服/)
 - [docker-compose中如何访问宿主机的网络](./docker-compose中如何访问宿主机的网络.md)
 - [管理docker网络地址范围](./管理docker网络.md)
