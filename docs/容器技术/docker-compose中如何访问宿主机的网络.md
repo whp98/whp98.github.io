@@ -1,4 +1,4 @@
-# docker-compose中如何访问宿主机的网络
+# docker-compose中如何访问宿主机的网络（设置代理）
 
 ## 对于需要访问宿主机器的容器
 可以看如下的应用配置：
@@ -8,6 +8,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
+      - no_proxy=localhost,127.0.0.1,host.docker.internal
       - https_proxy=http://host.docker.internal:20003
       - http_proxy=http://host.docker.internal:20003
 ```

@@ -88,6 +88,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
+      - no_proxy=localhost,127.0.0.1,host.docker.internal
       - https_proxy=http://host.docker.internal:20003
       - http_proxy=http://host.docker.internal:20003
     runtime: nvidia
