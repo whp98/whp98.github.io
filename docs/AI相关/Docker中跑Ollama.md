@@ -15,7 +15,9 @@
    https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
    
    https://docs.docker.com/engine/containers/resource_constraints/#gpu
+ 
  4. 安装vscode
+   
  5. 安装vscode docker 插件
 
 ## 二、准备docker-compose文件

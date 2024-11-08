@@ -1,12 +1,9 @@
-# ubuntu docker使用nvidia显卡跑ai
+# ubuntu docker使用nvidia显卡跑comfyui
 
 
 ## 参考文档
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
-
-
-## 安装
 
 
 ### apt安装nvidia-container-toolkit
@@ -89,8 +86,9 @@ services:
       - "host.docker.internal:host-gateway"
     environment:
       - no_proxy=localhost,127.0.0.1,host.docker.internal
-      - https_proxy=http://host.docker.internal:20003
-      - http_proxy=http://host.docker.internal:20003
+      # 可替换为自己的代理地址
+      - https_proxy=http://host.docker.internal:7890
+      - http_proxy=http://host.docker.internal:7890
     runtime: nvidia
     deploy:
       resources:
