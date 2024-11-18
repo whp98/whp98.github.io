@@ -1,8 +1,8 @@
 # Linux系统
+- [ubuntu桌面](./ubuntu桌面/)
 - [SSH设置远程电脑免密连接脚本](./SSH设置远程电脑免密连接.md)
 - [debian系暂停内核更新](./debian系暂停内核更新.md)
 - [迁移docker目录/var/lib/docker/](./迁移docker目录.md)
-- [ubuntu桌面](./ubuntu桌面/)
 - [linux centos系统pyinstaller打包环境准备](./linux系统pyinstaller打包环境准备.md)
 - [Linux系统中su-用户和su的区别](./Linux系统中su-用户和su的区别.md)
 - [Linux系统中.bash_rc和.bash_profile的区别](./Linux系统中.bash_rc和.bash_profile的区别.md)

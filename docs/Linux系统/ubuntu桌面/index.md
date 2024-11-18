@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [ubuntu24.04-zip中文报错解决](./ubuntu24.04-zip中文报错解决.md)
 - [ubuntu gnome切换kde](./ubuntu切换kde.md)
 - [ubuntu卸载nautils](./ubuntu卸载nautils.md)
 - [ubuntu24.04断网排查和修复](./ubuntu断网排查.md)
