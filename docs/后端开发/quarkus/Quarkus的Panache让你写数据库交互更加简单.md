@@ -6,6 +6,7 @@ https://cn.quarkus.io/guides/hibernate-orm-panache
 
 ## 如何简单使用
 
+
 ### 1. 创建实体类
 
 ```java
@@ -41,3 +42,18 @@ return Result.ok(all.firstResult());
 ```java
 PanacheQuery<Book> all = Book.findAll(Sort.by("id", Sort.Direction.Descending)).page(dto.getCurrentPage() - 1, dto.getPageSize());
 ```
+
+### 5.保存数据
+```java
+Book book = new Book();
+book.title = "Java";
+book.author = "xxx";
+book.persist();
+```
+### 6.删除数据
+
+```java
+Book book = Book.findById(1L);
+book.delete();
+```
+
