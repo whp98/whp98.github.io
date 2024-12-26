@@ -1,4 +1,5 @@
 # 容器技术
+- [镜像输出内容乱码解决](./镜像输出内容乱码解决.md)
 - [ubuntu docker使用nvidia显卡跑ai](./docker使用nvidia显卡跑ai.md)
 - [docker-compose中如何访问宿主机的网络（设置代理）](./docker-compose中如何访问宿主机的网络.md)
 - [docker-compose设置拉取策略](./docker-compose设置拉取策略.md)
