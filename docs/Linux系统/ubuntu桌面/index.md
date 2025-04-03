@@ -1,4 +1,5 @@
 # ubuntu桌面
+- [ubuntu配置打印机](./ubuntu配置打印机.md)
 - [ubuntu24.04-zip中文报错解决](./ubuntu24.04-zip中文报错解决.md)
 - [ubuntu 如何在网络连接变化后自动执行脚本](./ubuntu如何在网络连接变化后自动执行脚本.md)
 - [ubuntu gnome切换kde](./ubuntu切换kde.md)
