@@ -189,6 +189,10 @@ export DORIS_QUICK_START_VERSION=2.1.7
 
 docker-compose up -d
 ```
+启动前关闭swap
+```bash
+swapoff -a
+```
 
 启动脚本执行后，会启动3个FE节点，3个BE节点
 ## 使用

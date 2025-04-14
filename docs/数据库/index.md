@@ -1,4 +1,6 @@
 # 数据库
+- [seatunnel](./seatunnel/)
+- [达梦8](./达梦8/)
 - [Doris](./Doris/)
 - [Mysql数据库](./Mysql数据库/)
 - [Oracle数据库](./Oracle数据库/)
