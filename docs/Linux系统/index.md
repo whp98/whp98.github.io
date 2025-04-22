@@ -1,4 +1,5 @@
 # Linux系统
+- [Linux一键换源](./Linux一键换源.md)
 - [ubuntu桌面](./ubuntu桌面/)
 - [SSH设置远程电脑免密连接脚本](./SSH设置远程电脑免密连接.md)
 - [debian系暂停内核更新](./debian系暂停内核更新.md)
@@ -27,4 +28,3 @@
 - [记录服务器升级失败](./记录服务器升级失败.md)
 - [linux服务器迁移](./linux-server-move-place.md)
 - [rustdesk服务端搭建](./rustdesk服务端搭建.md)
-- [Linux一键换源](./Linux一键换源.md)

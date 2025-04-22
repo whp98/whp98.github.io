@@ -5,6 +5,11 @@
 具体最新脚本请参考上面的开源项目。
 
 ## Linux一键换源
+
+```bash
+bash <(curl -sSL https://linuxmirrors.cn/main.sh)
+```
+
 ```bash
 bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
 
