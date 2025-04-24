@@ -1,4 +1,5 @@
 # Linux系统
+- [kylin-v10安装docker和docker-compose](./kylin-v10安装docker和docker-compose.md)
 - [Linux一键换源](./Linux一键换源.md)
 - [ubuntu桌面](./ubuntu桌面/)
 - [SSH设置远程电脑免密连接脚本](./SSH设置远程电脑免密连接.md)
