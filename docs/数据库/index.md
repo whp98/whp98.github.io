@@ -1,4 +1,5 @@
 # 数据库
+- [Duckdb](./Duckdb/)
 - [seatunnel](./seatunnel/)
 - [达梦8](./达梦8/)
 - [Doris](./Doris/)
