@@ -1,5 +1,5 @@
 # kylin-v10安装docker和docker-compose
-
+> 这种方法仅适用于kylin-v10，其他系统请使用包管理器安装
 ## 预先检查下linux上是否有docker和docker-compose还有podman
 
 ```bash
