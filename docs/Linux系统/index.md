@@ -1,7 +1,7 @@
 # Linux系统
+- [ubuntu桌面](./ubuntu桌面/)
 - [kylin-v10安装docker和docker-compose](./kylin-v10安装docker和docker-compose.md)
 - [Linux一键换源](./Linux一键换源.md)
-- [ubuntu桌面](./ubuntu桌面/)
 - [SSH设置远程电脑免密连接脚本](./SSH设置远程电脑免密连接.md)
 - [debian系暂停内核更新](./debian系暂停内核更新.md)
 - [迁移docker目录/var/lib/docker/](./迁移docker目录.md)
