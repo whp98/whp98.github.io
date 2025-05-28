@@ -1,4 +1,6 @@
 # Linux系统
+- [nginx编译](./nginx编译.md)
+- [linux新建用户和组](./linux新建用户和组.md)
 - [ubuntu桌面](./ubuntu桌面/)
 - [kylin-v10安装docker和docker-compose](./kylin-v10安装docker和docker-compose.md)
 - [Linux一键换源](./Linux一键换源.md)
