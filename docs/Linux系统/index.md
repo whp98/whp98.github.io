@@ -1,4 +1,5 @@
 # Linux系统
+- [liunx的sudo环境变量的传递](./liunx的sudo环境变量的传递.md)
 - [nginx编译](./nginx编译.md)
 - [linux新建用户和组](./linux新建用户和组.md)
 - [ubuntu桌面](./ubuntu桌面/)
