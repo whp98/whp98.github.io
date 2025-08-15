@@ -1,4 +1,6 @@
 # Linux系统
+- [flatpak安装常用软件](./flatpak安装常用软件.md)
+- [evolution邮件无法启动](./evolution邮件无法启动.md)
 - [liunx的sudo环境变量的传递](./liunx的sudo环境变量的传递.md)
 - [nginx编译](./nginx编译.md)
 - [linux新建用户和组](./linux新建用户和组.md)
