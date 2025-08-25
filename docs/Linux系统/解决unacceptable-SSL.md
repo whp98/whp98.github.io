@@ -1,10 +1,9 @@
 # 解决unacceptable-SSL
 
 ## 分析原因
-手工删除证书之后需要更新证书缓存
-```bash
-sudo update-ca-certificates
-```
+
+应该是我手动删除了/etc/ssl/certs/ca-certificates.crt导致的
+
 ## 重新配置
 ```bash
 dpkg -s ca-certificates
