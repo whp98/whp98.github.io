@@ -1,5 +1,5 @@
 # Linux系统
-- [解决unacceptable-SSL](./解决unacceptable-SSL.md)
+- [解决Linux系统中的SSL证书错误 (Unacceptable SSL certificate)](./解决unacceptable-SSL.md)
 - [flatpak安装常用软件](./flatpak安装常用软件.md)
 - [evolution邮件无法启动](./evolution邮件无法启动.md)
 - [liunx的sudo环境变量的传递](./liunx的sudo环境变量的传递.md)
