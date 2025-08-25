@@ -1,4 +1,5 @@
 # Linux系统
+- [unacceptable-SSL](./unacceptable-SSL.md)
 - [flatpak安装常用软件](./flatpak安装常用软件.md)
 - [evolution邮件无法启动](./evolution邮件无法启动.md)
 - [liunx的sudo环境变量的传递](./liunx的sudo环境变量的传递.md)
