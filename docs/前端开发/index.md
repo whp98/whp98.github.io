@@ -1,4 +1,5 @@
 # 前端开发
+- [windows-vue-node支持环境变量](./windows-vue-node支持环境变量.md)
 - [用nvm管理node版本](./用nvm管理node版本.md)
 - [npm设置查看镜像](./npm设置查看镜像.md)
 - [nrm前端镜像管理](./nrm前端镜像管理.md)
