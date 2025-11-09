@@ -1,4 +1,5 @@
 # 容器技术
+- [一个命令统计docker-compose内存](./一个命令统计docker-compose内存.md)
 - [docker清理没用的垃圾](./docker清理没用的垃圾.md)
 - [镜像输出内容乱码解决](./镜像输出内容乱码解决.md)
 - [ubuntu docker使用nvidia显卡跑ai](./docker使用nvidia显卡跑ai.md)
