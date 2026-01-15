@@ -1,4 +1,5 @@
 # Linux系统
+- [ubuntu升级bios之后英伟达显卡看不到了](./ubuntu升级bios之后英伟达显卡看不到了.md)
 - [Linux-X570主板-KDE全面温度监控](./Linux-X570主板-KDE全面温度监控.md)
 - [解决Linux系统中的SSL证书错误 (Unacceptable SSL certificate)](./解决unacceptable-SSL.md)
 - [flatpak安装常用软件](./flatpak安装常用软件.md)
