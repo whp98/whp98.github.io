@@ -1,4 +1,5 @@
 # Python语言
+- [ubuntu24.04-python连接oracle配置](./ubuntu24.04-python连接oracle配置.md)
 - [python输出没有缓存](./python输出没有缓存.md)
 - [anaconda使用](./anaconda使用.md)
 - [pip使用](./pip使用.md)
