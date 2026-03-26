@@ -1,4 +1,7 @@
 # Linux系统
+- [rhel系列dnf安装docker组件 ](./rhel系列dnf安装docker组件.md)
+- [oracle云使用root用户登陆](./oracle云使用root用户登陆.md)
+- [ubuntu安装docker](./ubuntu安装docker.md)
 - [KDE禁止休眠和切换用户按钮](./KDE禁止休眠和切换用户按钮.md)
 - [ubuntu升级bios之后英伟达显卡看不到了](./ubuntu升级bios之后英伟达显卡看不到了.md)
 - [Linux-X570主板-KDE全面温度监控](./Linux-X570主板-KDE全面温度监控.md)
