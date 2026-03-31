@@ -1,5 +1,5 @@
 # Linux系统
-- [1c1g Linux 小机器优化](./1c1g Linux 小机器优化.md)
+- [1c1g-Linux小机器优化](./1c1g-Linux小机器优化.md)
 - [rhel关闭selinux](./rhel关闭selinux.md)
 - [rhel系列dnf安装docker组件 ](./rhel系列dnf安装docker组件.md)
 - [oracle云使用root用户登陆](./oracle云使用root用户登陆.md)

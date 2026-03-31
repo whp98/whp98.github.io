@@ -1,4 +1,4 @@
-# 1c1g Linux 小机器优化
+# 1c1g-Linux小机器优化
 
 ## 检查SAWP并新增
 ```bash
