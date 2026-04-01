@@ -1,4 +1,5 @@
 # Git版本管理
+- [Git删除全部提交记录-孤儿分支](./Git删除全部提交记录-孤儿分支.md)
 - [使用网页小游戏学习git](./使用网页小游戏学习git.md)
 - [gitlab的cicd部署项目](./gitlab的cicd部署项目.md)
 - [Git设置代理](./Git设置代理.md)
