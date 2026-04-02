@@ -78,24 +78,24 @@ export default {
   port: 34561,
   appearance: "dark",
   vite: {
-    // plugins: [
-    //   {
-    //     ...AutoIndex({}),
-    //     enforce: "pre",
-    //   },
-    //   // add plugin
-    //   AutoSidebar({
-    //     // You can also set options to adjust sidebar data
-    //     // see option document below
-    //     // ignoreList: ['index.md'],
-    //     ignoreIndexItem: false,
-    //     prefix: ".",
-    //     collapsed: false,
-    //     titleFromFile: true,
-    //     // sideBarItemsResolved: SidebarItemFilter,
-    //     sideBarItemsResolved: SidebarItemFilter,
-    //   }),
-    // ],
+    plugins: [
+      {
+        ...AutoIndex({}),
+        enforce: "pre",
+      },
+      // add plugin
+      AutoSidebar({
+        // You can also set options to adjust sidebar data
+        // see option document below
+        // ignoreList: ['index.md'],
+        ignoreIndexItem: false,
+        prefix: ".",
+        collapsed: false,
+        titleFromFile: true,
+        // sideBarItemsResolved: SidebarItemFilter,
+        sideBarItemsResolved: SidebarItemFilter,
+      }),
+    ],
   },
   head: [
     [
