@@ -1,4 +1,5 @@
 # Linux系统
+- [KDE桌面长时间运行出现黑窗口的解决方案](./KDE桌面长时间运行出现黑窗口的解决方案.md)
 - [1c1g-Linux小机器优化](./1c1g-Linux小机器优化.md)
 - [rhel关闭selinux](./rhel关闭selinux.md)
 - [rhel系列dnf安装docker组件 ](./rhel系列dnf安装docker组件.md)
