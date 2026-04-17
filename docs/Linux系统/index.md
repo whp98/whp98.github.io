@@ -1,4 +1,5 @@
 # Linux系统
+- [Linux上钉钉很卡的优化方案](./Linux上钉钉很卡的优化方案.md)
 - [KDE桌面长时间运行出现黑窗口的解决方案](./KDE桌面长时间运行出现黑窗口的解决方案.md)
 - [1c1g-Linux小机器优化](./1c1g-Linux小机器优化.md)
 - [rhel关闭selinux](./rhel关闭selinux.md)
