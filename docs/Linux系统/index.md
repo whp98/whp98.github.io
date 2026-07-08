@@ -1,4 +1,5 @@
 # Linux系统
+- [SELinux](./SELinux.md)
 - [ubuntu实用脚本-软件更新脚本](./ubuntu实用脚本-软件更新脚本.md)
 - [MC卡到爆炸优化操作:linux-环境变量-DRI_PRIME是啥](./MC卡到爆炸优化操作linux-环境变量-DRI_PRIME.md)
 - [KDE桌面长时间运行出现黑窗口的解决方案](./KDE桌面长时间运行出现黑窗口的解决方案.md)
