@@ -1,4 +1,5 @@
 # Linux系统
+- [彻底卸载snap的脚本](./彻底卸载snap的脚本.md)
 - [flatpak-ubuntu安装配置](./flatpak-ubuntu安装配置.md)
 - [SELinux](./SELinux.md)
 - [ubuntu实用脚本-软件更新脚本](./ubuntu实用脚本-软件更新脚本.md)
