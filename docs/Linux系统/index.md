@@ -1,4 +1,5 @@
 # Linux系统
+- [flatpak-ubuntu安装配置](./flatpak-ubuntu安装配置.md)
 - [SELinux](./SELinux.md)
 - [ubuntu实用脚本-软件更新脚本](./ubuntu实用脚本-软件更新脚本.md)
 - [MC卡到爆炸优化操作:linux-环境变量-DRI_PRIME是啥](./MC卡到爆炸优化操作linux-环境变量-DRI_PRIME.md)
