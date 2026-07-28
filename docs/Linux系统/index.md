@@ -1,4 +1,5 @@
 # Linux系统
+- [ubuntu-kitty终端配置](./ubuntu-kitty终端配置.md)
 - [彻底卸载snap的脚本](./彻底卸载snap的脚本.md)
 - [flatpak-ubuntu安装配置](./flatpak-ubuntu安装配置.md)
 - [SELinux](./SELinux.md)
