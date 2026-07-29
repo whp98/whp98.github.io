@@ -10,6 +10,19 @@ sudo apt install kitty
 ```bash
 sudo apt install fonts-jetbrains-mono
 ```
+## 配置输入法使用ibus
+
+```bash
+mkdir -p /home/w/.config/environment.d/
+code /home/w/.config/environment.d/glfw.conf
+```
+
+输入
+
+```conf
+GLFW_IM_MODULE=ibus
+```
+
 ## 修改配置
 
 `code ~/.config/kitty/kitty.conf`
