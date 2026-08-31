@@ -18,7 +18,7 @@ logback-spring.xml
 ## 打印特定模块的debug日志和durid的完整sql
 
 
-durid配置: https://www.jsfr.work/Java语言相关/使用durid打印可执行sql.html
+durid配置: https://www.261020.xyz/Java语言相关/使用durid打印可执行sql.html
 
 log4j.xml
 ```xml

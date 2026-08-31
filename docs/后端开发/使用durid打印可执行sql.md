@@ -14,7 +14,7 @@
 注意我用的是toml格式配置
 
 相关文章
-https://www.jsfr.work/Java语言相关/Spring/use-toml-config-in-spring-boot.html
+https://www.261020.xyz/Java语言相关/Spring/use-toml-config-in-spring-boot.html
 
 ```toml
 [spring.datasource.druid]

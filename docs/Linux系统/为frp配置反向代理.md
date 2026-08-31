@@ -1,7 +1,7 @@
 # 为frp配置反向代理
 
 
-目的访问`https://www.jsfr.work/frp/static/#/proxies/tcp`即可使用frp面板。
+目的访问`https://www.261020.xyz/frp/static/#/proxies/tcp`即可使用frp面板。
 
 
 重要的一步是

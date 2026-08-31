@@ -323,7 +323,7 @@ tagWordArr.push({'text': tag.name, 'weight': tag.length, 'link': decodeURI(tag.p
  
 然后你访问
 
-<http://ali.jsfr.work/favicon-128.jpg>
+<http://ali.261020.xyz/favicon-128.jpg>
 
 就会发现显示了图片而不是下载
 
@@ -386,7 +386,7 @@ accessKeySecret: XXXXXXXXXXXXXXXXXXXXXXXXX
 
 这时候你就可以访问你的网站了
 
-<http://ali.jsfr.work/>
+<http://ali.261020.xyz/>
 
 但是这里不是HTTPS访问，这里需要通过在域名管理哪里上传你的证书就可以开启HTTPS访问了
 

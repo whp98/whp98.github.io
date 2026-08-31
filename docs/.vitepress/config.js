@@ -205,7 +205,7 @@ export default {
   buildEnd: async ({ outDir }) => {
     console.log("out", outDir);
     const sitemap = new SitemapStream({
-      hostname: "https://blog.jsfr.work/",
+      hostname: "https://blog.261020.xyz/",
     });
     const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
     sitemap.pipe(writeStream);

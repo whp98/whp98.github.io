@@ -1,4 +1,5 @@
 # Linux系统
+- [为frp配置反向代理](./为frp配置反向代理.md)
 - [oracle云ubuntu-debian清除内部iptables拦截规则](./oracle云ubuntu-debian清除内部iptables拦截规则.md)
 - [ubuntu-kitty终端配置](./ubuntu-kitty终端配置.md)
 - [彻底卸载snap的脚本](./彻底卸载snap的脚本.md)
@@ -40,7 +41,6 @@
 - [阿里云ssh公钥连接不上关闭严格模式](./阿里云ssh公钥连接不上关闭严格模式/阿里云ssh公钥连接不上关闭严格模式.md)
 - [解决telegram-bot-api缺少libso](./解决telegram-bot-api缺少libso.md)
 - [给服务器添加公钥登录](./给服务器添加公钥登录.md)
-- [为frp配置反向代理](./为frp配置反向代理.md)
 - [Ngrok使用方式](./Ngrok使用方式.md)
 - [WSL安装CODE-SERVER](./WSL安装CODE-SERVER.md)
 - [Centos使用](./Centos使用.md)

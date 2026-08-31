@@ -1,4 +1,5 @@
 # 后端开发
+- [引入durid连接池并配置完整sql打印](./使用durid打印可执行sql.md)
 - [几个OPEN-JDK下载](./几个OPEN-JDK下载.md)
 - [java-ssl证书设置](./java-ssl证书设置.md)
 - [spring程序挂掉分析(过多springSessionRedisMessageListenerContainer)](./spring程序挂掉分析(过多springSessionRedisMessageListenerContainer).md)
@@ -10,7 +11,6 @@
 - [存储100亿密码rockyou2024](./存储100亿密码rockyou2024.md)
 - [Nginx](./Nginx/)
 - [j2ee](./j2ee/)
-- [引入durid连接池并配置完整sql打印](./使用durid打印可执行sql.md)
 - [Java流式转换超大文本的字符编码](./Java流式转换超大文本的字符编码.md)
 - [代码质量扫描](./代码质量扫描/)
 - [IDEA 持续高CPU占用20%-30%](./Idea版本推荐.md)

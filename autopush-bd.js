@@ -6,10 +6,10 @@ const path = require("path");
 const config = {
     postDirLinux: 'docs\.vitepress\dist',
     postDirWin: 'docs/.vitepress/dist',
-    basePostUrl: 'https://blog.jsfr.work',
-    targetHost: 'http://data.zz.baidu.com/urls?site=https://blog.jsfr.work&token=hvnE5Z5hOYPIKkyo',
+    basePostUrl: 'https://blog.261020.xyz',
+    targetHost: 'http://data.zz.baidu.com/urls?site=https://blog.261020.xyz&token=hvnE5Z5hOYPIKkyo',
     fixedUrls: [
-        'https://blog.jsfr.work'
+        'https://blog.261020.xyz'
     ]
 };
 
@@ -65,5 +65,5 @@ async function commitData(data) {
     const urls = collectUrls();
     const data = concatUrls(urls);
     console.log(data)
-    await commitData(data);
+    //await commitData(data);
 })();
