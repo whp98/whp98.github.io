@@ -1,4 +1,5 @@
 # Linux系统
+- [解决浏览器经常error-network-changed报错](./解决浏览器经常error-network-changed报错.md)
 - [为frp配置反向代理](./为frp配置反向代理.md)
 - [oracle云ubuntu-debian清除内部iptables拦截规则](./oracle云ubuntu-debian清除内部iptables拦截规则.md)
 - [ubuntu-kitty终端配置](./ubuntu-kitty终端配置.md)
