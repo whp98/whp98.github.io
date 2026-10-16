@@ -1,4 +1,5 @@
 # Linux系统
+- [Android Studio 模拟器启动崩溃（Exit Code 139 / SIGSEGV）排查与解决方案](./ANDROID_EMULATOR_CRASH_SOLUTION.md)
 - [解决浏览器经常error-network-changed报错](./解决浏览器经常error-network-changed报错.md)
 - [为frp配置反向代理](./为frp配置反向代理.md)
 - [oracle云ubuntu-debian清除内部iptables拦截规则](./oracle云ubuntu-debian清除内部iptables拦截规则.md)
