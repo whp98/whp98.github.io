@@ -1,4 +1,5 @@
 # Linux系统
+- [Linux 桌面应用界面变大:原因排查与修复](./LINUX桌面应用界面变大原因和修复.md)
 - [Android Studio 模拟器启动崩溃（Exit Code 139 / SIGSEGV）排查与解决方案](./ANDROID_EMULATOR_CRASH_SOLUTION.md)
 - [解决浏览器经常error-network-changed报错](./解决浏览器经常error-network-changed报错.md)
 - [为frp配置反向代理](./为frp配置反向代理.md)
