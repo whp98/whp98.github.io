@@ -1,25 +1,22 @@
-import { createWriteStream } from "node:fs";
-import { resolve } from "node:path";
-import { SitemapStream } from "sitemap";
-import moment from "moment/moment";
+import { defineConfig } from "vitepress";
 import AutoSidebar from "vite-plugin-vitepress-auto-sidebar-whp98";
 import AutoIndex from "vite-plugin-vitepress-auto-index";
-const links = [];
-const currentYear = moment().format("YYYY");
+
+const currentYear = new Date().getFullYear();
 
 const SidebarItemFilter = (SidebarItemArr) => {
   const res = SidebarItemArr.filter((e) => {
     const flag1 = e.text !== "LICENSE";
-    const flag2 = e.text.indexOf(".") === -1;
+    const flag2 = !/\.(md|txt|json|yml|yaml|png|jpg|jpeg|gif|svg|js|ts|css|html)$/i.test(
+      e.text
+    );
     return flag1 && flag2;
   });
   res.forEach((e) => {
     if (e.text === "README" || e.text === "index") {
       e.text = "内容";
     }
-    return e;
   });
-  //console.log(res);
   for (let index = 0; index < res.length; index++) {
     const element = res[index];
     if (element.items && element.items.length === 1) {
@@ -70,29 +67,35 @@ const SidebarItemFilter = (SidebarItemArr) => {
   return res;
 };
 
-export default {
+export default defineConfig({
   lang: "zh-CN",
   title: "技术凡人",
   description: "技术凡人的个人站",
   base: "/",
-  port: 34561,
   appearance: "dark",
+  lastUpdated: true,
+  sitemap: {
+    hostname: "https://blog.261020.xyz",
+  },
+  ignoreDeadLinks: [/^https?:\/\/localhost/, /^\.\/public\/index$/],
   vite: {
+    assetsInclude: ["**/*.PNG", "**/*.JPG"],
+    build: {
+      chunkSizeWarningLimit: 10240,
+    },
+    server: {
+      port: 34561,
+    },
     plugins: [
       {
         ...AutoIndex({}),
         enforce: "pre",
       },
-      // add plugin
       AutoSidebar({
-        // You can also set options to adjust sidebar data
-        // see option document below
-        // ignoreList: ['index.md'],
         ignoreIndexItem: false,
         prefix: ".",
         collapsed: false,
         titleFromFile: true,
-        // sideBarItemsResolved: SidebarItemFilter,
         sideBarItemsResolved: SidebarItemFilter,
       }),
     ],
@@ -122,15 +125,6 @@ export default {
         name: "sogou_site_verification",
         content: "UFI5s8VKnD",
       },
-      {},
-    ],
-    [
-      "script",
-      {
-        async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=G-M87WHVJHWW",
-        crossorigin: "anonymous",
-      },
     ],
     [
       "script",
@@ -141,13 +135,25 @@ export default {
       },
     ],
   ],
+  markdown: {
+    theme: {
+      light: "github-light",
+      dark: "material-theme-palenight",
+    },
+    lineNumbers: true,
+    toc: { level: [1, 2, 3, 4, 5, 6] },
+    attrs: { disable: true },
+  },
   themeConfig: {
     logo: "/logo.png",
+    lastUpdated: {
+      text: "最后更新于",
+    },
     search: {
       provider: "local",
       options: {
         locales: {
-          zh: {
+          root: {
             translations: {
               button: {
                 buttonText: "搜索文档",
@@ -159,6 +165,7 @@ export default {
                 footer: {
                   selectText: "选择",
                   navigateText: "切换",
+                  closeText: "关闭",
                 },
               },
             },
@@ -171,54 +178,58 @@ export default {
         '基于<a href="https://github.com/whp98/whp98.github.io/blob/main/LICENSE.txt">MIT License</a>发布',
       copyright: `Copyright © 2021-${currentYear} <a href="https://github.com/whp98">Roc</a>`,
     },
-    lastUpdated: true,
-    markdown: {
-      theme: "material-palenight",
-      lineNumbers: true,
-    },
     nav: [
       { text: "主页", link: "/" },
-      { text: "AI相关", link: "/AI相关/" },
-      { text: "后端开发", link: "/后端开发/" },
-      { text: "容器技术", link: "/容器技术/" },
-      { text: "前端开发", link: "/前端开发/" },
-      { text: "安卓开发", link: "/安卓开发/" },
-      { text: "生活记录", link: "/生活记录/" },
-      { text: "数据库", link: "/数据库/" },
-      { text: "Git版本管理", link: "/Git版本管理/" },
-      { text: "Python语言", link: "/Python语言/" },
-      { text: "Rust语言", link: "/Rust语言/" },
-      { text: "Linux", link: "/Linux系统/" },
-      { text: "Windows", link: "/Windows系统/" },
+      { text: "AI 相关", link: "/AI相关/" },
+      {
+        text: "开发技术",
+        items: [
+          { text: "前端开发", link: "/前端开发/" },
+          { text: "后端开发", link: "/后端开发/" },
+          { text: "安卓开发", link: "/安卓开发/" },
+          { text: "数据库", link: "/数据库/" },
+          { text: "系统架构", link: "/系统架构/" },
+          { text: "算法面试", link: "/算法面试/" },
+          { text: "嵌入式相关", link: "/嵌入式相关/" },
+        ],
+      },
+      {
+        text: "编程语言",
+        items: [
+          { text: "Python 语言", link: "/Python语言/" },
+          { text: "Rust 语言", link: "/Rust语言/" },
+        ],
+      },
+      {
+        text: "系统与运维",
+        items: [
+          { text: "Linux 系统", link: "/Linux系统/" },
+          { text: "Windows 系统", link: "/Windows系统/" },
+          { text: "容器技术", link: "/容器技术/" },
+          { text: "计算机网络", link: "/计算机网络/" },
+          { text: "Git 版本管理", link: "/Git版本管理/" },
+          { text: "SVN 版本管理", link: "/SVN版本管理/" },
+        ],
+      },
+      {
+        text: "工具与建站",
+        items: [
+          { text: "开发工具技巧", link: "/开发工具技巧/" },
+          { text: "博客搭建", link: "/博客搭建/" },
+        ],
+      },
+      {
+        text: "随笔与认知",
+        items: [
+          { text: "生活记录", link: "/生活记录/" },
+          { text: "奇思妙想", link: "/奇思妙想/" },
+          { text: "金融知识", link: "/金融知识/" },
+          { text: "健康科普", link: "/健康科普/" },
+          { text: "社会认知", link: "/社会认知/" },
+          { text: "小说", link: "/小说/" },
+        ],
+      },
       { text: "赞助和推广", link: "/赞助和推广/" },
     ],
   },
-  transformHtml: (_, id, { pageData }) => {
-    if (!/[\\/]404\.html$/.test(id))
-      links.push({
-        // you might need to change this if not using clean urls mode
-        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, "$2"),
-        lastmod: pageData.lastUpdated,
-      });
-  },
-  // 生成sitemap.xml
-  buildEnd: async ({ outDir }) => {
-    console.log("out", outDir);
-    const sitemap = new SitemapStream({
-      hostname: "https://blog.261020.xyz/",
-    });
-    const writeStream = createWriteStream(resolve(outDir, "sitemap.xml"));
-    sitemap.pipe(writeStream);
-    links.forEach((link) => sitemap.write(link));
-    sitemap.end();
-    await new Promise((r) => writeStream.on("finish", r));
-  },
-  markdown: {
-    // options for @mdit-vue/plugin-toc
-    // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
-    toc: { level: [1, 2, 3, 4, 5, 6, 7] },
-    attrs: { disable: true },
-  },
-  // 忽略死链
-  ignoreDeadLinks: true,
-};
+});
