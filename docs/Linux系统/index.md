@@ -1,4 +1,5 @@
 # Linux系统
+- [GRUB2 字体过大、分辨率偏低排查与设置指南](./GRUB2分辨率与字体大小排查指南.md)
 - [记一次 Caddy 反向代理“偶尔 404”诡异故障排查与底层原理剖析](./caddy-排查-404-分析.md)
 - [Linux 桌面应用界面变大:原因排查与修复](./LINUX桌面应用界面变大原因和修复.md)
 - [Android Studio 模拟器启动崩溃（Exit Code 139 / SIGSEGV）排查与解决方案](./ANDROID_EMULATOR_CRASH_SOLUTION.md)

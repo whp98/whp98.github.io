@@ -1,6 +1,6 @@
 # 目录
-- [About](./public/public.md)
 - [Linux系统](./Linux系统/)
+- [About](./public/public.md)
 - [开发工具技巧](./开发工具技巧/)
 - [后端开发](./后端开发/)
 - [奇思妙想](./奇思妙想/)
