@@ -1,4 +1,5 @@
 # Linux系统
+- [Nerd Fonts 详解与全平台（Linux / macOS / Windows / WSL）安装配置指南](./Nerd-Fonts详解与全平台安装配置指南.md)
 - [Linux终端字体回退机制与Kitty终端图标乱码深度排查指南](./Linux终端字体回退机制与Kitty图标乱码深度排查指南.md)
 - [Wayland 下钉钉、WPS Office 等应用中文输入法环境变量原理解析与配置](./Wayland下钉钉和WPS等应用中文输入法环境变量原理解析与配置.md)
 - [GRUB2 字体过大、分辨率偏低排查与设置指南](./GRUB2分辨率与字体大小排查指南.md)
