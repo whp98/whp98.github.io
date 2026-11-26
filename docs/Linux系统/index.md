@@ -1,6 +1,6 @@
 # Linux系统
-- [深入解析 Waydroid：核心运行原理、文件架构全景与彻底卸载指南](./waydroid-internals-and-uninstall.md)
 - [Ubuntu 手把手指南：安装 Waydroid、开启 ARM 转译并流畅运行番茄小说](./waydroid-guide.md)
+- [深入解析 Waydroid：核心运行原理、文件架构全景与彻底卸载指南](./waydroid-internals-and-uninstall.md)
 - [Nerd Fonts 详解与全平台（Linux / macOS / Windows / WSL）安装配置指南](./Nerd-Fonts详解与全平台安装配置指南.md)
 - [Linux终端字体回退机制与Kitty终端图标乱码深度排查指南](./Linux终端字体回退机制与Kitty图标乱码深度排查指南.md)
 - [Wayland 下钉钉、WPS Office 等应用中文输入法环境变量原理解析与配置](./Wayland下钉钉和WPS等应用中文输入法环境变量原理解析与配置.md)

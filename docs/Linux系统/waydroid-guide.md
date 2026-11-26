@@ -241,3 +241,12 @@ waydroid show-full-ui
 ---
 
 > 🎉 **大功告成！** 享受在 Linux 桌面利用大屏与鼠标滚轮畅读番茄小说的极致体验吧！
+
+## 11.解决无法播放风控问题
+
+设置waydroid的形状为手机
+```bash
+waydroid prop set persist.waydroid.width 400
+waydroid prop set persist.waydroid.height 800
+waydroid session stop
+```
