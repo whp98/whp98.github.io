@@ -1,15 +1,16 @@
 import { defineConfig } from "vitepress";
 import AutoSidebar from "vite-plugin-vitepress-auto-sidebar-whp98";
 import AutoIndex from "vite-plugin-vitepress-auto-index";
-
+import { MermaidMarkdown,MermaidPlugin } from "vitepress-plugin-mermaid";
 const currentYear = new Date().getFullYear();
 
 const SidebarItemFilter = (SidebarItemArr) => {
   const res = SidebarItemArr.filter((e) => {
     const flag1 = e.text !== "LICENSE";
-    const flag2 = !/\.(md|txt|json|yml|yaml|png|jpg|jpeg|gif|svg|js|ts|css|html)$/i.test(
-      e.text
-    );
+    const flag2 =
+      !/\.(md|txt|json|yml|yaml|png|jpg|jpeg|gif|svg|js|ts|css|html)$/i.test(
+        e.text,
+      );
     return flag1 && flag2;
   });
   res.forEach((e) => {
@@ -98,7 +99,14 @@ export default defineConfig({
         titleFromFile: true,
         sideBarItemsResolved: SidebarItemFilter,
       }),
+      MermaidPlugin()
     ],
+    optimizeDeps: {
+      include: ["mermaid"],
+    },
+    ssr: {
+      noExternal: ["mermaid"],
+    }
   },
   head: [
     [
@@ -143,6 +151,9 @@ export default defineConfig({
     lineNumbers: true,
     toc: { level: [1, 2, 3, 4, 5, 6] },
     attrs: { disable: true },
+    config: (md) => {
+      md.use(MermaidMarkdown);
+    }
   },
   themeConfig: {
     logo: "/logo.png",
